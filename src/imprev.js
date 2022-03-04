@@ -1,8 +1,8 @@
 export default [
     {
         id: 1,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
@@ -13,8 +13,8 @@ export default [
     },
     {
         id: 3,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
     {
@@ -25,8 +25,8 @@ export default [
     },
     {
         id: 5,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
@@ -37,14 +37,14 @@ export default [
     },
     {
         id: 7,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
     {
         id: 8,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
@@ -55,14 +55,14 @@ export default [
     },
     {
         id: 10,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
     {
         id: 11,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
@@ -73,14 +73,14 @@ export default [
     },
     {
         id: 13,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
     {
         id: 14,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
@@ -91,14 +91,14 @@ export default [
     },
     {
         id: 16,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
     {
         id: 17,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
@@ -109,14 +109,14 @@ export default [
     },
     {
         id: 19,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
         id: 20,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
     {
@@ -127,14 +127,14 @@ export default [
     },
     {
         id: 22,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
     {
         id: 23,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
@@ -145,8 +145,8 @@ export default [
     },
     {
         id: 25,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
     {
@@ -157,8 +157,8 @@ export default [
     },
     {
         id: 27,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false
     },
     {
@@ -169,8 +169,8 @@ export default [
     },
     {
         id: 29,
-        title: "",
-        description: "",
+        title: "- nessun imprevisto -",
+        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false
     },
 ]
