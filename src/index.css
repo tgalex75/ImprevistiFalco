@@ -57,10 +57,10 @@ body {
     width: 100vw;
     height: 90vh;
     text-align: center;
-    background-image: url(../public/logo900_25.png);
+    background-image: url(../public/logo900_25.png), url(../public/right-bg25.png);
     background-repeat: no-repeat;
     background-size: 50%;
-    background-position: -50%;
+    background-position: -50%, 125% bottom;
 }
 
 .displayPrepartita {
