@@ -9,18 +9,28 @@ export default function Main(props) {
             isImprev: item.isImprev
         }
     )) */
-    console.clear()    
     let ranNumImprev = props.randomNumber
-    console.log(typeof ranNumImprev)
+    let randNumFixedIndex = ranNumImprev - 1
+    let title = props.imprev[randNumFixedIndex -1].title
+    let description = props.imprev[randNumFixedIndex -1].description
+    let isImprev = props.imprev[randNumFixedIndex -1].isImprev
+    let ultEstrazione = props.imprev[randNumFixedIndex -1].ultEstrazione
+
     return (
         <main className="main">
             {props.mainState === "prepartita" && (
                 <div className="displayPrepartita">
                     <h1>Imprevisti PREPARTITA</h1>
-                    <div id="btn-randNum" onClick={props.randNumBox}>ESTRAI</div>
+                    <div className="btn-randNum" onClick={props.randNumBox}>ESTRAI</div>
                     <h2 id="randomNumber">{ranNumImprev}</h2>
-                    <h3>{props.imprev[0].title}</h3>
-                    <p>{props.imprev[0].description}</p>
+                    <h3>{title}</h3>
+                    <p>{description}</p>
+                    {ultEstrazione && <div className="ultEstrazione">
+                        <input type="number" min="1" max="35"/>
+                        <div className="btn-player" onClick={props.randNumBox}>ESTRAI</div>
+                        <h2 className="randomPlayer">77</h2>
+                        <div className="img-impr"></div>
+                    </div>}
                 </div>
             )}
 

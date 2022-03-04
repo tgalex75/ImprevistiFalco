@@ -9,9 +9,10 @@ export default function App() {
         return Math.floor(Math.random() * imprev.length) + 1;
     }
 
-    const [randomNumber, setRandomNumber] = React.useState("0")
+    const [randomNumber, setRandomNumber] = React.useState(getRandomNumber)
 
     function randNumBox() {
+        console.clear()    
         setRandomNumber(getRandomNumber)
     }
     
@@ -30,6 +31,7 @@ export default function App() {
             <Header
                 selectMainPrepartita={selectMainPrepartita}
                 selectMainSettimana={selectMainSettimana}
+                mainState={mainState}
             />
             <Main 
                 mainState={mainState}

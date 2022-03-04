@@ -1,90 +1,190 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .header {
-  width: 100vw;
-  height: 10vh;
-  box-shadow: 0 5px 20px rgba(0,0,0,.5);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  background-color: #024b80;
-  color: white;
-  transition: .3s;
-  font-weight: 600;
-
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+    font-weight: 800;
 }
 
-#menu-prepartita, #menu-settimana{
-  width: 50%;
-  height: 100%;
-  border-left: 1px solid #011b2e;
-  border-right: 1px solid #011b2e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* font-size: 20vw; */
+#menu-prepartita,
+#menu-settimana {
+    width: 50%;
+    height: 100%;
+    background-color: #024b80;
+    border-left: 1px solid #011b2e;
+    border-right: 1px solid #011b2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2.5vh;
 }
 
-#menu-prepartita:hover, #menu-settimana:hover {
-  background-color: #011b2e ;  
+#menu-prepartita.default,
+#menu-settimana.default {
+    background-color: #e52d27;
 }
 
-#menu-prepartita:visited, #menu-settimana:visited {
-  background-color: #011b2e ;  
+#menu-prepartita:hover,
+#menu-settimana:hover {
+    background-color: #011b2e;
 }
 
-#menu-prepartita > span {
-  font-size: x-large;
-}
+#menu-prepartita > span,
 #menu-settimana > span {
-  font-size: x-large;
+    font-size: 4vh;
 }
 
 /* MAIN SECTION */
 
 .main {
-  width: 100vw;
-  height: 100vh;
-  padding: .5vh;
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+    background-image: url(../public/logo900_25.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: -50%;
 }
 
 .displayPrepartita {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#btn-randNum {
-  padding: .8rem 3rem;
-  background-color: #011b2e;
-  border-radius: .3em;
-  text-align: center;
-  color: white;
-  font-weight: 600;
-  transition: .3s;
-  cursor: pointer;
+.btn-randNum {
+    background-image: linear-gradient(
+        to right,
+        #314755 0%,
+        #26a0da 51%,
+        #314755 100%
+    );
+}
+.btn-randNum {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-#btn-randNum:hover {
-  background-color: #024b80;
-}
-
-#btn-randNum:active {
-  background-color: #800202;
+.btn-randNum:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
 
 #randomNumber {
-  font-size: 10rem;
-  font-weight: 800;
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.ultEstrazione {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    border: 10px solid #26a0da;
+    border-radius: 0.3em;
+    padding: 1em 0;
+    position: relative;
+}
+
+.ultEstrazione > input {
+    text-align: center;
+    border-radius: 0.3em;
+    font-weight: 600;
+    font-size: 2.5rem;
+    max-width: 8rem;
+    padding-left: 10px;
+}
+
+.ultEstrazione > .btn-randNum {
+    margin: 0 20px;
+}
+
+.randomPlayer {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    /* background-color: #800202; */
+    color: #024b80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.btn-player {
+    background-image: linear-gradient(
+        to right,
+        #e52d27 0%,
+        #b31217 51%,
+        #e52d27 100%
+    );
+}
+.btn-player {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-player:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-impr {
+    background-image: url(../public/imprevisto.png);
+    background-size: cover;
+    width: 120px;
+    height: 98px;
+    position: absolute;
+    top: calc(0px - (98px / 2));
+    right: calc(0px - (120px / 2));
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    #menu-prepartita, #menu-settimana {font-size: 1.8vh;}
+    #menu-prepartita > span, #menu-settimana > span {font-size: 3.2vh;}
+    .ultEstrazione {flex-direction: column;}
 }
