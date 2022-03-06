@@ -22,7 +22,7 @@ export default function App() {
         return Math.floor(Math.random() * imprev.length) + 1;
     }
 
-    const [randomNumber, setRandomNumber] = React.useState(getRandomNumber)
+    const [randomNumber, setRandomNumber] = React.useState(1)
 
     function randNumBox() {
         setRandomNumber(getRandomNumber)

@@ -18,12 +18,12 @@ export default function Main(props) {
     function chooseRandomPlayer () {
         setExtractedNumber(Math.floor(Math.random() * inputField.randomPlayerNumber) + 1)
     }
-    let ranNumImprev = props.randomNumber
-    let randNumFixedIndex = ranNumImprev - 1
-    let title = props.imprev[randNumFixedIndex].title
-    let description = props.imprev[randNumFixedIndex].description
-    let isImprev = props.imprev[randNumFixedIndex].isImprev
-    let ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione
+    const ranNumImprev = props.randomNumber
+    const randNumFixedIndex = ranNumImprev - 1
+    const title = props.imprev[randNumFixedIndex].title
+    const description = props.imprev[randNumFixedIndex].description
+    const isImprev = props.imprev[randNumFixedIndex].isImprev
+    const ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione
 
     return (
         <main className="main">
