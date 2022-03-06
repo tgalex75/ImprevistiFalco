@@ -20,10 +20,10 @@ export default function Main(props) {
     }
     let ranNumImprev = props.randomNumber
     let randNumFixedIndex = ranNumImprev - 1
-    let title = props.imprev[randNumFixedIndex -1].title
-    let description = props.imprev[randNumFixedIndex -1].description
-    let isImprev = props.imprev[randNumFixedIndex -1].isImprev
-    let ultEstrazione = props.imprev[randNumFixedIndex -1].ultEstrazione
+    let title = props.imprev[randNumFixedIndex].title
+    let description = props.imprev[randNumFixedIndex].description
+    let isImprev = props.imprev[randNumFixedIndex].isImprev
+    let ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione
 
     return (
         <main className="main">
@@ -57,9 +57,9 @@ export default function Main(props) {
             {props.mainState === "settimana" &&( 
                 <div className="displayPrepartita">
                     <div className="btn-randNum" onClick={props.randNumBox}>ESTRAI</div>
-                    <h2 className={props.imprevSettim[ranNumImprev].isImprev ? "red-alert" : ""} id="randomNumber">{ranNumImprev}</h2>
-                    <h3 className={props.imprevSettim[ranNumImprev].isImprev ? "red-alert" : ""}>{props.imprevSettim[ranNumImprev].title}</h3>
-                    <p>{props.imprevSettim[ranNumImprev].description}</p>
+                    <h2 className={props.imprevSettim[randNumFixedIndex].isImprev ? "red-alert" : ""} id="randomNumber">{ranNumImprev}</h2>
+                    <h3 className={props.imprevSettim[randNumFixedIndex].isImprev ? "red-alert" : ""}>{props.imprevSettim[randNumFixedIndex].title}</h3>
+                    <p>{props.imprevSettim[randNumFixedIndex].description}</p>
                 </div>
                     )}
         </main>
