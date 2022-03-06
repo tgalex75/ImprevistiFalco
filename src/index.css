@@ -8,6 +8,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.main-container {
+    height: 100vh;
+}
+
 .header {
     width: 100vw;
     height: 10vh;
@@ -26,31 +30,37 @@ body {
     width: 50%;
     height: 100%;
     background-color: #024b80;
-    border-left: 1px solid #011b2e;
+/*     border-left: 1px solid #011b2e;
     border-right: 1px solid #011b2e;
-    display: flex;
+ */    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     transition: .6s;
+}
+
+#menu-prepartita > span,
+#menu-settimana > span {
+    font-size: 2vh;
 }
 
 #menu-prepartita.default,
 #menu-settimana.default {
     background-color: #e52d27;
-    width: 95%;
+    width: 100%;
+    font-size: 2vh;
+}
+
+#menu-prepartita.default > span,
+#menu-settimana.default > span {
+    font-size: 3.5vh;
 }
 
 #menu-prepartita:hover,
 #menu-settimana:hover {
     background-color: #011b2e;
-}
-
-#menu-prepartita > span,
-#menu-settimana > span {
-    font-size: 4vh;
 }
 
 /* MAIN SECTION */
@@ -84,8 +94,7 @@ body {
     );
 }
 .btn-randNum {
-    margin: 10px;
-    padding: 15px 45px;
+    padding: 30px 150px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -107,28 +116,35 @@ body {
 #randomNumber {
     font-size: 12rem;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1;
+}
+
+.img-impr {
+    width: 300px;
+    height: 69px;
+    background-image: url(../public/imprevisto_OR.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .displayPrepartita > h3 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .displayPrepartita > p {
-    font-size: 1.2em;
+    font-size: 1.7em;
     font-weight: 600;
+    padding: 0 5px;
 }
 
 .ultEstrazione {
-    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60vw;
-    border: 5px dotted #26a0da;
+    width: 50vw;
+    border: 5px dashed #26a0da;
     border-radius: 0.3em;
-    padding: 1em 0;
-    position: relative;
+    padding: .5em 0;
 }
 
 .ultEstrazione > .container {
@@ -182,25 +198,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 600;
     background-image: url(../public/retro-shirt.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     padding-bottom: .5em;
-}
-
-.img-impr {
-    background-image: url(../public/imprevisto_OR.png);
-    background-size: cover;
-    width: 300px;
-    height: 69px;
-    position: fixed;
-    top: 30%;
-    right: 3%;
-    transform: rotate(25deg);
-
 }
 
 .red-alert {
@@ -210,9 +214,23 @@ body {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-    #menu-prepartita, #menu-settimana {font-size: 1.8vh;}
-    #menu-prepartita > span, #menu-settimana > span {font-size: 3.2vh;}
-    .ultEstrazione {flex-direction: column;}
-    .img-impr {top: 30%; width: 150px; height: 34px; transform: rotate(35deg)}
-
+    .btn-randNum {padding: 15px 40%;}
+    #randomNumber {
+        font-size: 8rem;
+        line-height: .8;
+    }
+    .img-impr {width: 200px; height: 50px;}
+    .displayPrepartita > h3 {
+        font-size: 1.5em;
+        line-height: 1;
+    }
+    .displayPrepartita > p {
+        font-size: 1.2em;
+    }
+    
+    .ultEstrazione {flex-direction: column; border: 3px dashed #26a0da;
+    }
+    .randomPlayer {
+        height: 7rem;
+        width: 6rem;}
 }

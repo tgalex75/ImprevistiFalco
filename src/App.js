@@ -29,7 +29,7 @@ export default function App() {
     }  
 
     return (
-        <>
+        <div className="main-container">
             <Header
                 selectMainPrepartita={selectMainPrepartita}
                 selectMainSettimana={selectMainSettimana}
@@ -42,6 +42,6 @@ export default function App() {
                 imprev={imprev}
                 imprevSettim={imprevSettim}
             />
-        </>
+        </div>
     );
 }
