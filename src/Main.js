@@ -25,12 +25,17 @@ export default function Main(props) {
     let isImprev = props.imprev[randNumFixedIndex -1].isImprev
     let ultEstrazione = props.imprev[randNumFixedIndex -1].ultEstrazione
 
+    console.log(props.mainState)
+
     return (
         <main className="main">
+
+            {/* IMPREVISTI PREPARTITA */}
+
             {props.mainState === "prepartita" && (
                 <div className="displayPrepartita">
                     <div className="btn-randNum" onClick={props.randNumBox}>ESTRAI</div>
-                    <h2 className={isImprev ? "red-alert" : ""} id="randomNumber">{ranNumImprev}</h2>
+                    {props.randomNumber && <h2 className={isImprev ? "red-alert" : ""} id="randomNumber">{ranNumImprev}</h2>}
                     <h3 className={isImprev ? "red-alert" : ""}>{title}</h3>
                     <p>{description}</p>
                     {ultEstrazione && <div className="ultEstrazione">
@@ -49,7 +54,16 @@ export default function Main(props) {
                 </div>
             )}
 
-            {props.mainState === "settimana" && <h1>Imprevisti SETTIMANA</h1>}
+            {/* IMPREVISTI PEGGIORE DELLA SETTIMANA */}
+
+            {props.mainState === "settimana" &&( 
+                <div className="displayPrepartita">
+                    <div className="btn-randNum" onClick={props.randNumBox}>ESTRAI</div>
+                    <h2 className={props.imprevSettim[ranNumImprev].isImprev ? "red-alert" : ""} id="randomNumber">{ranNumImprev}</h2>
+                    <h3 className={props.imprevSettim[ranNumImprev].isImprev ? "red-alert" : ""}>{props.imprevSettim[ranNumImprev].title}</h3>
+                    <p>{props.imprevSettim[ranNumImprev].description}</p>
+                </div>
+                    )}
         </main>
     );
 }

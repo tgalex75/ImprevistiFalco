@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import imprev from "./imprev";
+import imprevSettim from "./imprevSettim";
 import Main from "./Main";
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
                 randomNumber={randomNumber}
                 randNumBox={randNumBox}
                 imprev={imprev}
+                imprevSettim={imprevSettim}
             />
         </>
     );

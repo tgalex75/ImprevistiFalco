@@ -34,11 +34,13 @@ body {
     justify-content: center;
     cursor: pointer;
     font-size: 2.5vh;
+    transition: .6s;
 }
 
 #menu-prepartita.default,
 #menu-settimana.default {
     background-color: #e52d27;
+    width: 95%;
 }
 
 #menu-prepartita:hover,
@@ -58,7 +60,7 @@ body {
     width: 100vw;
     height: 90vh;
     text-align: center;
-    background-image: url(../public/logo900_25.png), url(../public/right-bg25.png);
+    background-image: url(../public/logo900_25.png), url(../public/right-bg50.png);
     background-repeat: no-repeat, no-repeat;
     background-size: 50%, 75%;
     background-position: -50%, 150% bottom;
@@ -69,8 +71,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 2rem;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 .btn-randNum {
@@ -103,9 +105,18 @@ body {
 }
 
 #randomNumber {
-    font-size: 10rem;
+    font-size: 12rem;
     font-weight: 800;
     line-height: 1.2;
+}
+
+.displayPrepartita > h3 {
+    font-size: 1.5em;
+}
+
+.displayPrepartita > p {
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .ultEstrazione {
@@ -181,13 +192,15 @@ body {
 }
 
 .img-impr {
-    background-image: url(../public/imprevisto.png);
+    background-image: url(../public/imprevisto_OR.png);
     background-size: cover;
-    width: 120px;
-    height: 98px;
+    width: 300px;
+    height: 69px;
     position: fixed;
     top: 30%;
-    right: 25%;
+    right: 3%;
+    transform: rotate(25deg);
+
 }
 
 .red-alert {
@@ -200,6 +213,6 @@ body {
     #menu-prepartita, #menu-settimana {font-size: 1.8vh;}
     #menu-prepartita > span, #menu-settimana > span {font-size: 3.2vh;}
     .ultEstrazione {flex-direction: column;}
-    .img-impr {right: 0;
-    }
+    .img-impr {top: 30%; width: 150px; height: 34px; transform: rotate(35deg)}
+
 }
