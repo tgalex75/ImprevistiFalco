@@ -1,14 +1,23 @@
 import React from "react";
 
 export default function Main(props) {
-    /* const imprevistiMappati = props.imprev.map((item, index)=>(
-        {
-            id: item.id,
-            title: item.title,
-            description: item.description,
-            isImprev: item.isImprev
-        }
-    )) */
+    
+    const [inputField, setInputField] = React.useState({randomPlayerNumber: ""})
+
+    function handleChange(event) {
+        setInputField(prevInputField => {
+            return {
+                ...prevInputField,
+                [event.target.name]: event.target.value
+            }
+        })
+    }
+
+    const [extractedNumber, setExtractedNumber] = React.useState(null)
+
+    function chooseRandomPlayer () {
+        setExtractedNumber(Math.floor(Math.random() * inputField.randomPlayerNumber) + 1)
+    }
     let ranNumImprev = props.randomNumber
     let randNumFixedIndex = ranNumImprev - 1
     let title = props.imprev[randNumFixedIndex -1].title
@@ -20,15 +29,21 @@ export default function Main(props) {
         <main className="main">
             {props.mainState === "prepartita" && (
                 <div className="displayPrepartita">
-                    <h1>Imprevisti PREPARTITA</h1>
                     <div className="btn-randNum" onClick={props.randNumBox}>ESTRAI</div>
-                    <h2 id="randomNumber">{ranNumImprev}</h2>
-                    <h3>{title}</h3>
+                    <h2 className={isImprev ? "red-alert" : ""} id="randomNumber">{ranNumImprev}</h2>
+                    <h3 className={isImprev ? "red-alert" : ""}>{title}</h3>
                     <p>{description}</p>
                     {ultEstrazione && <div className="ultEstrazione">
-                        <input type="number" min="1" max="35"/>
-                        <div className="btn-player" onClick={props.randNumBox}>ESTRAI</div>
-                        <h2 className="randomPlayer">77</h2>
+                        <div className="container">
+                            <input type="number" 
+                            name="randomPlayerNumber" 
+                            value={inputField.randomPlayerNumber} 
+                            onChange={handleChange} 
+                            min="1" max="35"
+                            />
+                            <div className="btn-player" onClick={chooseRandomPlayer}>ESTRAI</div>
+                        </div>
+                        <div className="randomPlayer">{extractedNumber}</div>
                         <div className="img-impr"></div>
                     </div>}
                 </div>

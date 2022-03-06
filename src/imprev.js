@@ -1,7 +1,7 @@
 export default [
     {
         id: 1,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
@@ -15,7 +15,7 @@ export default [
     },
     {
         id: 3,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
@@ -29,7 +29,7 @@ export default [
     },
     {
         id: 5,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
@@ -43,14 +43,14 @@ export default [
     },
     {
         id: 7,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
     },
     {
         id: 8,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
@@ -64,14 +64,14 @@ export default [
     },
     {
         id: 10,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
     },
     {
         id: 11,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
@@ -85,14 +85,14 @@ export default [
     },
     {
         id: 13,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
     },
     {
         id: 14,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
@@ -106,14 +106,14 @@ export default [
     },
     {
         id: 16,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
     },
     {
         id: 17,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
@@ -127,14 +127,14 @@ export default [
     },
     {
         id: 19,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
     },
     {
         id: 20,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
@@ -148,14 +148,14 @@ export default [
     },
     {
         id: 22,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
     },
     {
         id: 23,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
@@ -169,7 +169,7 @@ export default [
     },
     {
         id: 25,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
@@ -183,7 +183,7 @@ export default [
     },
     {
         id: 27,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
         isImprev: false,
         ultEstrazione: false
@@ -197,7 +197,7 @@ export default [
     },
     {
         id: 29,
-        title: "- nessun imprevisto -",
+        title: "nessun imprevisto",
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false

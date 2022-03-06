@@ -53,14 +53,16 @@ body {
 
 /* MAIN SECTION */
 
+
 .main {
     width: 100vw;
     height: 90vh;
     text-align: center;
     background-image: url(../public/logo900_25.png), url(../public/right-bg25.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: -50%, 125% bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, 75%;
+    background-position: -50%, 150% bottom;
+    /* background-color: rgba(0, 0, 0, 0.9); */
 }
 
 .displayPrepartita {
@@ -68,6 +70,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding-top: 2rem;
 }
 
 .btn-randNum {
@@ -111,35 +114,26 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 60vw;
-    border: 10px solid #26a0da;
+    border: 5px dotted #26a0da;
     border-radius: 0.3em;
     padding: 1em 0;
     position: relative;
 }
 
-.ultEstrazione > input {
-    text-align: center;
-    border-radius: 0.3em;
-    font-weight: 600;
-    font-size: 2.5rem;
-    max-width: 8rem;
-    padding-left: 10px;
-}
-
-.ultEstrazione > .btn-randNum {
-    margin: 0 20px;
-}
-
-.randomPlayer {
-    border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
-    /* background-color: #800202; */
-    color: #024b80;
+.ultEstrazione > .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+}
+
+.ultEstrazione > .container > input {
+    text-align: center;
+    border-radius: 0.1em;
+    font-weight: 600;
+    font-size: 2rem;
+    max-width: 8rem;
+    padding-left: 10px;
 }
 
 .btn-player {
@@ -171,14 +165,33 @@ body {
     text-decoration: none;
 }
 
+.randomPlayer {
+    height: 8rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    background-image: url(../public/retro-shirt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-bottom: .5em;
+}
+
 .img-impr {
     background-image: url(../public/imprevisto.png);
     background-size: cover;
     width: 120px;
     height: 98px;
-    position: absolute;
-    top: calc(0px - (98px / 2));
-    right: calc(0px - (120px / 2));
+    position: fixed;
+    top: 30%;
+    right: 25%;
+}
+
+.red-alert {
+    color: #b31217;
 }
 
 /* MEDIA QUERIES */
@@ -187,4 +200,6 @@ body {
     #menu-prepartita, #menu-settimana {font-size: 1.8vh;}
     #menu-prepartita > span, #menu-settimana > span {font-size: 3.2vh;}
     .ultEstrazione {flex-direction: column;}
+    .img-impr {right: 0;
+    }
 }
