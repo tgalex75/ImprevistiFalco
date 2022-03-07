@@ -36,10 +36,10 @@ export default [
     },
     {
         id: 6,
-        title: "MARESCA",
+        title: "COULON!",
         description: "Maresca scalda i guantoni e si prende il posto da titolare",
         isImprev: true,
-        ultEstrazione: true
+        ultEstrazione: false
     },
     {
         id: 7,
@@ -162,10 +162,10 @@ export default [
     },
     {
         id: 24,
-        title: "MARESCA",
+        title: "COULON!",
         description: "Maresca scalda i guantoni e si prende il posto da titolare",
         isImprev: true,
-        ultEstrazione: true
+        ultEstrazione: false
     },
     {
         id: 25,
