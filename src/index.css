@@ -8,6 +8,18 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .main-container {
     height: 100vh;
 }
@@ -30,9 +42,7 @@ body {
     width: 50%;
     height: 100%;
     background-color: #024b80;
-/*     border-left: 1px solid #011b2e;
-    border-right: 1px solid #011b2e;
- */    display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -74,7 +84,6 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-size: 50%, 75%;
     background-position: -50%, 150% bottom;
-    /* background-color: rgba(0, 0, 0, 0.9); */
 }
 
 .displayPrepartita {
@@ -94,7 +103,7 @@ body {
     );
 }
 .btn-randNum {
-    padding: 30px 150px;
+    padding: 20px 150px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -134,11 +143,12 @@ body {
 }
 
 .displayPrepartita > p {
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-weight: 600;
-    padding: 0 5px;
-    background-color: rgba(5,5,5,.15);
-    bored-radius: 5px;
+    padding: 10px;
+    background-color: rgba(5, 5, 5, 0.15);
+    border-radius: 5px;
+    width: 50%;
 }
 
 .ultEstrazione {
@@ -146,8 +156,8 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 50vw;
-    border: 5px dashed #26a0da;
-    border-radius: 0.3em;
+    border: 5px double #024b80;
+    border-radius: 0.5em;
     padding: .5em 0;
 }
 
@@ -164,7 +174,6 @@ body {
     font-weight: 600;
     font-size: 2rem;
     max-width: 8rem;
-    padding-left: 10px;
 }
 
 .btn-player {
@@ -229,10 +238,10 @@ body {
         line-height: 1;
     }
     .displayPrepartita > p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
-    .ultEstrazione {flex-direction: column; border: 3px dashed #26a0da;
+    .ultEstrazione {flex-direction: column; border: 3px double #26a0da;
     }
     .randomPlayer {
         height: 7rem;

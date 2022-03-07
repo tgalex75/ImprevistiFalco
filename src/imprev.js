@@ -37,7 +37,7 @@ export default [
     {
         id: 6,
         title: "COULON!",
-        description: "Maresca scalda i guantoni e si prende il posto da titolare",
+        description: "Coulon scalda i guantoni e si prende il posto da titolare",
         isImprev: true,
         ultEstrazione: false
     },
@@ -163,7 +163,7 @@ export default [
     {
         id: 24,
         title: "COULON!",
-        description: "Maresca scalda i guantoni e si prende il posto da titolare",
+        description: "Coulon scalda i guantoni e si prende il posto da titolare",
         isImprev: true,
         ultEstrazione: false
     },

@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -16,7 +16,7 @@ export default [
     {
         id: 3,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -29,7 +29,7 @@ export default [
     {
         id: 5,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -43,7 +43,7 @@ export default [
     {
         id: 7,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -57,7 +57,7 @@ export default [
     {
         id: 9,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -71,7 +71,7 @@ export default [
     {
         id: 11,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -85,7 +85,7 @@ export default [
     {
         id: 13,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -99,7 +99,7 @@ export default [
     {
         id: 15,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -113,7 +113,7 @@ export default [
     {
         id: 17,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -127,7 +127,7 @@ export default [
     {
         id: 19,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -141,7 +141,7 @@ export default [
     {
         id: 21,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -155,7 +155,7 @@ export default [
     {
         id: 23,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -169,7 +169,7 @@ export default [
     {
         id: 25,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -183,7 +183,7 @@ export default [
     {
         id: 27,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
@@ -197,7 +197,7 @@ export default [
     {
         id: 29,
         title: "nessun imprevisto",
-        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.giocate in questa settimana",
+        description: "Il giocatore passerà in tribuna le partite giocate questa settimana.",
         isImprev: false
         
     },
