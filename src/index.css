@@ -126,6 +126,7 @@ body {
     background-image: url(../public/imprevisto_OR.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .displayPrepartita > h3 {
@@ -136,6 +137,8 @@ body {
     font-size: 1.7em;
     font-weight: 600;
     padding: 0 5px;
+    background-color: rgba(5,5,5,.15);
+    bored-radius: 5px;
 }
 
 .ultEstrazione {
