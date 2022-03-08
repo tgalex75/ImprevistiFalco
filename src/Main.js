@@ -1,4 +1,5 @@
 import React from "react";
+import Tooltip from '@mui/material/Tooltip';
 
 export default function Main(props) {
     
@@ -39,12 +40,14 @@ export default function Main(props) {
                     <p>{description}</p>
                     {ultEstrazione && <div className="ultEstrazione">
                         <div className="container">
+                        <Tooltip title="Inserisci un numero per estrarre il giocatore colpito dall'imprevisto" followCursor>
                             <input type="number"
                             name="randomPlayerNumber" 
                             value={inputField.randomPlayerNumber} 
                             onChange={handleChange}
                             min="1" max="35"
                             />
+                        </Tooltip>
                             <div className="btn-player" onClick={chooseRandomPlayer}>ESTRAI</div>
                         </div>
                         <div className="randomPlayer">{extractedNumber}</div>
