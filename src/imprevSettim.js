@@ -64,7 +64,7 @@ export default [
     {
         id: 10,
         title: "IETTATORE",
-        description: "???",
+        description: "Il giocatore estratto causa un infortunio al miglior elemento della rosa che starà fuori per un mese.",
         isImprev: true
         
     },
@@ -92,7 +92,7 @@ export default [
     {
         id: 14,
         title: "IETTATORE",
-        description: "???",
+        description: "Il giocatore estratto causa un infortunio al miglior elemento della rosa che starà fuori per un mese.",
         isImprev: true
         
     },
