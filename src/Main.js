@@ -19,22 +19,24 @@ export default function Main(props) {
     function chooseRandomPlayer () {
         setExtractedNumber(Math.floor(Math.random() * inputField.randomPlayerNumber) + 1)
     }
-    const ranNumImprev = props.randomNumber
-    const randNumFixedIndex = ranNumImprev - 1
+    const randNumFixedIndex = props.randomNumber - 1
     const title = props.imprev[randNumFixedIndex].title
     const description = props.imprev[randNumFixedIndex].description
     const isImprev = props.imprev[randNumFixedIndex].isImprev
     const ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione
-
     return (
-        <main className="main">
+        <main className={props.mainState === "welcome" ? "main welcome" : "main"}>
 
+            {/* WELCOME SCREEN */}
+            {props.mainState === "welcome" &&
+            <div className="overlay"> 
+            <h1 className="welcome-title">Benvenuto!<br/>Scegli il tipo di imprevisto dal menu in alto</h1>
+            </div>}
             {/* IMPREVISTI PREPARTITA */}
-
             {props.mainState === "prepartita" && (
                 <div className="displayPrepartita">
-                    <div className="btn-randNum" onClick={props.randNumBox}>ESTRAI</div>
-                    <h2 className={isImprev ? "red-alert" : ""} id="randomNumber">{ranNumImprev}</h2>
+                    <button type="button" className="btn-randNum" onClick={props.randNumBox}>ESTRAI</button>
+                    <h2 className={isImprev ? "red-alert" : ""} id="randomNumber">{props.randomNumber}</h2>
                     {ultEstrazione && <div className="img-impr"></div>}
                     <h3 className={isImprev ? "red-alert" : ""}>{title}</h3>
                     <p>{description}</p>
@@ -48,7 +50,7 @@ export default function Main(props) {
                             min="1" max="35"
                             />
                         </Tooltip>
-                            <div className="btn-player" onClick={chooseRandomPlayer}>ESTRAI</div>
+                            <button type="button" className="btn-player" onClick={chooseRandomPlayer}>ESTRAI</button>
                         </div>
                         <div className="randomPlayer">{extractedNumber}</div>
                     </div>}
@@ -60,7 +62,7 @@ export default function Main(props) {
             {props.mainState === "settimana" &&( 
                 <div className="displayPrepartita">
                     <div className="btn-randNum" onClick={props.randNumBox}>ESTRAI</div>
-                    <h2 className={props.imprevSettim[randNumFixedIndex].isImprev ? "red-alert" : ""} id="randomNumber">{ranNumImprev}</h2>
+                    <h2 className={props.imprevSettim[randNumFixedIndex].isImprev ? "red-alert" : ""} id="randomNumber">{props.randomNumber}</h2>
                     <h3 className={props.imprevSettim[randNumFixedIndex].isImprev ? "red-alert" : ""}>{props.imprevSettim[randNumFixedIndex].title}</h3>
                     <p>{props.imprevSettim[randNumFixedIndex].description}</p>
                 </div>

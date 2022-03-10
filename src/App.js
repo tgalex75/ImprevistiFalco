@@ -7,7 +7,7 @@ import Main from "./Main";
 export default function App() {
 
     /* Header Menu State */
-    const [mainState, setMainState] = React.useState("prepartita");
+    const [mainState, setMainState] = React.useState("welcome");
 
     function selectMainPrepartita() {
         setMainState("prepartita");
