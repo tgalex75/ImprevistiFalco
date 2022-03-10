@@ -44,13 +44,12 @@ export default function Main(props) {
             {/* IMPREVISTI PREPARTITA */}
             {props.mainState === "prepartita" && (
                 <div className="displayPrepartita">
-                    <button
-                        type="button"
+                    <div
                         className="btn-randNum"
                         onClick={props.randNumBox}
                     >
                         ESTRAI
-                    </button>
+                    </div>
                     <h2 style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}}
                         className={isImprev ? "red-alert" : ""}
                         id="randomNumber"

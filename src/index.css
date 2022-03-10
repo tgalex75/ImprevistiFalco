@@ -55,6 +55,7 @@ input[type="number"] {
 #menu-prepartita > span,
 #menu-settimana > span {
     font-size: 2.5vh;
+    padding: 0 .5em;
 }
 
 #menu-prepartita.default,
@@ -258,6 +259,8 @@ main.welcome {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
+    #menu-prepartita, #menu-settimana{font-size: 1.5vh;}
+    #menu-prepartita > span, #menu-settimana > span{font-size: 1.8vh;}
     .welcome-title {
         font-size: 2rem;
         padding: 1.5em;
