@@ -10,10 +10,12 @@ export default function App() {
     const [mainState, setMainState] = React.useState("welcome");
 
     function selectMainPrepartita() {
+        setRandomNumber(0)
         setMainState("prepartita");
     }
 
     function selectMainSettimana() {
+        setRandomNumber(0)
         setMainState("settimana");
     }
 
