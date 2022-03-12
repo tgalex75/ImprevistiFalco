@@ -3,6 +3,7 @@ import Header from "./Header";
 import imprev from "./imprev";
 import imprevSettim from "./imprevSettim";
 import Main from "./Main";
+import Credits from "./Credits"
 
 export default function App() {
 
@@ -44,6 +45,7 @@ export default function App() {
                 imprev={imprev}
                 imprevSettim={imprevSettim}
             />
+            <Credits mainState={mainState}/>
         </div>
     );
 }

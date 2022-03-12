@@ -137,7 +137,6 @@ main.welcome {
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    /* box-shadow: 0 0 20px #eee; */
     border-radius: 10px;
     display: block;
     font-weight: 600;
@@ -224,7 +223,6 @@ main.welcome {
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    /* box-shadow: 0 0 20px #eee; */
     border-radius: 10px;
     display: block;
     font-weight: 600;
@@ -254,6 +252,26 @@ main.welcome {
 
 .red-alert {
     color: #b31217;
+}
+
+/* CREDITS SECTION */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    color: #fff;
+    opacity: .25;
+}
+
+.black {
+    color: black;
+
+}
+
+.footer > p > span {
+    font-weight: 600;
 }
 
 /* MEDIA QUERIES */
