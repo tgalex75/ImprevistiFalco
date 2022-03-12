@@ -261,8 +261,10 @@ main.welcome {
     bottom: 0;
     right: 0;
     padding: 5px;
+    text-align: end;
+    font-size: .8em;
     color: #fff;
-    opacity: .25;
+    opacity: .5;
 }
 
 .black {
@@ -310,5 +312,10 @@ main.welcome {
     .randomPlayer {
         height: 7rem;
         width: 6rem;
+    }
+    .footer {
+        font-size: .6em;
+        text-align: start;
+        left: 0;
     }
 }
