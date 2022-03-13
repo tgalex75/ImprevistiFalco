@@ -55,7 +55,7 @@ input[type="number"] {
 #menu-prepartita > span,
 #menu-settimana > span {
     font-size: 2.5vh;
-    padding: 0 .5em;
+    padding: 0 0.5em;
 }
 
 #menu-prepartita.default,
@@ -95,11 +95,14 @@ main.welcome {
 }
 
 .overlay {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(70,70,70,0) 90%); 
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(70, 70, 70, 0) 90%
+    );
     width: 100%;
     height: 100%;
-    
 }
 
 .welcome-title {
@@ -128,8 +131,6 @@ main.welcome {
         #26a0da 51%,
         #314755 100%
     );
-}
-.btn-randNum {
     padding: 15px 150px;
     margin-top: 5px;
     text-align: center;
@@ -262,14 +263,13 @@ main.welcome {
     right: 0;
     padding: 5px;
     text-align: end;
-    font-size: .8em;
+    font-size: 0.8em;
     color: #fff;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .black {
     color: black;
-
 }
 
 .footer > p > span {
@@ -279,8 +279,14 @@ main.welcome {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-    #menu-prepartita, #menu-settimana{font-size: 1.5vh;}
-    #menu-prepartita > span, #menu-settimana > span{font-size: 1.8vh;}
+    #menu-prepartita,
+    #menu-settimana {
+        font-size: 1.5vh;
+    }
+    #menu-prepartita > span,
+    #menu-settimana > span {
+        font-size: 1.8vh;
+    }
     .welcome-title {
         font-size: 2rem;
         padding: 1.5em;
@@ -310,12 +316,83 @@ main.welcome {
         border: 3px double #26a0da;
     }
     .randomPlayer {
-        height: 7rem;
-        width: 6rem;
+        height: 6rem;
+        width: 5rem;
     }
     .footer {
-        font-size: .6em;
+        font-size: 0.6em;
         text-align: start;
         left: 0;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .header {
+        width: 8vw;
+        height: 100vh;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+
+    #menu-prepartita,
+    #menu-settimana {
+        width: 100%;
+        height: 50%;
+    }
+
+    #menu-prepartita.default,
+    #menu-settimana.default {
+        height: 100%;
+    }
+
+    .main {
+        width: 92vw;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .btn-randNum {
+        padding: 0;
+        position: fixed;
+        right: 10px;
+        bottom: 10%;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .randomNumber {
+        font-size: 7rem;
+    }
+
+    .displayPrepartita > p {
+        width: 65%;
+        padding: 5px 10px;
+        min-height: auto;
+    }
+
+    .ultEstrazione {
+        flex-direction: row;
+        width: 60vw;
+    }
+
+    .ultEstrazione > .container {
+        flex-direction: row;
+    }
+
+    .img-impr {
+        width: 160px;
+        height: 30px;
+    }
+
+    .footer {
+        text-align: end;
+        font-size: .4em;
     }
 }

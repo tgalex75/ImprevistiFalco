@@ -75,13 +75,12 @@ export default function Main(props) {
                                         max="35"
                                     />
                                 </Tooltip>
-                                <button
-                                    type="button"
+                                <div
                                     className="btn-player"
                                     onClick={chooseRandomPlayer}
                                 >
                                     ESTRAI
-                                </button>
+                                </div>
                             </div>
                             <div className="randomPlayer">
                                 {extractedNumber}
