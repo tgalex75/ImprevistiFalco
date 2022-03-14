@@ -86,7 +86,7 @@ const imprev = [
     {
         id: 13,
         title: "nessun imprevisto",
-        description: "È il momento della verità?",
+        description: "È il momento della verità? Non lo so, però...",
         isImprev: false,
         ultEstrazione: false
     },

@@ -82,7 +82,7 @@ input[type="number"] {
     height: 90vh;
     text-align: center;
     background-image: url(../public/logo900_25.png),
-        url(../public/right-bg50.png);
+        url(../public/right-bg25.png);
     background-repeat: no-repeat, no-repeat;
     background-size: 50%, 75%;
     background-position: -50%, 150% bottom;
