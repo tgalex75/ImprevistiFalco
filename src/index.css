@@ -318,6 +318,7 @@ main.welcome {
     .randomPlayer {
         height: 6rem;
         width: 5rem;
+        font-size: 2.6rem;
     }
     .footer {
         font-size: 0.6em;
