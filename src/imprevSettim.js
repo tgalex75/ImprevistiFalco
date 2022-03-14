@@ -1,4 +1,4 @@
-export default [
+const imprevSettim = [
     {
         id: 1,
         title: "nessun imprevisto",
@@ -202,3 +202,5 @@ export default [
         
     },
 ]
+
+export default imprevSettim;
