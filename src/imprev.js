@@ -16,7 +16,7 @@ const imprev = [
     {
         id: 3,
         title: "nessun imprevisto",
-        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
+        description: "È il momento della verità? Non lo so, però...",
         isImprev: false,
         ultEstrazione: false
     },
@@ -65,7 +65,7 @@ const imprev = [
     {
         id: 10,
         title: "nessun imprevisto",
-        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
+        description: "È il momento della verità?",
         isImprev: false,
         ultEstrazione: false
     },
@@ -86,7 +86,7 @@ const imprev = [
     {
         id: 13,
         title: "nessun imprevisto",
-        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
+        description: "È il momento della verità?",
         isImprev: false,
         ultEstrazione: false
     },
@@ -149,7 +149,7 @@ const imprev = [
     {
         id: 22,
         title: "nessun imprevisto",
-        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
+        description: "È il momento della verità?",
         isImprev: false,
         ultEstrazione: false
     },
@@ -198,7 +198,7 @@ const imprev = [
     {
         id: 29,
         title: "nessun imprevisto",
-        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
+        description: "È il momento della verità? Non lo so, però...",
         isImprev: false,
         ultEstrazione: false
     },
