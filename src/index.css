@@ -6,7 +6,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #d9f0ff;
+    background-color: rgb(24, 24, 24);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -25,61 +25,11 @@ input[type="number"] {
     height: 100vh;
 }
 
-.header {
-    width: 100vw;
-    height: 10vh;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    color: white;
-    transition: 0.3s;
-    font-weight: 800;
-}
-
-#menu-prepartita,
-#menu-settimana {
-    width: 50%;
-    height: 100%;
-    background-color: #024b80;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 2vh;
-    transition: 0.6s;
-}
-
-#menu-prepartita > span,
-#menu-settimana > span {
-    font-size: 2.5vh;
-    padding: 0 0.5em;
-}
-
-#menu-prepartita.default,
-#menu-settimana.default {
-    background-color: #e52d27;
-    width: 100%;
-    font-size: 2.5vh;
-}
-
-#menu-prepartita.default > span,
-#menu-settimana.default > span {
-    font-size: 3.5vh;
-}
-
-#menu-prepartita:hover,
-#menu-settimana:hover {
-    background-color: #011b2e;
-}
-
 /* MAIN SECTION */
 
 .main {
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
     text-align: center;
     background-image: url(../public/logo900_25.png),
         url(../public/right-bg25.png);
@@ -279,14 +229,7 @@ main.welcome {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-    #menu-prepartita,
-    #menu-settimana {
-        font-size: 1.5vh;
-    }
-    #menu-prepartita > span,
-    #menu-settimana > span {
-        font-size: 1.8vh;
-    }
+
     .welcome-title {
         font-size: 2rem;
         padding: 1.5em;
@@ -328,26 +271,9 @@ main.welcome {
 }
 
 @media (max-height: 500px) and (orientation: landscape) {
-    .header {
-        width: 8vw;
-        height: 100vh;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-    }
-
-    #menu-prepartita,
-    #menu-settimana {
-        width: 100%;
-        height: 50%;
-    }
-
-    #menu-prepartita.default,
-    #menu-settimana.default {
-        height: 100%;
-    }
 
     .main {
-        width: 92vw;
+        width: 100%;
         height: 100vh;
         position: absolute;
         right: 0;
