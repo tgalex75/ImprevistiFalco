@@ -56,7 +56,7 @@ export default function Main(props) {
                     >
                         {props.randomNumber}
                     </h2>
-                    {ultEstrazione && <div className="img-impr"></div>}
+                    {isImprev && <div className="img-impr"></div>}
                     <h3 style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}} className={isImprev ? "red-alert" : ""}>{title}</h3>
                     <p style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}}>{description}</p>
                     {ultEstrazione && (
