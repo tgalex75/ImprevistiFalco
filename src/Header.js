@@ -6,7 +6,6 @@ import {
 } from "react-icons/fa";
 import "./HeaderStyle.css";
 import logo from "./assets/logo192.png";
-import { color } from "@mui/system";
 
 export default function Header(props) {
     const [openMenu, setOpenMenu] = useState(false);
