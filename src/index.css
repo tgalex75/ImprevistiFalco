@@ -6,7 +6,6 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #d9f0ff;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -21,65 +20,22 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-.main-container {
+#main-container {
     height: 100vh;
+    color: black;
+    background-color: rgba(240, 240, 240, 0.85);    
 }
 
-.header {
-    width: 100vw;
-    height: 10vh;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    color: white;
-    transition: 0.3s;
-    font-weight: 800;
-}
-
-#menu-prepartita,
-#menu-settimana {
-    width: 50%;
-    height: 100%;
-    background-color: #024b80;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 2vh;
-    transition: 0.6s;
-}
-
-#menu-prepartita > span,
-#menu-settimana > span {
-    font-size: 2.5vh;
-    padding: 0 0.5em;
-}
-
-#menu-prepartita.default,
-#menu-settimana.default {
-    background-color: #e52d27;
-    width: 100%;
-    font-size: 2.5vh;
-}
-
-#menu-prepartita.default > span,
-#menu-settimana.default > span {
-    font-size: 3.5vh;
-}
-
-#menu-prepartita:hover,
-#menu-settimana:hover {
-    background-color: #011b2e;
+#main-container.dark {
+    background-color: rgb(0,0,0,.9);
+    color: #fff;
 }
 
 /* MAIN SECTION */
 
-.main {
-    width: 100vw;
-    height: 90vh;
+main {
+    width: 100%;
+    height: 100vh;
     text-align: center;
     background-image: url(../public/logo900_25.png),
         url(../public/right-bg25.png);
@@ -92,6 +48,7 @@ main.welcome {
     background-image: url(../public/pitch.jpg);
     background-size: cover;
     background-position: center center;
+    z-index: 10;
 }
 
 .overlay {
@@ -113,7 +70,7 @@ main.welcome {
     justify-content: center;
     color: white;
     font-size: 3rem;
-    padding: 3em;
+    padding: 3rem;
 }
 
 .displayPrepartita {
@@ -131,18 +88,31 @@ main.welcome {
         #26a0da 51%,
         #314755 100%
     );
-    padding: 15px 150px;
-    margin-top: 5px;
-    text-align: center;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    border-radius: 10px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
     cursor: pointer;
-    font-size: 1.7em;
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.btn-randNum.centered {
+    width: 12rem;
+    height: 12rem;
+    font-size: 2.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .btn-randNum:hover {
@@ -157,26 +127,25 @@ main.welcome {
     line-height: 1;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 .img-impr {
-    width: 300px;
-    height: 69px;
-    background-image: url(../public/imprevisto_OR.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    color: #b31217;
 }
 
 .displayPrepartita > h3 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .displayPrepartita > p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 600;
     padding: 10px;
-    background-color: rgba(5, 5, 5, 0.15);
     border-radius: 5px;
-    width: 50%;
+    width: 60%;
     min-height: 80px;
     display: flex;
     align-items: center;
@@ -189,8 +158,8 @@ main.welcome {
     justify-content: space-around;
     width: 50vw;
     border: 5px double #024b80;
-    border-radius: 0.5em;
-    padding: 0.5em 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .ultEstrazione > .container {
@@ -200,9 +169,9 @@ main.welcome {
     justify-content: center;
 }
 
-.ultEstrazione > .container > input {
+#randomPlayerNumber {
     text-align: center;
-    border-radius: 0.1em;
+    border-radius: 0.1rem;
     font-weight: 600;
     font-size: 2rem;
     max-width: 8rem;
@@ -248,24 +217,11 @@ main.welcome {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
 }
 
 .red-alert {
     color: #b31217;
-}
-
-/* CREDITS SECTION */
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 5px;
-    text-align: end;
-    font-size: 0.8em;
-    color: #fff;
-    opacity: 0.5;
 }
 
 .black {
@@ -279,36 +235,30 @@ main.welcome {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-    #menu-prepartita,
-    #menu-settimana {
-        font-size: 1.5vh;
-    }
-    #menu-prepartita > span,
-    #menu-settimana > span {
-        font-size: 1.8vh;
-    }
+
     .welcome-title {
         font-size: 2rem;
-        padding: 1.5em;
+        padding: 1.5rem;
     }
     .btn-randNum {
-        padding: 15px 40%;
-        font-size: 1.2em;
+        font-size: .8rem;
+        width: 4rem;
+        height: 4rem;
+        right: 3%;
+        bottom: 5%;
     }
     #randomNumber {
-        font-size: 8rem;
         line-height: 0.8;
     }
     .img-impr {
-        width: 200px;
-        height: 50px;
+        font-size: 2.5rem;
     }
     .displayPrepartita > h3 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         line-height: 1;
     }
     .displayPrepartita > p {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .ultEstrazione {
@@ -320,34 +270,14 @@ main.welcome {
         width: 5rem;
         font-size: 2.6rem;
     }
-    .footer {
-        font-size: 0.6em;
-        text-align: start;
-        left: 0;
-    }
 }
 
+/* MEDIA QUERY - MOBILE LANDSCAPE */
+
 @media (max-height: 500px) and (orientation: landscape) {
-    .header {
-        width: 8vw;
-        height: 100vh;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-    }
-
-    #menu-prepartita,
-    #menu-settimana {
-        width: 100%;
-        height: 50%;
-    }
-
-    #menu-prepartita.default,
-    #menu-settimana.default {
-        height: 100%;
-    }
 
     .main {
-        width: 92vw;
+        width: 100%;
         height: 100vh;
         position: absolute;
         right: 0;
@@ -359,41 +289,43 @@ main.welcome {
         position: fixed;
         right: 10px;
         bottom: 10%;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1em;
+        width: 4.2rem;
+        height: 4.2rem;
+        font-size: 1rem;
     }
 
-    .randomNumber {
-        font-size: 7rem;
+    #randomNumber {
+        font-size: 8rem;
     }
+
+
+    .img-impr {
+        font-size: 2rem;
+    }
+
+    .displayPrepartita > h3 {
+        font-size: 1.5rem;
+    }
+
 
     .displayPrepartita > p {
-        width: 65%;
+        width: 75%;
         padding: 5px 10px;
         min-height: auto;
     }
 
     .ultEstrazione {
         flex-direction: row;
-        width: 60vw;
+        width: 75%;
     }
 
     .ultEstrazione > .container {
         flex-direction: row;
     }
 
-    .img-impr {
-        width: 160px;
-        height: 30px;
-    }
-
-    .footer {
-        text-align: end;
-        font-size: .4em;
+    .randomPlayer {
+        font-size: 2.2rem;
+        height: 6rem;
+        width: 5rem;
     }
 }

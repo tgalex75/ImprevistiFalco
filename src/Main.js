@@ -1,5 +1,5 @@
 import React from "react";
-import Tooltip from "@mui/material/Tooltip";
+import "./tooltip.css";
 
 export default function Main(props) {
     const [inputField, setInputField] = React.useState({
@@ -29,44 +29,76 @@ export default function Main(props) {
     const ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione;
     return (
         <main
-            className={props.mainState === "welcome" ? "main welcome" : "main"}
+            className={props.mainState === "welcome" ? "dark welcome" : "dark"}
         >
+            
+
             {/* WELCOME SCREEN */}
             {props.mainState === "welcome" && (
                 <div className="overlay">
-                    <h1 className="welcome-title">
+                    {/* <h1 className="welcome-title">
                         Benvenuto!
                         <br />
                         Scegli il tipo di imprevisto dal menu in alto
-                    </h1>
+                    </h1> */}
                 </div>
             )}
-            {/* IMPREVISTI PREPARTITA */}
+
+            {/* *********************
+             * IMPREVISTI PREPARTITA *
+             ********************* */}
+
             {props.mainState === "prepartita" && (
                 <div className="displayPrepartita">
                     <div
-                        className="btn-randNum"
+                        className={
+                            props.randomNumber
+                                ? "btn-randNum"
+                                : "btn-randNum centered"
+                        }
                         onClick={props.randNumBox}
                     >
                         ESTRAI
                     </div>
-                    <h2 style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}}
+                    <h2
+                        style={
+                            props.randomNumber
+                                ? { visibility: "visible" }
+                                : { visibility: "hidden" }
+                        }
                         className={isImprev ? "red-alert" : ""}
                         id="randomNumber"
                     >
                         {props.randomNumber}
                     </h2>
-                    {isImprev && <div className="img-impr"></div>}
-                    <h3 style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}} className={isImprev ? "red-alert" : ""}>{title}</h3>
-                    <p style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}}>{description}</p>
+
+                    {isImprev && <div className="img-impr">IMPREVISTO</div>}
+
+                    <h3
+                        style={
+                            props.randomNumber
+                                ? { visibility: "visible" }
+                                : { visibility: "hidden" }
+                        }
+                        className={isImprev ? "red-alert" : ""}
+                    >
+                        {title}
+                    </h3>
+                    <p
+                        style={
+                            props.randomNumber
+                                ? { visibility: "visible" }
+                                : { visibility: "hidden" }
+                        }
+                    >
+                        {description}
+                    </p>
                     {ultEstrazione && (
                         <div className="ultEstrazione">
                             <div className="container">
-                                <Tooltip
-                                    title="Inserisci un numero per estrarre il giocatore colpito dall'imprevisto"
-                                    followCursor
-                                >
+                                <div className="tooltip">
                                     <input
+                                        id="randomPlayerNumber"
                                         type="number"
                                         name="randomPlayerNumber"
                                         value={inputField.randomPlayerNumber}
@@ -74,7 +106,19 @@ export default function Main(props) {
                                         min="1"
                                         max="35"
                                     />
-                                </Tooltip>
+                                    {!inputField.randomPlayerNumber && (
+                                        <div className="left">
+                                            <p>
+                                                <strong>
+                                                    Inserisci un numero
+                                                </strong>{" "}
+                                                per estrarre il giocatore
+                                                colpito da imprevisto
+                                            </p>
+                                            <i></i>
+                                        </div>
+                                    )}
+                                </div>
                                 <div
                                     className="btn-player"
                                     onClick={chooseRandomPlayer}
@@ -90,14 +134,28 @@ export default function Main(props) {
                 </div>
             )}
 
-            {/* IMPREVISTI PEGGIORE DELLA SETTIMANA */}
+            {/* ***********************************
+             * IMPREVISTI PEGGIORE DELLA SETTIMANA *
+             *********************************** */}
 
             {props.mainState === "settimana" && (
                 <div className="displayPrepartita">
-                    <div className="btn-randNum" onClick={props.randNumBox}>
+                    <div
+                        className={
+                            props.randomNumber
+                                ? "btn-randNum"
+                                : "btn-randNum centered"
+                        }
+                        onClick={props.randNumBox}
+                    >
                         ESTRAI
                     </div>
-                    <h2 style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}}
+                    <h2
+                        style={
+                            props.randomNumber
+                                ? { visibility: "visible" }
+                                : { visibility: "hidden" }
+                        }
                         className={
                             props.imprevSettim[randNumFixedIndex].isImprev
                                 ? "red-alert"
@@ -107,7 +165,17 @@ export default function Main(props) {
                     >
                         {props.randomNumber}
                     </h2>
-                    <h3 style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}}
+
+                    {props.imprevSettim[randNumFixedIndex].isImprev && (
+                        <div className="img-impr">IMPREVISTO</div>
+                    )}
+
+                    <h3
+                        style={
+                            props.randomNumber
+                                ? { visibility: "visible" }
+                                : { visibility: "hidden" }
+                        }
                         className={
                             props.imprevSettim[randNumFixedIndex].isImprev
                                 ? "red-alert"
@@ -116,7 +184,15 @@ export default function Main(props) {
                     >
                         {props.imprevSettim[randNumFixedIndex].title}
                     </h3>
-                    <p style={props.randomNumber ? {visibility:"visible"} : {visibility:"hidden"}}>{props.imprevSettim[randNumFixedIndex].description}</p>
+                    <p
+                        style={
+                            props.randomNumber
+                                ? { visibility: "visible" }
+                                : { visibility: "hidden" }
+                        }
+                    >
+                        {props.imprevSettim[randNumFixedIndex].description}
+                    </p>
                 </div>
             )}
         </main>

@@ -1,0 +1,142 @@
+header {
+    width: 100%;
+    height: 4.75rem;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    font-weight: 800;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+/* header.dark {
+    color: black;
+} */
+
+header a {
+    height: 100%;
+}
+
+.img--logo {
+    height: 100%;
+}
+
+.title {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #26a0da;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    animation: fadeArrow 1.2s 3 ;
+    -webkit-animation: fadeArrow 1.2s 3 ;
+    -moz-animation: fadeArrow 1.2s 3 ;
+    -o-animation: fadeArrow 1.2s 3 ;
+}
+
+.title > h2 {
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+
+@keyframes fadeArrow {
+    0% { opacity: 1; top: 0; }
+    100% { opacity: 0; top: 1.2rem; }
+}
+@-webkit-keyframes fadeArrow {
+    0% { opacity: 0; top: 0; }
+    100% { opacity: 1; top: 1.2rem; }
+}
+@-moz-keyframes fadeArrow {
+    0% { opacity: 0; top: 0; }
+    100% { opacity: 1; top: 1.2rem; }
+}
+@-o-keyframes fadeArrow {
+    0% { opacity: 0; top: 0; }
+    100% { opacity: 1; top: 1.2rem; }
+}
+
+.nav-menu {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    z-index: -1;
+    transition: 0.3s;
+    padding-top: 3rem;
+}
+
+.nav-menu.active {
+    left: 0;
+    color: #fff !important;
+}
+
+.nav-menu > li {
+    list-style: none;
+    padding: 5rem;
+    color: #fff;
+    text-decoration: none;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.nav-menu > li:hover {
+    color: #e52d27;
+    border-left: 0.4rem solid #e52d27;
+    border-right: 0.4rem solid #e52d27;
+}
+
+/* MEDIA QUERY MOBILE PORTRAIT */
+
+@media (max-width: 768px) {
+
+    .title > h2 {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+
+    .nav-menu > li {
+        font-size: 2rem;
+        padding: 2rem 5rem;
+    }
+}
+
+/* MEDIA QUERY - MOBILE LANDSCAPE */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .title {
+        padding-top: 2rem;
+    }
+
+    .title > h2 {
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .nav-menu {
+        padding-top: 2.5rem;
+    }
+
+    .nav-menu > li {
+        padding: 1.5rem 5rem;
+    }
+}
