@@ -1,4 +1,5 @@
 import React from 'react'
+import './credits.css'
 
 export default function Credits(props) {
     return (

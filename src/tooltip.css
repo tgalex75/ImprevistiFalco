@@ -1,0 +1,77 @@
+.tooltip {
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dotted #666;
+    text-align: left;
+}
+
+.tooltip .left {
+    min-width: 100px;
+    max-width: 200px;
+    top: 50%;
+    right: 100%;
+    margin-right: 20px;
+    transform: translate(0, -50%);
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgba(2, 75, 128, 0.75);
+    font-weight: normal;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 99999999;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.tooltip:hover .left {
+    display: none;
+}
+
+.tooltip .left i {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -12px;
+    width: 12px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.tooltip .left i::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: #024b80;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+    .tooltip .left {
+        margin-right: 12px;
+        padding: 10px 15px;
+        font-weight: normal;
+        font-size: 0.7rem;
+    }
+}
+
+/* MEDIA QUERY - MOBILE LANDSCAPE */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .tooltip .left {
+        padding: 8px 14px;
+        font-size: 0.7rem;
+        min-width: 130px;
+        max-width: 200px;
+    
+    }
+}

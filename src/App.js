@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import imprev from "./imprev";
 import imprevSettim from "./imprevSettim";
+import Toggler from "./Toggler";
 import Main from "./Main";
 import Credits from "./Credits"
 
@@ -29,14 +30,26 @@ export default function App() {
 
     function randNumBox() {
         setRandomNumber(getRandomNumber)
-    }  
+    }
+
+    /* Toggle Dark/Light Mode */
+    const [darkMode, setDarkMode] = React.useState(true)
+    
+    function toggleDarkMode() {
+        setDarkMode(prevMode => !prevMode)
+    }
 
     return (
-        <div className="main-container">
+        <div id="main-container" className={darkMode ? "dark": ""}>
             <Header
                 selectMainPrepartita={selectMainPrepartita}
                 selectMainSettimana={selectMainSettimana}
                 mainState={mainState}
+                darkMode={darkMode}
+            />
+            <Toggler 
+                darkMode={darkMode}
+                toggleDarkMode={toggleDarkMode}
             />
             <Main 
                 mainState={mainState}
@@ -44,6 +57,7 @@ export default function App() {
                 randNumBox={randNumBox}
                 imprev={imprev}
                 imprevSettim={imprevSettim}
+                darkMode={darkMode}
             />
             <Credits mainState={mainState}/>
         </div>
