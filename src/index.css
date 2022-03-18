@@ -224,6 +224,10 @@ main.welcome {
     color: #b31217;
 }
 
+.red-alert.dark {
+    color: #f3251e;
+}
+
 .black {
     color: black;
 }

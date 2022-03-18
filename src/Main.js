@@ -66,13 +66,13 @@ export default function Main(props) {
                                 ? { visibility: "visible" }
                                 : { visibility: "hidden" }
                         }
-                        className={isImprev ? "red-alert" : ""}
+                        className={`${isImprev ? "red-alert" : ""} ${props.darkMode ? "dark" : ""}`}
                         id="randomNumber"
                     >
                         {props.randomNumber}
                     </h2>
 
-                    {isImprev && <div className="img-impr">IMPREVISTO</div>}
+                    {isImprev && <div className={`img-impr ${props.darkMode ? "red-alert dark" : ""}`}>IMPREVISTO</div>}
 
                     <h3
                         style={
@@ -80,7 +80,7 @@ export default function Main(props) {
                                 ? { visibility: "visible" }
                                 : { visibility: "hidden" }
                         }
-                        className={isImprev ? "red-alert" : ""}
+                        className={`${isImprev ? "red-alert" : ""} ${props.darkMode ? "dark" : ""}`}
                     >
                         {title}
                     </h3>
