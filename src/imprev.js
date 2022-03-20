@@ -36,8 +36,8 @@ const imprev = [
     },
     {
         id: 6,
-        title: "COULON!",
-        description: "Coulon scalda i guantoni e si prende il posto da titolare",
+        title: "MARESCA!",
+        description: "Il secondo portiere scalda i guantoni e si prende il posto da titolare",
         isImprev: true,
         ultEstrazione: false
     },
@@ -162,8 +162,8 @@ const imprev = [
     },
     {
         id: 24,
-        title: "COULON!",
-        description: "Coulon scalda i guantoni e si prende il posto da titolare",
+        title: "MARESCA!",
+        description: "Il secondo portiere scalda i guantoni e si prende il posto da titolare",
         isImprev: true,
         ultEstrazione: false
     },
