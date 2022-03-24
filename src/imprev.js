@@ -37,7 +37,7 @@ const imprev = [
     {
         id: 6,
         title: "MOMENTO TOP!",
-        description: "Il difensore biondo che fa impazzire il mondo!",
+        description: "Scende in campo il difensore biondo che fa impazzire il mondo!",
         isImprev: true,
         ultEstrazione: false
     },
@@ -58,7 +58,7 @@ const imprev = [
     {
         id: 9,
         title: "CREDO IN TE",
-        description: "Il giocatore estratto sarà sostituito dal suo peggior pari ruolo.",
+        description: "Gioca uno a sceltra tra i peggiori panchinari",
         isImprev: true,
         ultEstrazione: true
     },
@@ -142,7 +142,7 @@ const imprev = [
     {
         id: 21,
         title: "CREDO IN TE",
-        description: "Il giocatore estratto sarà sostituito dal suo peggior pari ruolo.",
+        description: "Gioca uno a sceltra tra i peggiori panchinari",
         isImprev: true,
         ultEstrazione: true
     },
@@ -163,7 +163,7 @@ const imprev = [
     {
         id: 24,
         title: "MOMENTO TOP!",
-        description: "Il difensore biondo che fa impazzire il mondo!",
+        description: "Scende in campo il difensore biondo che fa impazzire il mondo!",
         isImprev: true,
         ultEstrazione: false
     },
