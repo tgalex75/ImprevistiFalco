@@ -33,7 +33,7 @@ export default function App() {
     }
 
     /* Toggle Dark/Light Mode */
-    const [darkMode, setDarkMode] = React.useState(true)
+    const [darkMode, setDarkMode] = React.useState(false)
     
     function toggleDarkMode() {
         setDarkMode(prevMode => !prevMode)
