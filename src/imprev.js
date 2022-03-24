@@ -173,7 +173,7 @@ const imprev = [
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
-    }
+    },
     {
         id: 26,
         title: "SCANDALO SOCIAL",
