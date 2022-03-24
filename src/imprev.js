@@ -36,8 +36,8 @@ const imprev = [
     },
     {
         id: 6,
-        title: "MARESCA!",
-        description: "Il secondo portiere scalda i guantoni e si prende il posto da titolare",
+        title: "MOMENTO TOP!",
+        description: "Il difensore biondo che fa impazzire il mondo!",
         isImprev: true,
         ultEstrazione: false
     },
@@ -57,7 +57,7 @@ const imprev = [
     },
     {
         id: 9,
-        title: "PEGGIOR PANCHINARO",
+        title: "CREDO IN TE",
         description: "Il giocatore estratto sarà sostituito dal suo peggior pari ruolo.",
         isImprev: true,
         ultEstrazione: true
@@ -141,7 +141,7 @@ const imprev = [
     },
     {
         id: 21,
-        title: "PEGGIOR PANCHINARO",
+        title: "CREDO IN TE",
         description: "Il giocatore estratto sarà sostituito dal suo peggior pari ruolo.",
         isImprev: true,
         ultEstrazione: true
@@ -162,8 +162,8 @@ const imprev = [
     },
     {
         id: 24,
-        title: "MARESCA!",
-        description: "Il secondo portiere scalda i guantoni e si prende il posto da titolare",
+        title: "MOMENTO TOP!",
+        description: "Il difensore biondo che fa impazzire il mondo!",
         isImprev: true,
         ultEstrazione: false
     },
@@ -173,7 +173,7 @@ const imprev = [
         description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
         isImprev: false,
         ultEstrazione: false
-    },
+    }
     {
         id: 26,
         title: "SCANDALO SOCIAL",
