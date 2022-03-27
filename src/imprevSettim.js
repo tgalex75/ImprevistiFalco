@@ -35,8 +35,8 @@ const imprevSettim = [
     },
     {
         id: 6,
-        title: "IN PRESTITO",
-        description: "Il giocatore estratto verrà inserito in lista prestiti",
+        title: "UNTORE",
+        description: "Il giocatore trasmette una brutta malattia al resto della squadra. Aumenta di 20 punti le due slide degli infortuni per tutto il mese.",
         isImprev: true
         
     },
@@ -50,7 +50,7 @@ const imprevSettim = [
     {
         id: 8,
         title: "SAUDADE",
-        description: "Acquista tra gli svincolati un connazionale a scelta del giocatore oggetto dell’imprevisto e schierali SEMPRE insieme per il mese successivo. ",
+        description: "Acquista tra gli svincolati un connazionale a scelta del giocatore oggetto dell’imprevisto e schierali SEMPRE insieme per il mese successivo.",
         isImprev: true
         
     },
@@ -64,7 +64,7 @@ const imprevSettim = [
     {
         id: 10,
         title: "IETTATORE",
-        description: "Il giocatore estratto causa un infortunio al miglior giocatore  della tua rosa che starà fuori per un mese.",
+        description: "Il giocatore in oggetto causa un infortunio al miglior giocatore della tua rosa, che resta fuori per tutto il mese.",
         isImprev: true
         
     },
@@ -77,8 +77,8 @@ const imprevSettim = [
     },
     {
         id: 12,
-        title: "UNTORE",
-        description: "Il giocatore trasmette una brutta malattia alla squadra: aumenta di 20 punti le slides degli infortuni ",
+        title: "SAUDADE",
+        description: "Acquista tra gli svincolati un connazionale a scelta del giocatore oggetto dell’imprevisto e schierali SEMPRE insieme per il mese successivo.",
         isImprev: true
         
     },
@@ -91,8 +91,8 @@ const imprevSettim = [
     },
     {
         id: 14,
-        title: "IETTATORE",
-        description: "Il giocatore estratto causa un infortunio al miglior elemento della rosa che starà fuori per un mese.",
+        title: "SEMPRE PRESENTE",
+        description: "II giocatore dovrà disputare tutte le partite per tutto il mese.",
         isImprev: true
         
     },
@@ -105,8 +105,8 @@ const imprevSettim = [
     },
     {
         id: 16,
-        title: "IN PRESTITO",
-        description: "Il giocatore estratto verrà inserito in lista prestiti",
+        title: "UNTORE",
+        description: "Il giocatore trasmette una brutta malattia al resto della squadra. Aumenta di 20 punti le due slide degli infortuni per tutto il mese.",
         isImprev: true
         
     },
@@ -120,7 +120,7 @@ const imprevSettim = [
     {
         id: 18,
         title: "SEMPRE PRESENTE",
-        description: "Il giocatore estratto ... ?",
+        description: "II giocatore dovrà disputare tutte le partite per tutto il mese.",
         isImprev: true
         
     },
@@ -133,8 +133,8 @@ const imprevSettim = [
     },
     {
         id: 20,
-        title: "ADDIO PER SEMPRE",
-        description: "Il giocatore estratto verrà inserito in lista trasferimenti.",
+        title: "SAUDADE",
+        description: "Acquista tra gli svincolati un connazionale a scelta del giocatore oggetto dell’imprevisto e schierali SEMPRE insieme per il mese successivo.",
         isImprev: true
         
     },
@@ -147,8 +147,8 @@ const imprevSettim = [
     },
     {
         id: 22,
-        title: "UNTORE",
-        description: "Il giocatore trasmette una brutta malattia alla squadra: aumenta di 20 punti le slides degli infortuni ",
+        title: "IETTATORE",
+        description: "Il giocatore in oggetto causa un infortunio al miglior giocatore della tua rosa, che resta fuori per tutto il mese.",
         isImprev: true
         
     },
@@ -161,8 +161,8 @@ const imprevSettim = [
     },
     {
         id: 24,
-        title: "ADDIO PER SEMPRE",
-        description: "Il giocatore estratto verrà inserito in lista trasferimenti.",
+        title: "UNTORE",
+        description: "Il giocatore trasmette una brutta malattia al resto della squadra. Aumenta di 20 punti le due slide degli infortuni per tutto il mese.",
         isImprev: true
         
     },
@@ -176,7 +176,7 @@ const imprevSettim = [
     {
         id: 26,
         title: "SEMPRE PRESENTE",
-        description: "Il giocatore estratto ... ?",
+        description: "II giocatore dovrà disputare tutte le partite per tutto il mese.",
         isImprev: true
         
     },
@@ -189,8 +189,8 @@ const imprevSettim = [
     },
     {
         id: 28,
-        title: "IN PRESTITO",
-        description: "Il giocatore estratto verrà inserito in lista prestiti",
+        title: "ADDIO PER SEMPRE",
+        description: "Il giocatore sarà inserito tra i cedibili e dovranno essere accettate tutte le offerte con possibilità di trattativa.",
         isImprev: true
         
     },

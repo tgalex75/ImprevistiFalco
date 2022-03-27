@@ -23,7 +23,7 @@ const imprev = [
     {
         id: 4,
         title: "SCANDALO SOCIAL",
-        description: "Il giocatore estratto starà fuori per tutto l'episodio.",
+        description: "Il giocatore estratto sarà messo fuori rosa per tutto l’episodio.",
         isImprev: true,
         ultEstrazione: true
     },
@@ -37,7 +37,7 @@ const imprev = [
     {
         id: 6,
         title: "MOMENTO TOP!",
-        description: "Scende in campo il difensore biondo che fa impazzire il mondo!",
+        description: "Scende in campo TOP, il difensore biondo che fa impazzire il mondo!",
         isImprev: true,
         ultEstrazione: false
     },
@@ -58,7 +58,7 @@ const imprev = [
     {
         id: 9,
         title: "CREDO IN TE",
-        description: "Gioca uno a sceltra tra i peggiori panchinari",
+        description: "Schiera titolare uno tra i tre peggiori giocatori in rosa.",
         isImprev: true,
         ultEstrazione: true
     },
@@ -100,7 +100,7 @@ const imprev = [
     {
         id: 15,
         title: "LITIGIO SPOGLIATOIO",
-        description: "Estrai 2 giocatori e mettili fuori rosa per il resto della settimana",
+        description: "Estrai 2 giocatori e mettili fuori rosa per il resto della settimana.",
         isImprev: true,
         ultEstrazione: true
     },
@@ -142,7 +142,7 @@ const imprev = [
     {
         id: 21,
         title: "CREDO IN TE",
-        description: "Gioca uno a sceltra tra i peggiori panchinari",
+        description: "Schiera titolare uno tra i tre peggiori giocatori in rosa.",
         isImprev: true,
         ultEstrazione: true
     },
@@ -163,7 +163,7 @@ const imprev = [
     {
         id: 24,
         title: "MOMENTO TOP!",
-        description: "Scende in campo il difensore biondo che fa impazzire il mondo!",
+        description: "Scende in campo TOP, il difensore biondo che fa impazzire il mondo!",
         isImprev: true,
         ultEstrazione: false
     },
@@ -177,7 +177,7 @@ const imprev = [
     {
         id: 26,
         title: "SCANDALO SOCIAL",
-        description: "Il giocatore estratto starà fuori per tutto l'episodio.",
+        description: "Il giocatore estratto sarà messo fuori rosa per tutto l’episodio.",
         isImprev: true,
         ultEstrazione: true
     },
