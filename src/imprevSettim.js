@@ -9,7 +9,7 @@ const imprevSettim = [
     {
         id: 2,
         title: "ADDIO PER SEMPRE",
-        description: "Il giocatore estratto verrà inserito in lista trasferimenti.",
+        description: "Il giocatore sarà inserito tra i cedibili e dovranno essere accettate tutte le offerte con possibilità di trattativa.",
         isImprev: true
         
     },
@@ -23,7 +23,7 @@ const imprevSettim = [
     {
         id: 4,
         title: "SEMPRE PRESENTE",
-        description: "Il giocatore estratto ... ?",
+        description: "II giocatore dovrà disputare tutte le partite per tutto il mese.",
         isImprev: true        
     },
     {
@@ -50,7 +50,7 @@ const imprevSettim = [
     {
         id: 8,
         title: "SAUDADE",
-        description: "???",
+        description: "Acquista tra gli svincolati un connazionale a scelta del giocatore oggetto dell’imprevisto e schierali SEMPRE insieme per il mese successivo. ",
         isImprev: true
         
     },
@@ -64,7 +64,7 @@ const imprevSettim = [
     {
         id: 10,
         title: "IETTATORE",
-        description: "Il giocatore estratto causa un infortunio al miglior elemento della rosa che starà fuori per un mese.",
+        description: "Il giocatore estratto causa un infortunio al miglior giocatore  della tua rosa che starà fuori per un mese.",
         isImprev: true
         
     },
