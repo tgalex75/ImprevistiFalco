@@ -1,5 +1,5 @@
 import React from "react";
-import "./tooltip.css";
+import Rules from "./Rules";
 
 export default function Main(props) {
     const [inputField, setInputField] = React.useState({
@@ -31,8 +31,6 @@ export default function Main(props) {
         <main
             className={props.mainState === "welcome" ? "dark welcome" : "dark"}
         >
-            
-
             {/* WELCOME SCREEN */}
             {props.mainState === "welcome" && (
                 <div className="overlay">
@@ -66,13 +64,23 @@ export default function Main(props) {
                                 ? { visibility: "visible" }
                                 : { visibility: "hidden" }
                         }
-                        className={`${isImprev ? "red-alert" : ""} ${props.darkMode ? "dark" : ""}`}
+                        className={`${isImprev ? "red-alert" : ""} ${
+                            props.darkMode ? "dark" : ""
+                        }`}
                         id="randomNumber"
                     >
                         {props.randomNumber}
                     </h2>
 
-                    {isImprev && <div className={`img-impr ${props.darkMode ? "red-alert dark" : ""}`}>IMPREVISTO</div>}
+                    {isImprev && (
+                        <div
+                            className={`img-impr ${
+                                props.darkMode ? "red-alert dark" : ""
+                            }`}
+                        >
+                            IMPREVISTO
+                        </div>
+                    )}
 
                     <h3
                         style={
@@ -80,7 +88,9 @@ export default function Main(props) {
                                 ? { visibility: "visible" }
                                 : { visibility: "hidden" }
                         }
-                        className={`${isImprev ? "red-alert" : ""} ${props.darkMode ? "dark" : ""}`}
+                        className={`${isImprev ? "red-alert" : ""} ${
+                            props.darkMode ? "dark" : ""
+                        }`}
                     >
                         {title}
                     </h3>
@@ -194,6 +204,16 @@ export default function Main(props) {
                         {props.imprevSettim[randNumFixedIndex].description}
                     </p>
                 </div>
+            )}
+            {/* ***********************************
+             * IMPREVISTI PEGGIORE DELLA SETTIMANA *
+             *********************************** */}
+            {props.mainState === "rules" && (
+                <Rules
+                    imprev={props.imprev}
+                    imprevSettim={props.imprevSettim}
+                    mainState={props.mainState}
+                />  
             )}
         </main>
     );
