@@ -53,7 +53,7 @@ export default function App() {
                 mainState={mainState}
                 darkMode={darkMode}
             />
-            {mainState !== "rules" && <Toggler darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
+            {mainState !== "rules" && mainState !== "welcome" && <Toggler darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
             <Main
                 mainState={mainState}
                 randomNumber={randomNumber}
