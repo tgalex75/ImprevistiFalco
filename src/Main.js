@@ -34,11 +34,6 @@ export default function Main(props) {
             {/* WELCOME SCREEN */}
             {props.mainState === "welcome" && (
                 <div className="overlay">
-                    {/* <h1 className="welcome-title">
-                        Benvenuto!
-                        <br />
-                        Scegli il tipo di imprevisto dal menu in alto
-                    </h1> */}
                 </div>
             )}
 

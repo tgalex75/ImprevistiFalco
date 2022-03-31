@@ -5,64 +5,65 @@ import imprevSettim from "./imprevSettim";
 import Toggler from "./Toggler";
 import Main from "./Main";
 import Credits from "./Credits";
-import Rules from "./Rules";
 
 export default function App() {
-    /* Header Menu State */
-    const [mainState, setMainState] = React.useState("welcome");
+  /* Header Menu State */
+  const [mainState, setMainState] = React.useState("welcome");
 
-    function selectMainPrepartita() {
-        setRandomNumber(0);
-        setMainState("prepartita");
-    }
+  function selectMainPrepartita() {
+    setRandomNumber(0);
+    setMainState("prepartita");
+  }
 
-    function selectMainSettimana() {
-        setRandomNumber(0);
-        setMainState("settimana");
-    }
-    
-    function selectMainRules() {
-        setRandomNumber(0);
-        setMainState("rules");
-    }
+  function selectMainSettimana() {
+    setRandomNumber(0);
+    setMainState("settimana");
+  }
 
-    /* Get random number for Normal 29 elements from "Imprevisti" data */
-    function getRandomNumber() {
-        return Math.floor(Math.random() * imprev.length) + 1;
-    }
+  function selectMainRules() {
+    setRandomNumber(0);
+    setMainState("rules");
+  }
 
-    const [randomNumber, setRandomNumber] = React.useState(0);
+  /* Get random number for Normal 29 elements from "Imprevisti" data */
+  function getRandomNumber() {
+    return Math.floor(Math.random() * imprev.length) + 1;
+  }
 
-    function randNumBox() {
-        setRandomNumber(getRandomNumber);
-    }
+  const [randomNumber, setRandomNumber] = React.useState(0);
 
-    /* Toggle Dark/Light Mode */
-    const [darkMode, setDarkMode] = React.useState(false);
+  function randNumBox() {
+    setRandomNumber(getRandomNumber);
+  }
 
-    function toggleDarkMode() {
-        setDarkMode((prevMode) => !prevMode);
-    }
+  /* Toggle Dark/Light Mode */
+  const [darkMode, setDarkMode] = React.useState(false);
 
-    return (
-        <div id="main-container" className={darkMode ? "dark" : ""}>
-            <Header
-                selectMainPrepartita={selectMainPrepartita}
-                selectMainSettimana={selectMainSettimana}
-                selectMainRules={selectMainRules}
-                mainState={mainState}
-                darkMode={darkMode}
-            />
-            {mainState !== "rules" && mainState !== "welcome" && <Toggler darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
-            <Main
-                mainState={mainState}
-                randomNumber={randomNumber}
-                randNumBox={randNumBox}
-                imprev={imprev}
-                imprevSettim={imprevSettim}
-                darkMode={darkMode}
-            />
-            <Credits mainState={mainState} /> 
-        </div>
-    );
+  function toggleDarkMode() {
+    setDarkMode((prevMode) => !prevMode);
+  }
+
+  return (
+    <div id="main-container" className={darkMode ? "dark" : ""}>
+      <Header
+        selectMainPrepartita={selectMainPrepartita}
+        selectMainSettimana={selectMainSettimana}
+        selectMainRules={selectMainRules}
+        mainState={mainState}
+        darkMode={darkMode}
+      />
+      {mainState !== "rules" && mainState !== "welcome" && (
+        <Toggler darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      )}
+      <Main
+        mainState={mainState}
+        randomNumber={randomNumber}
+        randNumBox={randNumBox}
+        imprev={imprev}
+        imprevSettim={imprevSettim}
+        darkMode={darkMode}
+      />
+      {mainState !== "rules" && <Credits mainState={mainState} />}
+    </div>
+  );
 }
