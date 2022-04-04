@@ -9,10 +9,10 @@ export default function Rules(props) {
                 <div className="col--number">{el.id}</div>
                 <div className="col--title">{el.title}</div>
             </div>
-            <div className="right">
+            {el.isImprev && <div className="right">
                 <p>{el.description}</p>
                 <i></i>
-            </div>
+            </div>}
         </div>
     ));
 
@@ -22,10 +22,10 @@ export default function Rules(props) {
                 <div className="col--number">{el.id}</div>
                 <div className="col--title">{el.title}</div>
             </div>
-            <div className="left">
+            {el.isImprev && <div className="left">
                 <p>{el.description}</p>
                 <i></i>
-            </div>
+            </div>}
         </div>
     ));
 
