@@ -1,5 +1,7 @@
 import React from "react";
 import Rules from "./Rules";
+import clipVideo from './assets/clip.mp4'
+import fallbackImg from './assets/pitch.jpg'
 
 export default function Main(props) {
     const [inputField, setInputField] = React.useState({
@@ -33,8 +35,12 @@ export default function Main(props) {
         >
             {/* WELCOME SCREEN */}
             {props.mainState === "welcome" && (
-                <div className="overlay">
-                </div>
+                <>
+                    <video autoPlay loop muted id="video" poster={fallbackImg}>
+                        <source src={clipVideo} type="video/mp4" />
+                    </video>
+                    <div className="overlay"></div>
+                </>
             )}
 
             {/* *********************
@@ -208,7 +214,7 @@ export default function Main(props) {
                     imprev={props.imprev}
                     imprevSettim={props.imprevSettim}
                     mainState={props.mainState}
-                />  
+                />
             )}
         </main>
     );

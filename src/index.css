@@ -45,10 +45,18 @@ main {
 }
 
 main.welcome {
-    background-image: url(../public/pitch.jpg);
     background-size: cover;
     background-position: center center;
     z-index: 10;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+main #video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .8;
 }
 
 .overlay {
