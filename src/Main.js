@@ -33,7 +33,10 @@ export default function Main(props) {
         <main
             className={props.mainState === "welcome" ? "dark welcome" : "dark"}
         >
-            {/* WELCOME SCREEN */}
+            {/* **************
+            * WELCOME SCREEN *
+            ************** */}
+            
             {props.mainState === "welcome" && (
                 <>
                     <video autoPlay loop muted id="video" poster={fallbackImg}>
