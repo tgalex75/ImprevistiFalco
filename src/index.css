@@ -54,7 +54,7 @@ main.welcome {
 
 main #video {
     height: 100%;
-    width: 150%;
+    width: 140%;
     object-fit: cover;
     opacity: .9;
 }
