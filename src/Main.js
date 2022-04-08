@@ -119,6 +119,7 @@ export default function Main(props) {
                                         onChange={handleChange}
                                         min="1"
                                         max="35"
+                                        placeholder="11"
                                     />
                                     {!inputField.randomPlayerNumber && (
                                         <div className="left">
@@ -127,7 +128,7 @@ export default function Main(props) {
                                                     Inserisci un numero
                                                 </strong>{" "}
                                                 per scegliere tra quanti giocatori della rosa, sarà estratto quello
-                                                colpito da imprevisto (es. 11, 18, etc)
+                                                colpito da imprevisto (es. 11, 18, etc.)
                                             </p>
                                             <i></i>
                                         </div>
