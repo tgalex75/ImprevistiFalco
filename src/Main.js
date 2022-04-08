@@ -28,21 +28,9 @@ export default function Main(props) {
     const isImprev = props.imprev[randNumFixedIndex].isImprev;
     const ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione;
     return (
-        <main
-            className={props.mainState === "welcome" ? "dark welcome" : "dark"}
-        >
-            
-
+        <main className={props.mainState === "welcome" ? "welcome" : ""}>
             {/* WELCOME SCREEN */}
-            {props.mainState === "welcome" && (
-                <div className="overlay">
-                    {/* <h1 className="welcome-title">
-                        Benvenuto!
-                        <br />
-                        Scegli il tipo di imprevisto dal menu in alto
-                    </h1> */}
-                </div>
-            )}
+            {props.mainState === "welcome" && <div className="overlay"></div>}
 
             {/* *********************
              * IMPREVISTI PREPARTITA *
@@ -66,13 +54,23 @@ export default function Main(props) {
                                 ? { visibility: "visible" }
                                 : { visibility: "hidden" }
                         }
-                        className={`${isImprev ? "red-alert" : ""} ${props.darkMode ? "dark" : ""}`}
+                        className={`${isImprev ? "red-alert" : ""} ${
+                            props.darkMode ? "dark" : ""
+                        }`}
                         id="randomNumber"
                     >
                         {props.randomNumber}
                     </h2>
 
-                    {isImprev && <div className={`img-impr ${props.darkMode ? "red-alert dark" : ""}`}>IMPREVISTO</div>}
+                    {isImprev && (
+                        <div
+                            className={`img-impr ${
+                                props.darkMode ? "red-alert dark" : ""
+                            }`}
+                        >
+                            IMPREVISTO
+                        </div>
+                    )}
 
                     <h3
                         style={
@@ -80,7 +78,9 @@ export default function Main(props) {
                                 ? { visibility: "visible" }
                                 : { visibility: "hidden" }
                         }
-                        className={`${isImprev ? "red-alert" : ""} ${props.darkMode ? "dark" : ""}`}
+                        className={`${isImprev ? "red-alert" : ""} ${
+                            props.darkMode ? "dark" : ""
+                        }`}
                     >
                         {title}
                     </h3>
@@ -113,8 +113,10 @@ export default function Main(props) {
                                                 <strong>
                                                     Inserisci un numero
                                                 </strong>{" "}
-                                                per scegliere tra quanti giocatori della rosa, sarà estratto quello
-                                                colpito da imprevisto (es. 11, 18, etc.)
+                                                per scegliere tra quanti
+                                                giocatori della rosa, sarà
+                                                estratto quello colpito da
+                                                imprevisto (es. 11, 18, etc.)
                                             </p>
                                             <i></i>
                                         </div>
