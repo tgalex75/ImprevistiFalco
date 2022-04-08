@@ -112,7 +112,7 @@ export default function Main(props) {
                                                 <strong>
                                                     Inserisci un numero
                                                 </strong>{" "}
-                                                per estrarre il giocatore
+                                                per scegliere tra quanti giocatori della rosa, sarà estratto quello giocatore
                                                 colpito da imprevisto
                                             </p>
                                             <i></i>
