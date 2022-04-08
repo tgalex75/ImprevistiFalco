@@ -31,7 +31,7 @@ export default function Main(props) {
     const ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione;
     return (
         <main
-            className={props.mainState === "welcome" ? "dark welcome" : "dark"}
+            className={props.mainState === "welcome" ? "welcome" : ""}
         >
             {/* **************
             * WELCOME SCREEN *
