@@ -60,7 +60,7 @@ const imprev = [
         title: "CREDO IN TE",
         description: "Schiera titolare uno tra i tre peggiori giocatori in rosa.",
         isImprev: true,
-        ultEstrazione: true
+        ultEstrazione: false
     },
     {
         id: 10,
@@ -144,7 +144,7 @@ const imprev = [
         title: "CREDO IN TE",
         description: "Schiera titolare uno tra i tre peggiori giocatori in rosa.",
         isImprev: true,
-        ultEstrazione: true
+        ultEstrazione: false
     },
     {
         id: 22,
