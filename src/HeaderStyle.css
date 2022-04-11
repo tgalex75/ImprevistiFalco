@@ -88,7 +88,7 @@ header a {
 
 .nav-menu > li {
     list-style: none;
-    padding: 5rem;
+    padding: 3rem;
     color: #fff;
     text-decoration: none;
     border-left: 0.4rem solid transparent;
@@ -103,6 +103,10 @@ header a {
     color: #e52d27;
     border-left: 0.4rem solid #e52d27;
     border-right: 0.4rem solid #e52d27;
+}
+
+#rules--li {
+    font-size: 1rem;
 }
 
 /* MEDIA QUERY MOBILE PORTRAIT */

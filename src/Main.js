@@ -1,5 +1,7 @@
 import React from "react";
-import "./tooltip.css";
+import Rules from "./Rules";
+import clipVideo from './assets/clip.mp4'
+import fallbackImg from './assets/pitch.jpg'
 
 export default function Main(props) {
     const [inputField, setInputField] = React.useState({
@@ -28,9 +30,21 @@ export default function Main(props) {
     const isImprev = props.imprev[randNumFixedIndex].isImprev;
     const ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione;
     return (
-        <main className={props.mainState === "welcome" ? "welcome" : ""}>
-            {/* WELCOME SCREEN */}
-            {props.mainState === "welcome" && <div className="overlay"></div>}
+        <main
+            className={props.mainState === "welcome" ? "welcome" : ""}
+        >
+            {/* **************
+            * WELCOME SCREEN *
+            ************** */}
+            
+            {props.mainState === "welcome" && (
+                <>
+                    <video autoPlay loop muted id="video" poster={fallbackImg}>
+                        <source src={clipVideo} type="video/mp4" />
+                    </video>
+                    <div className="overlay"></div>
+                </>
+            )}
 
             {/* *********************
              * IMPREVISTI PREPARTITA *
@@ -38,6 +52,7 @@ export default function Main(props) {
 
             {props.mainState === "prepartita" && (
                 <div className="displayPrepartita">
+                    {/* MAIN BUTTON */}
                     <div
                         className={
                             props.randomNumber
@@ -47,6 +62,17 @@ export default function Main(props) {
                         onClick={props.randNumBox}
                     >
                         ESTRAI
+                    </div>
+                    {/* RESET BUTTON */}
+                    <div
+                        className={
+                            props.randomNumber
+                                ? "btn-randNum btn-reset"
+                                : "hidden"
+                        }
+                        onClick={props.selectMainPrepartita}
+                    >
+                        RESET
                     </div>
                     <h2
                         style={
@@ -112,11 +138,9 @@ export default function Main(props) {
                                             <p>
                                                 <strong>
                                                     Inserisci un numero
-                                                </strong>{" "}
-                                                per scegliere tra quanti
-                                                giocatori della rosa, sarà
-                                                estratto quello colpito da
-                                                imprevisto (es. 11, 18, etc.)
+                                                </strong>
+                                                per scegliere tra quanti giocatori della rosa, sarà estratto quello
+                                                colpito da imprevisto (es. 11, 18, etc.)
                                             </p>
                                             <i></i>
                                         </div>
@@ -197,6 +221,16 @@ export default function Main(props) {
                         {props.imprevSettim[randNumFixedIndex].description}
                     </p>
                 </div>
+            )}
+            {/* ***********************************
+             * IMPREVISTI PEGGIORE DELLA SETTIMANA *
+             *********************************** */}
+            {props.mainState === "rules" && (
+                <Rules
+                    imprev={props.imprev}
+                    imprevSettim={props.imprevSettim}
+                    mainState={props.mainState}
+                />
             )}
         </main>
     );

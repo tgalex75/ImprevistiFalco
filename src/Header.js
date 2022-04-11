@@ -33,6 +33,7 @@ export default function Header(props) {
                         <li onClick={props.selectMainSettimana}>
                             Peggiore della SETTIMANA
                         </li>
+                        <li id="rules--li" onClick={props.selectMainRules}>- REGOLAMENTO -</li>
                     </ul>
                     {openMenu ? (
                         <FaBars size={25} style={props.darkMode || props.mainState === "welcome" ? {color: "#fff"} : {color: "#000"}} />

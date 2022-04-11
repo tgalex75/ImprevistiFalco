@@ -71,8 +71,8 @@
     .tooltip .left {
         padding: 8px 14px;
         font-size: 0.7rem;
-        min-width: 130px;
-        max-width: 200px;
+        min-width: 100px;
+        max-width: 150px;
     
     }
 }

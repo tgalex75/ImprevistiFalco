@@ -23,7 +23,7 @@ input[type="number"] {
 #main-container {
     height: 100vh;
     color: black;
-    background-color: rgba(240, 240, 240, 0.85);    
+    background-color: rgba(240, 240, 240, 0.85);
 }
 
 #main-container.dark {
@@ -45,10 +45,18 @@ main {
 }
 
 main.welcome {
-    background-image: url(../public/pitch.jpg);
     background-size: cover;
     background-position: center center;
     z-index: 10;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+main #video {
+    height: 100%;
+    width: 140%;
+    object-fit: cover;
+    opacity: .9;
 }
 
 .overlay {
@@ -81,6 +89,10 @@ main.welcome {
     height: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 .btn-randNum {
     background-image: linear-gradient(
         to right,
@@ -92,7 +104,7 @@ main.welcome {
     height: 8rem;
     border-radius: 50%;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: all 0.5s ease-out;
     background-size: 200% auto;
     color: white;
     display: flex;
@@ -104,6 +116,22 @@ main.welcome {
     position: absolute;
     bottom: 10%;
     right: 5%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    z-index: 3;
+}
+
+.btn-reset {
+    background-image: linear-gradient(
+        to right,
+        #e52d27 0%,
+        #b31217 51%,
+        #e52d27 100%
+    );
+    width: 4rem;
+    height: 4rem;
+    transform: translate(40%, 40%);
+    font-size: .8rem;
+    z-index: 2;
 }
 
 .btn-randNum.centered {
@@ -246,10 +274,15 @@ main.welcome {
     }
     .btn-randNum {
         font-size: .8rem;
-        width: 4rem;
-        height: 4rem;
-        right: 3%;
+        width: 4.5rem;
+        height: 4.5rem;
         bottom: 5%;
+    }
+    .btn-reset {
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translate(30%, 50%);
+        font-size: .4rem;
     }
     #randomNumber {
         line-height: 0.8;
@@ -291,11 +324,17 @@ main.welcome {
     .btn-randNum {
         padding: 0;
         position: fixed;
-        right: 10px;
+        right: 12px;
         bottom: 10%;
-        width: 4.2rem;
-        height: 4.2rem;
+        width: 5rem;
+        height: 5rem;
         font-size: 1rem;
+    }
+    .btn-reset {
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translate(20%, 50%);
+        font-size: .4rem;
     }
 
     #randomNumber {
