@@ -62,6 +62,7 @@ export default function App() {
         imprev={imprev}
         imprevSettim={imprevSettim}
         darkMode={darkMode}
+        selectMainPrepartita={selectMainPrepartita}
       />
       {mainState !== "rules" && <Credits mainState={mainState} />}
     </div>

@@ -52,6 +52,7 @@ export default function Main(props) {
 
             {props.mainState === "prepartita" && (
                 <div className="displayPrepartita">
+                    {/* MAIN BUTTON */}
                     <div
                         className={
                             props.randomNumber
@@ -61,6 +62,17 @@ export default function Main(props) {
                         onClick={props.randNumBox}
                     >
                         ESTRAI
+                    </div>
+                    {/* RESET BUTTON */}
+                    <div
+                        className={
+                            props.randomNumber
+                                ? "btn-randNum btn-reset"
+                                : "hidden"
+                        }
+                        onClick={props.selectMainPrepartita}
+                    >
+                        RESET
                     </div>
                     <h2
                         style={

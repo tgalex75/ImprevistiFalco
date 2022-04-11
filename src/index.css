@@ -89,6 +89,10 @@ main #video {
     height: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 .btn-randNum {
     background-image: linear-gradient(
         to right,
@@ -112,6 +116,22 @@ main #video {
     position: absolute;
     bottom: 10%;
     right: 5%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    z-index: 3;
+}
+
+.btn-reset {
+    background-image: linear-gradient(
+        to right,
+        #e52d27 0%,
+        #b31217 51%,
+        #e52d27 100%
+    );
+    width: 4rem;
+    height: 4rem;
+    transform: translate(40%, 40%);
+    font-size: .8rem;
+    z-index: 2;
 }
 
 .btn-randNum.centered {
@@ -254,10 +274,15 @@ main #video {
     }
     .btn-randNum {
         font-size: .8rem;
-        width: 4rem;
-        height: 4rem;
-        right: 3%;
+        width: 4.5rem;
+        height: 4.5rem;
         bottom: 5%;
+    }
+    .btn-reset {
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translate(30%, 50%);
+        font-size: .4rem;
     }
     #randomNumber {
         line-height: 0.8;
@@ -299,11 +324,17 @@ main #video {
     .btn-randNum {
         padding: 0;
         position: fixed;
-        right: 10px;
+        right: 12px;
         bottom: 10%;
         width: 5rem;
         height: 5rem;
         font-size: 1rem;
+    }
+    .btn-reset {
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translate(20%, 50%);
+        font-size: .4rem;
     }
 
     #randomNumber {
