@@ -1,7 +1,7 @@
 import React from "react";
 import Rules from "./Rules";
-import clipVideo from './assets/clip.mp4'
-import fallbackImg from './assets/pitch.jpg'
+import clipVideo from "./assets/clip.mp4";
+import fallbackImg from "./assets/pitch.jpg";
 
 export default function Main(props) {
     const [inputField, setInputField] = React.useState({
@@ -30,13 +30,11 @@ export default function Main(props) {
     const isImprev = props.imprev[randNumFixedIndex].isImprev;
     const ultEstrazione = props.imprev[randNumFixedIndex].ultEstrazione;
     return (
-        <main
-            className={props.mainState === "welcome" ? "welcome" : ""}
-        >
+        <main className={props.mainState === "welcome" ? "welcome" : ""}>
             {/* **************
-            * WELCOME SCREEN *
-            ************** */}
-            
+             * WELCOME SCREEN *
+             ************** */}
+
             {props.mainState === "welcome" && (
                 <>
                     <video autoPlay loop muted id="video" poster={fallbackImg}>
@@ -138,9 +136,11 @@ export default function Main(props) {
                                             <p>
                                                 <strong>
                                                     Inserisci un numero
-                                                </strong>{" "}
-                                                per scegliere tra quanti giocatori della rosa, sarà estratto quello
-                                                colpito da imprevisto (es. 11, 18, etc.)
+                                                </strong><br/>
+                                                per scegliere tra quanti
+                                                giocatori della rosa, sarà
+                                                estratto quello colpito da
+                                                imprevisto (es. 11, 18, etc.)
                                             </p>
                                             <i></i>
                                         </div>
