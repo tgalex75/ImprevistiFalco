@@ -138,8 +138,8 @@ export default function Main(props) {
                                             <p>
                                                 <strong>
                                                     Inserisci un numero
-                                                </strong>
-                                                 per scegliere tra quanti giocatori della rosa, sarà estratto quello
+                                                </strong><br/>
+                                                per scegliere tra quanti giocatori della rosa, sarà estratto quello
                                                 colpito da imprevisto (es. 11, 18, etc.)
                                             </p>
                                             <i></i>
