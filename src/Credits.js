@@ -1,6 +1,5 @@
 import React from 'react'
 import './credits.css'
-import easterBg from "./assets/easter.png";
 
 export default function Credits(props) {
     return (
