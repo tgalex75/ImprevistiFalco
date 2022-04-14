@@ -161,7 +161,7 @@ main #video {
 
 .img-impr {
     text-align: center;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', Verdana, sans-serif;
     font-size: 3rem;
     color: #b31217;
 }
