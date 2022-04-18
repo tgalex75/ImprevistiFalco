@@ -38,12 +38,11 @@ main {
     height: 100vh;
     text-align: center;
     background-image: 
-        url(./assets/easter.png),
         url(../public/logo900_25.png),
         url(../public/right-bg25.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 30%, 50%, 75%;
-    background-position: bottom left, -50%, 150% bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, 75%;
+    background-position: -50%, 150% bottom;
 }
 
 main.welcome {
