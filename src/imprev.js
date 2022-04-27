@@ -16,7 +16,7 @@ const imprev = [
     {
         id: 3,
         title: "nessun imprevisto",
-        description: "È il momento della verità? Non lo so, però...",
+        description: "Mister mettiamo la maglia BLU o quella ROSSA?",
         isImprev: false,
         ultEstrazione: false
     },
@@ -30,7 +30,7 @@ const imprev = [
     {
         id: 5,
         title: "nessun imprevisto",
-        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
+        description: "Mister ricordati di controllare il METEO!",
         isImprev: false,
         ultEstrazione: false
     },
@@ -72,7 +72,7 @@ const imprev = [
     {
         id: 11,
         title: "nessun imprevisto",
-        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
+        description: "Mister ricordati di controllare il METEO!",
         isImprev: false,
         ultEstrazione: false
     },
@@ -114,7 +114,7 @@ const imprev = [
     {
         id: 17,
         title: "nessun imprevisto",
-        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
+        description: "Mister ricordati di controllare il METEO!",
         isImprev: false,
         ultEstrazione: false
     },
@@ -156,7 +156,7 @@ const imprev = [
     {
         id: 23,
         title: "nessun imprevisto",
-        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
+        description: "Mister mettiamo la maglia BLU o quella ROSSA?",
         isImprev: false,
         ultEstrazione: false
     },
