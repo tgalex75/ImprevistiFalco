@@ -162,8 +162,8 @@ const imprev = [
     },
     {
         id: 24,
-        title: "MOMENTO TOP!",
-        description: "Scende in campo TOP, il difensore biondo che fa impazzire il mondo!",
+        title: "DIVANO-LETTINHO!",
+        description: "Paulolettinho lascia il suo comodo divano, si pettina il baffo e scende in campo!",
         isImprev: true,
         ultEstrazione: false
     },
