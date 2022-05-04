@@ -16,7 +16,7 @@ const imprev = [
     {
         id: 3,
         title: "nessun imprevisto",
-        description: "Mister mettiamo la maglia BLU o quella ROSSA?",
+        description: "Mister mettiamo la maglia BLU o quella BIANCA?",
         isImprev: false,
         ultEstrazione: false
     },
@@ -156,7 +156,7 @@ const imprev = [
     {
         id: 23,
         title: "nessun imprevisto",
-        description: "Mister mettiamo la maglia BLU o quella ROSSA?",
+        description: "Mister mettiamo la maglia BLU o quella BIANCA?",
         isImprev: false,
         ultEstrazione: false
     },
