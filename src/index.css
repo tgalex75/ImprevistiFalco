@@ -39,10 +39,10 @@ main {
     text-align: center;
     background-image: 
         url(../public/logo900_25.png),
-        url(../public/right-bg25.png);
+        url(../public/right25BGNew.png);
     background-repeat: no-repeat, no-repeat;
-    background-size: 50%, 75%;
-    background-position: -50%, 150% bottom;
+    background-size: 50%, 40%;
+    background-position: -50%, 90% bottom;
 }
 
 main.welcome {
