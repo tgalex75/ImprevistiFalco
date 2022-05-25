@@ -42,7 +42,7 @@ main {
         url(../public/right25BGNew.png);
     background-repeat: no-repeat, no-repeat;
     background-size: 50%, 40%;
-    background-position: -50%, 90% bottom;
+    background-position: -50%, 95% bottom;
 }
 
 main.welcome {
