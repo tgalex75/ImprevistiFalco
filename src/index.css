@@ -1,375 +1,55 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+  /* Colors
+    --dark-blue: #03045eff;
+    --secondary-blue: #0077b6ff;
+    --primary-blue: rgb(56, 146, 194);
+    --light-blue: #90e0efff;
+    --bg-blue: #caf0f8ff;
+    --text-color: #efefef;
+    --grey-color: #d4d3d3;
+    --delete-color: #df372b;
+    --divider-color: rgba(0, 0, 0, 0.1);
+    --dark-bg: #222;
+    --soft-dark: #272724; */
+  /* Global */
+  --letter-spacing: 0.08rem;
+  --transition: all 0.3s linear;
+  --btn-transition: all 0.125s ease;
+  --radius: 0.25rem;
+  --img-radius: 0.25rem 0.25rem 0rem 0rem;
+  --card-radius: 0rem 0rem 0.25rem 0.25rem;
+  --btn-radius: 16px;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+}
+
+.light-mode {
+  --clr-bg: #efefef;
+  --clr-text: #222;
+  --clr-primary: rgb(56, 146, 194);
+  --clr-card: #eeeeee;
+}
+
+.dark-mode {
+  --clr-bg: #111;
+  --clr-text: #d4d3d3;
+  --clr-primary: #df372b;
+  --clr-card: #272724;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-#main-container {
-    height: 100vh;
-    color: black;
-    background-color: rgba(240, 240, 240, 0.85);
-}
-
-#main-container.dark {
-    background-color: rgb(0,0,0,.9);
-    color: #fff;
-}
-
-/* MAIN SECTION */
-
-main {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    background-image: 
-        url(../public/logo900_25.png),
-        url(../public/right25BGNew.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 50%, 40%;
-    background-position: -50%, 95% bottom;
-}
-
-main.welcome {
-    background-size: cover;
-    background-position: center center;
-    z-index: 10;
-    object-fit: contain;
-    overflow: hidden;
-}
-
-main #video {
-    height: 100%;
-    width: 130%;
-    object-fit: cover;
-    opacity: .9;
-}
-
-.overlay {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(70, 70, 70, 0) 90%
-    );
-    width: 100%;
-    height: 100%;
-}
-
-.welcome-title {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 3rem;
-    padding: 3rem;
-}
-
-.displayPrepartita {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-}
-
-.hidden {
-    display: none;
-}
-
-.btn-randNum {
-    background-image: linear-gradient(
-        to right,
-        #314755 0%,
-        #26a0da 51%,
-        #314755 100%
-    );
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    text-transform: uppercase;
-    transition: all 0.5s ease-out;
-    background-size: 200% auto;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 1.7rem;
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
-    z-index: 3;
-}
-
-.btn-reset {
-    background-image: linear-gradient(
-        to right,
-        #e52d27 0%,
-        #b31217 51%,
-        #e52d27 100%
-    );
-    width: 4rem;
-    height: 4rem;
-    transform: translate(40%, 40%);
-    font-size: .8rem;
-    z-index: 2;
-}
-
-.btn-randNum.centered {
-    width: 12rem;
-    height: 12rem;
-    font-size: 2.5rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.btn-randNum:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-}
-
-#randomNumber {
-    font-size: 10rem;
-    font-weight: 800;
-    line-height: 1;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
-.img-impr {
-    text-align: center;
-    font-family: 'Special Elite', Verdana, sans-serif;
-    font-size: 3rem;
-    color: #b31217;
-}
-
-.displayPrepartita > h3 {
-    font-size: 2rem;
-}
-
-.displayPrepartita > p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 10px;
-    border-radius: 5px;
-    width: 60%;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ultEstrazione {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 50vw;
-    border: 5px double #024b80;
-    border-radius: 0.5rem;
-    padding: 0.5rem 0;
-}
-
-.ultEstrazione > .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#randomPlayerNumber {
-    text-align: center;
-    border-radius: 0.1rem;
-    font-weight: 600;
-    font-size: 2rem;
-    max-width: 8rem;
-}
-
-.btn-player {
-    background-image: linear-gradient(
-        to right,
-        #e52d27 0%,
-        #b31217 51%,
-        #e52d27 100%
-    );
-}
-.btn-player {
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    border-radius: 10px;
-    display: block;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.btn-player:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-}
-
-.randomPlayer {
-    height: 8rem;
-    width: 7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    font-weight: 600;
-    background-image: url(../public/retro-shirt.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding-bottom: 0.5rem;
-}
-
-.red-alert {
-    color: #b31217;
-}
-
-.red-alert.dark {
-    color: #f3251e;
-}
-
-.black {
-    color: black;
-}
-
-.footer > p > span {
-    font-weight: 600;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 768px) {
-
-    .welcome-title {
-        font-size: 2rem;
-        padding: 1.5rem;
-    }
-    .btn-randNum {
-        font-size: .8rem;
-        width: 4.5rem;
-        height: 4.5rem;
-        bottom: 5%;
-    }
-    .btn-reset {
-        width: 2.5rem;
-        height: 2.5rem;
-        transform: translate(30%, 50%);
-        font-size: .4rem;
-    }
-    #randomNumber {
-        line-height: 0.8;
-    }
-    .img-impr {
-        font-size: 2.5rem;
-    }
-    .displayPrepartita > h3 {
-        font-size: 1.5rem;
-        line-height: 1;
-    }
-    .displayPrepartita > p {
-        font-size: 1rem;
-    }
-
-    .ultEstrazione {
-        flex-direction: column;
-        border: 3px double #26a0da;
-    }
-    .randomPlayer {
-        height: 6rem;
-        width: 5rem;
-        font-size: 2.6rem;
-    }
-}
-
-/* MEDIA QUERY - MOBILE LANDSCAPE */
-
-@media (max-height: 500px) and (orientation: landscape) {
-
-    .main {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .btn-randNum {
-        padding: 0;
-        position: fixed;
-        right: 12px;
-        bottom: 10%;
-        width: 5rem;
-        height: 5rem;
-        font-size: 1rem;
-    }
-    .btn-reset {
-        width: 2.5rem;
-        height: 2.5rem;
-        transform: translate(20%, 50%);
-        font-size: .4rem;
-    }
-
-    #randomNumber {
-        font-size: 8rem;
-    }
-
-
-    .img-impr {
-        font-size: 2rem;
-    }
-
-    .displayPrepartita > h3 {
-        font-size: 1.5rem;
-    }
-
-
-    .displayPrepartita > p {
-        width: 75%;
-        padding: 5px 10px;
-        min-height: auto;
-    }
-
-    .ultEstrazione {
-        flex-direction: row;
-        width: 75%;
-    }
-
-    .ultEstrazione > .container {
-        flex-direction: row;
-    }
-
-    .randomPlayer {
-        font-size: 2.2rem;
-        height: 6rem;
-        width: 5rem;
-    }
+  font-family: "Poppins", sans-serif;
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: var(--transition);
 }

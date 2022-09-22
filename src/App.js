@@ -1,70 +1,33 @@
 import React from "react";
-import Header from "./Header";
-import imprev from "./imprev";
-import imprevSettim from "./imprevSettim";
-import Toggler from "./Toggler";
-import Main from "./Main";
-import Credits from "./Credits";
+import { useState, useEffect } from "react";
 
 export default function App() {
-  /* Header Menu State */
-  const [mainState, setMainState] = React.useState("welcome");
-
-  function selectMainPrepartita() {
-    setRandomNumber(0);
-    setMainState("prepartita");
+  // Salvare lo stato "theme" nel localStorage
+  const getFromLocalStorage = () => {
+    return localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark-mode"
   }
 
-  function selectMainSettimana() {
-    setRandomNumber(0);
-    setMainState("settimana");
-  }
 
-  function selectMainRules() {
-    setRandomNumber(0);
-    setMainState("rules");
-  }
+  /* Funzione che aggiorna il tema in base allo State */
 
-  /* Get random number for Normal 29 elements from "Imprevisti" data */
-  function getRandomNumber() {
-    return Math.floor(Math.random() * imprev.length) + 1;
-  }
+  const [theme, setTheme] = useState(getFromLocalStorage());
 
-  const [randomNumber, setRandomNumber] = React.useState(0);
+  // Funzione che cambia il tema in base al valore dello State
 
-  function randNumBox() {
-    setRandomNumber(getRandomNumber);
-  }
+  const cambiaTema = () => {
+    theme === "light-mode" ? setTheme("dark-mode") : setTheme("light-mode");
+  };
 
-  /* Toggle Dark/Light Mode */
-  const [darkMode, setDarkMode] = React.useState(false);
-
-  function toggleDarkMode() {
-    setDarkMode((prevMode) => !prevMode);
-  }
+  // Al cambio ddello state "theme" verrà attaccata una classe al TAG html
+  useEffect(() => {
+    document.documentElement.className = theme
+    localStorage.setItem("theme", theme)
+  },[theme])
 
   return (
-    <div id="main-container" className={darkMode ? "dark" : ""}>
-      <Header
-        selectMainPrepartita={selectMainPrepartita}
-        selectMainSettimana={selectMainSettimana}
-        selectMainRules={selectMainRules}
-        mainState={mainState}
-        darkMode={darkMode}
-      />
-      {mainState !== "rules" && mainState !== "welcome" && (
-        <Toggler darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      )}
-      <Main
-        mainState={mainState}
-        randomNumber={randomNumber}
-        randNumBox={randNumBox}
-        imprev={imprev}
-        imprevSettim={imprevSettim}
-        darkMode={darkMode}
-        selectMainPrepartita={selectMainPrepartita}
-      />
-      {mainState !== "rules" && <Credits mainState={mainState} />}
-    </div>
+    <>
+      <h1>Ricominciamo</h1>
+      <button onClick={cambiaTema}>Cliccami</button>
+    </>
   );
 }
