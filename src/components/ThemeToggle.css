@@ -1,0 +1,10 @@
+.theme-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem .5rem;
+}

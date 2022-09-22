@@ -1,12 +1,17 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ThemeToggle from "./components/ThemeToggle";
+import Main from "./components/Main";
 
 export default function App() {
   // Salvare lo stato "theme" nel localStorage
   const getFromLocalStorage = () => {
-    return localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark-mode"
-  }
-
+    return localStorage.getItem("theme")
+      ? localStorage.getItem("theme")
+      : "dark-mode";
+  };
 
   /* Funzione che aggiorna il tema in base allo State */
 
@@ -20,14 +25,17 @@ export default function App() {
 
   // Al cambio ddello state "theme" verrà attaccata una classe al TAG html
   useEffect(() => {
-    document.documentElement.className = theme
-    localStorage.setItem("theme", theme)
-  },[theme])
+    document.documentElement.className = theme;
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
     <>
-      <h1>Ricominciamo</h1>
-      <button onClick={cambiaTema}>Cliccami</button>
+      <Navbar/>
+      <ThemeToggle theme={theme} cambiaTema={cambiaTema} /> 
+      <Main />
+      <Footer/>
     </>
+
   );
 }

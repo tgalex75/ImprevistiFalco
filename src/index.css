@@ -31,7 +31,7 @@
 }
 
 .dark-mode {
-  --clr-bg: #111;
+  --clr-bg: #131313;
   --clr-text: #d4d3d3;
   --clr-primary: #df372b;
   --clr-card: #272724;
@@ -52,4 +52,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: var(--transition);
+}
+
+h1 {
+    text-align: center;
+    color: #efefef;
 }
