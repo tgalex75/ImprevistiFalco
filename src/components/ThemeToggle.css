@@ -1,10 +1,12 @@
 .theme-toggle {
-    font-size: 1.5rem;
     cursor: pointer;
-    position: absolute;
-    right: 1rem;
+    font-size: 1.6rem;
+    /* position: absolute;
+    top: 0;
+    left: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem .5rem;
+    padding: 1rem .5rem; */
+
 }

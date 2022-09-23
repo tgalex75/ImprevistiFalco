@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ThemeToggle from "./components/ThemeToggle";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
+import Bg from "./components/Bg";
 
 export default function App() {
   // Salvare lo stato "theme" nel localStorage
@@ -31,10 +31,11 @@ export default function App() {
 
   return (
     <>
-      <Navbar/>
-      <ThemeToggle theme={theme} cambiaTema={cambiaTema} /> 
+      <Bg/>
+      <Navbar theme={theme} cambiaTema={cambiaTema}/>
       <Main />
       <Footer/>
+      
     </>
 
   );
