@@ -1,16 +1,17 @@
-import React from "react";
+import { React, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import { MdMenu, MdClose } from "react-icons/md";
-import "./Navbar.css";
+import Tooltip from "@mui/material/Tooltip";
+import "./NavbarStyle.css";
 import logo from "../assets/logo192.png";
 
 function Navbar(props) {
     const { theme, cambiaTema } = props;
 
-    const buttonMenu = () => {
-        console.log("menu cliccato");
+    const [openMenu, setOpenMenu] = useState(false);
+
+    const handleClick = () => {
+        setOpenMenu((prevMenu) => !prevMenu);
     };
 
     return (
@@ -19,14 +20,16 @@ function Navbar(props) {
             <div className="logo">
                 <a href="/">
                     {" "}
-                    <img src={logo} />{" "}
+                    <img src={logo} alt="logo" />
                 </a>
             </div>
             <ThemeToggle theme={theme} cambiaTema={cambiaTema} />
             {/* Menu */}
-            <div className="menu">
-                <MdMenu size={"2rem"} onClick={buttonMenu} />
-            </div>
+            <Tooltip title="Menu generale" placement= "left" arrow>
+                <div className="menu" onClick={handleClick}>
+                    {!openMenu ? <MdMenu /> : <MdClose />}
+                </div>
+            </Tooltip>
         </nav>
     );
 }

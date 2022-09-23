@@ -31,10 +31,10 @@ export default function App() {
 
   return (
     <>
-      <Bg/>
       <Navbar theme={theme} cambiaTema={cambiaTema}/>
       <Main />
       <Footer/>
+      <Bg/>
       
     </>
 

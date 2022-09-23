@@ -1,5 +1,5 @@
 import React from "react";
-import "./Bg.css"
+import "./BgStyle.css"
 import bgSvg from "../assets/big-logo.svg"
 
 

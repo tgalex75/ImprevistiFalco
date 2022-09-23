@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "mui-image";
-import "./Main.css";
+import "./MainStyle.css";
 
 const Main = () => {
   const handleClick = () => {
