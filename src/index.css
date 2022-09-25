@@ -14,7 +14,7 @@
   /* Global */
   --letter-spacing: 0.08rem;
   --transition: all 0.3s linear;
-  --btn-transition: all 0.125s ease;
+  --btn-transition: all 0.6s ease;
   --radius: 0.25rem;
   --img-radius: 0.25rem 0.25rem 0rem 0rem;
   --card-radius: 0rem 0rem 0.25rem 0.25rem;
@@ -52,9 +52,4 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: var(--transition);
-}
-
-h1 {
-    text-align: center;
-    color: #efefef;
 }

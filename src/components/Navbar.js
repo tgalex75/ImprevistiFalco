@@ -1,9 +1,11 @@
+import PropTypes from "prop-types";
 import { React, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { MdMenu, MdClose } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
 import "./NavbarStyle.css";
 import logo from "../assets/logo192.png";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
     const { theme, cambiaTema } = props;
@@ -19,19 +21,57 @@ function Navbar(props) {
             {/* Logo */}
             <div className="logo">
                 <a href="/">
-                    {" "}
                     <img src={logo} alt="logo" />
                 </a>
             </div>
             <ThemeToggle theme={theme} cambiaTema={cambiaTema} />
             {/* Menu */}
-            <Tooltip title="Menu generale" placement= "left" arrow>
-                <div className="menu" onClick={handleClick}>
-                    {!openMenu ? <MdMenu /> : <MdClose />}
+            <Tooltip title="Menu generale" placement="left" arrow>
+                <div className="menu">
+                    {!openMenu ? (
+                        <MdMenu onClick={handleClick} />
+                    ) : (
+                        <MdClose onClick={handleClick} />
+                    )}
+                    <ul
+                        onClick={handleClick}
+                        className={openMenu ? "nav-menu active" : "nav-menu"}
+                    >
+                        <Link to="/">
+                            <li>Home</li>
+                        </Link>
+                        <Link to="/prepartita">
+                            <li>Imprevisti Prepartita</li>
+                        </Link>
+                        <Link to="/settimana">
+                            <li>Imprevisti della Settimana</li>
+                        </Link>
+                        <span id="span-menu">MENU</span>
+                    </ul>
                 </div>
             </Tooltip>
         </nav>
     );
 }
 
+Navbar.propTypes = {
+    cambiaTema: PropTypes.any,
+    theme: PropTypes.any,
+};
+
 export default Navbar;
+
+/* <div className="hamburger" onClick={handleClick}>
+                    <ul className={openMenu ? "nav-menu" : "nav-menu active"}>
+                        <li onClick={props.selectMainPrepartita}>PREPARTITA</li>
+                        <li onClick={props.selectMainSettimana}>
+                            Peggiore della SETTIMANA
+                        </li>
+                        <li id="rules--li" onClick={props.selectMainRules}>- REGOLAMENTO -</li>
+                    </ul>
+                    {openMenu ? (
+                        <FaBars size={25} style={props.darkMode || props.mainState === "welcome" ? {color: "#fff"} : {color: "#000"}} />
+                    ) : (
+                        <FaTimes size={25} style={{color: "white"}} />
+                    )}
+                </div> */
