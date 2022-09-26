@@ -54,12 +54,18 @@
     align-items: center;
     justify-content: center;
     text-shadow: 3px 3px 3px #222;
+}
 
+.links{
+    padding: 5rem;
+    width: 100%;
+    z-index: 100;
 }
 
 .overlay h1 {
     font-size: 3rem;
     text-align: center;
+
 }
 
 .riquadro:hover h1 {

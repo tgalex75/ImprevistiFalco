@@ -28,9 +28,8 @@ const Main = () => {
                         onMouseEnter={() => playVideo(prepRef.current)}
                         onMouseLeave={() => pauseVideo(prepRef.current)}
                     >
-                        
                         <div className="overlay">
-                            <Link to="/prepartita">
+                            <Link className="links" to="/prepartita">
                                 <h1>
                                     Imprevisti
                                     <br />
@@ -40,12 +39,14 @@ const Main = () => {
                         </div>
                         <video ref={prepRef} src={magicu} loop />
                     </div>
-                    <div className="riquadro" id="impr--sett"
-                    onMouseEnter={() => playVideo(settRef.current)}
-                    onMouseLeave={() => pauseVideo(settRef.current)}>
-                        
+                    <div
+                        className="riquadro"
+                        id="impr--sett"
+                        onMouseEnter={() => playVideo(settRef.current)}
+                        onMouseLeave={() => pauseVideo(settRef.current)}
+                    >
                         <div className="overlay">
-                            <Link to="/settimana">
+                            <Link className="links" to="/settimana">
                                 <h1>
                                     Imprevisti
                                     <br />
