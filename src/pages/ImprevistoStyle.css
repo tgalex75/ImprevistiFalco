@@ -120,7 +120,7 @@
     height: 100%;
     width: 7rem;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     background-size: contain;
     background-repeat: no-repeat;
