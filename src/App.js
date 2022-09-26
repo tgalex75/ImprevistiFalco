@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Main from "./pages/Main";
 import Imprevisto from "./pages/Imprevisto";
+import Settimana from "./pages/Settimana";
 import Footer from "./components/Footer";
 import Bg from "./components/Bg";
 import ErrorPage from "./pages/ErrorPage";
@@ -41,7 +42,7 @@ export default function App() {
                     <Route path="/" element={<Main />} />
                     <Route path="/home" element={<Main />} />
                     <Route path="/prepartita" element={<Imprevisto />} />
-                    <Route path="/settimana" element={<Imprevisto />} />
+                    <Route path="/settimana" element={<Settimana />} />
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>
             </Router>

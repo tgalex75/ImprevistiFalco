@@ -86,14 +86,20 @@ const Imprevisto = () => {
 
     return (
         <>
+            <h1 className="titolo-h1">PREPARTITA</h1>
+
             {/* ***** WELCOME SCREEN ***** */}
 
             {isWelcomeScreen && (
-                <Tooltip title="Estrai un numero" placement="bottom" arrow>
-                    <div className="welcomeScreenBtn">
-                        <MdSend onClick={() => genRandomNumber(randomNumber)} />
-                    </div>
-                </Tooltip>
+                <div>
+                    <Tooltip title="Estrai un numero" placement="bottom" arrow>
+                        <div className="welcomeScreenBtn">
+                            <MdSend
+                                onClick={() => genRandomNumber(randomNumber)}
+                            />
+                        </div>
+                    </Tooltip>
+                </div>
             )}
 
             {/* ***** PREPARTITA ***** */}
@@ -101,8 +107,13 @@ const Imprevisto = () => {
             {!isWelcomeScreen && (
                 <div>
                     <div className="prepartita">
-                        <h1 style={isImprev ? { color: "#b31217" } : {}}>{id}</h1>
-                        <div className="isImprevisto"> {isImprev ? "IMPREVISTO" : ""} </div>
+                        <h1 style={isImprev ? { color: "#b31217" } : {}}>
+                            {id}
+                        </h1>
+                        <div className="isImprevisto">
+                            {" "}
+                            {isImprev ? "IMPREVISTO" : ""}{" "}
+                        </div>
                         <h2 style={isImprev ? { color: "#b31217" } : {}}>
                             {" "}
                             {title}{" "}
