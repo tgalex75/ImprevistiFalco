@@ -107,14 +107,14 @@ const Imprevisto = () => {
             {!isWelcomeScreen && (
                 <div>
                     <div className="prepartita">
-                        <h1 style={isImprev ? { color: "#b31217" } : {}}>
+                        <h1 style={isImprev ? { color: "#ff0066" } : {}}>
                             {id}
                         </h1>
                         <div className="isImprevisto">
                             {" "}
                             {isImprev ? "IMPREVISTO" : ""}{" "}
                         </div>
-                        <h2 style={isImprev ? { color: "#b31217" } : {}}>
+                        <h2 style={isImprev ? { color: "#ff0066" } : {}}>
                             {" "}
                             {title}{" "}
                         </h2>
@@ -156,6 +156,9 @@ const Imprevisto = () => {
                                 )}
                             </div>
                         )}
+
+                            {/* ***** Pulsante estrazione ***** */}
+                        
                         <Tooltip title="Estrai un numero" placement="top" arrow>
                             <div
                                 className="sendButton"
@@ -166,7 +169,6 @@ const Imprevisto = () => {
                         </Tooltip>
                     </div>
 
-                    {/* ***** Pulsante estrazione ***** */}
                 </div>
             )}
         </>
