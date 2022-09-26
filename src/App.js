@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Main from "./pages/Main";
-import Prepartita from "./pages/Prepartita";
-import Settimana from "./pages/Settimana";
+import Imprevisto from "./pages/Imprevisto";
 import Footer from "./components/Footer";
 import Bg from "./components/Bg";
 import ErrorPage from "./pages/ErrorPage";
@@ -41,8 +40,8 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/home" element={<Main />} />
-                    <Route path="/prepartita" element={<Prepartita />} />
-                    <Route path="/settimana" element={<Settimana />} />
+                    <Route path="/prepartita" element={<Imprevisto />} />
+                    <Route path="/settimana" element={<Imprevisto />} />
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>
             </Router>

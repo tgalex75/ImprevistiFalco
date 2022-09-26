@@ -67,15 +67,16 @@ nav {
 .nav-menu li,
 a {
     list-style-type: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     text-decoration: none;
     color: #efefef;
     position: relative;
+    word-spacing: .8rem;
 }
 
 .nav-menu li:hover {
-    color: orange;
+    color: #ff0066;
 }
 
 #span-menu {
@@ -89,7 +90,7 @@ a {
     font-size: 1.8rem;
     font-weight: 800;
     opacity: 0.8;
-    color: #c21935;
+    color: #ff0066;
 }
 
 @media (max-width: 768px) {
