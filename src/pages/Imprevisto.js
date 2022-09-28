@@ -4,8 +4,7 @@ import Tooltip from "@mui/material/Tooltip";
 import "./ImprevistoStyle.css";
 import prepartita from "../data/dati_prepartita";
 import TextField from "@mui/material/TextField";
-//import { FaTshirt } from "react-icons/fa";
-import labari from "../assets/labari.png";
+import grifo from "../assets/tshirt.png";
 
 const Imprevisto = () => {
     //const [tipoImprevisto, setTipoImprevisto] = useState("prepartita")
@@ -57,7 +56,7 @@ const Imprevisto = () => {
             fontSize: "2rem",
             textAlign: "center",
             fontWeight: "600",
-            width: "8rem",
+            width: "10rem",
         },
     };
 
@@ -146,7 +145,7 @@ const Imprevisto = () => {
                                     <div
                                         className="tshirt"
                                         style={{
-                                            backgroundImage: `url(${labari})`,
+                                            backgroundImage: `url(${grifo})`,
                                         }}
                                     >
                                         {secondExtractedNumber && (

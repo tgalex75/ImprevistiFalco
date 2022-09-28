@@ -36,8 +36,8 @@ const prepartita = [
     },
     {
         id: 6,
-        title: "MOMENTO TOP!",
-        description: "Scende in campo TOP, il difensore biondo che fa impazzire il mondo!",
+        title: "PAROLA ALLA COMMUNITY!",
+        description: "L'avete voluto voi...",
         isImprev: true,
         ultEstrazione: false
     },
@@ -162,8 +162,8 @@ const prepartita = [
     },
     {
         id: 24,
-        title: "DIVANO-LETTINHO!",
-        description: "Paulolettinho lascia il suo comodo divano, si pettina il baffo e scende in campo!",
+        title: "PAROLA ALLA COMMUNITY!",
+        description: "L'avete voluto voi...",
         isImprev: true,
         ultEstrazione: false
     },

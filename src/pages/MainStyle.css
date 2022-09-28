@@ -76,6 +76,15 @@
     width: auto;
 }
 
+.logo-team {
+    width: auto;
+    height: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -87,5 +96,9 @@
 
     .riquadro {
         margin: 0.8rem;
+    }
+
+    .logo-team{
+        height: 5rem;
     }
 }
