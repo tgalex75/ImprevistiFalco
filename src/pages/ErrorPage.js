@@ -8,12 +8,20 @@ const ErrorPage = () => {
         top: "50%",
         transform: "translate(-50%, -50%)",
         textAlign: "center",
-        zIndex: "10"
+        zIndex: "10",
     };
     return (
         <div style={styles}>
             <h1>Page Not Found</h1>
-            <Link to="/home" style={{ fontSize: "1rem", color: "#ff0066", fontWeight: "600" }}>
+            <Link
+                to="/home"
+                style={{
+                    fontSize: "1rem",
+                    color: "#ff0066",
+                    fontWeight: "600",
+                    padding: "2rem"
+                }}
+            >
                 <p>Torna alla Homepage</p>
             </Link>
         </div>
