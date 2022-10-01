@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdSend } from "react-icons/md";
+import { motion } from "framer-motion";
 import Tooltip from "@mui/material/Tooltip";
 import "./ImprevistoStyle.css";
 import prepartita from "../data/dati_prepartita";
@@ -84,7 +85,13 @@ const Imprevisto = () => {
     };
 
     return (
-        <>
+        <motion.div
+            className="container text-center  bg-black"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+        >
             <h1 className="titolo-h1">PREPARTITA</h1>
 
             {/* ***** WELCOME SCREEN ***** */}
@@ -104,7 +111,13 @@ const Imprevisto = () => {
             {/* ***** PREPARTITA ***** */}
 
             {!isWelcomeScreen && (
-                <div>
+                <motion.div
+                className="container text-center  bg-black"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: .7 }}
+            >
                     <div className="prepartita">
                         <h1 style={isImprev ? { color: "#ff0066" } : {}}>
                             {id}
@@ -156,8 +169,8 @@ const Imprevisto = () => {
                             </div>
                         )}
 
-                            {/* ***** Pulsante estrazione ***** */}
-                        
+                        {/* ***** Pulsante estrazione ***** */}
+
                         <Tooltip title="Estrai un numero" placement="top" arrow>
                             <div
                                 className="sendButton"
@@ -167,10 +180,9 @@ const Imprevisto = () => {
                             </div>
                         </Tooltip>
                     </div>
-
-                </div>
+                </motion.div>
             )}
-        </>
+        </motion.div>
     );
 };
 

@@ -8,6 +8,8 @@ import Settimana from "./pages/Settimana";
 import Footer from "./components/Footer";
 import Bg from "./components/Bg";
 import ErrorPage from "./pages/ErrorPage";
+import { AnimatePresence } from "framer-motion";
+
 
 export default function App() {
     // Salvare lo stato "theme" nel localStorage
@@ -23,7 +25,6 @@ export default function App() {
 
     // Funzione che cambia il tema in base al valore dello State
 
-
     const cambiaTema = () => {
         theme === "light-mode" ? setTheme("dark-mode") : setTheme("light-mode");
     };
@@ -35,19 +36,19 @@ export default function App() {
     }, [theme]);
 
     return (
-        <>
-        <Bg />
+        <AnimatePresence exitBeforeEnter>
+            <Bg />
             <Router>
                 <Navbar theme={theme} cambiaTema={cambiaTema} />
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/home" element={<Main />} />
-                    <Route path="/prepartita" element={<Imprevisto />} />
-                    <Route path="/settimana" element={<Settimana />} />
+                        <Route path="/prepartita" element={<Imprevisto />} />
+                        <Route path="/settimana" element={<Settimana />} />
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>
             </Router>
             <Footer />
-        </>
+        </AnimatePresence>
     );
 }

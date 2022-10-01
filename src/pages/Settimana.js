@@ -3,6 +3,7 @@ import { MdSend } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
 import "./ImprevistoStyle.css";
 import settimana from "../data/dati_settimana";
+import { motion } from "framer-motion";
 
 const Imprevisto = () => {
     //const [tipoImprevisto, setTipoImprevisto] = useState("prepartita")
@@ -25,7 +26,13 @@ const Imprevisto = () => {
     const { id, title, description, isImprev } = mappedNumber(settimana);
 
     return (
-        <>
+        <motion.div
+            className="container text-center  bg-black"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+        >
             <h1 className="titolo-h1">SETTIMANA</h1>
 
             {/* ***** WELCOME SCREEN ***** */}
@@ -72,7 +79,7 @@ const Imprevisto = () => {
                     </div>
                 </div>
             )}
-        </>
+        </motion.div>
     );
 };
 
