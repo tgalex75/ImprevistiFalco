@@ -36,6 +36,7 @@ export default function App() {
 
     return (
         <>
+        <Bg />
             <Router>
                 <Navbar theme={theme} cambiaTema={cambiaTema} />
                 <Routes>
@@ -47,7 +48,6 @@ export default function App() {
                 </Routes>
             </Router>
             <Footer />
-            <Bg />
         </>
     );
 }

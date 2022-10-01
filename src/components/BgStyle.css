@@ -9,5 +9,5 @@
     background-position: center center;
     background-size: contain;
     opacity: 30%;
-    z-index: 0;
+    z-index: -1;
 }
