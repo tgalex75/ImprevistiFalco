@@ -128,7 +128,7 @@ const Imprevisto = () => {
                                     label="A chi tocca oggi?"
                                     id="input-estrazione-giocatore"
                                     name="randomPlayerNum"
-                                    type="text"
+                                    type="number"
                                     value={inputField.randomPlayerNum}
                                     onChange={handleChange}
                                     inputProps={{
