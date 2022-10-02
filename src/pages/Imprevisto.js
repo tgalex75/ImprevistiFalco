@@ -86,11 +86,9 @@ const Imprevisto = () => {
 
     return (
         <motion.div
-            className="container text-center  bg-black"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
         >
             <h1 className="titolo-h1">PREPARTITA</h1>
 
@@ -112,74 +110,66 @@ const Imprevisto = () => {
 
             {!isWelcomeScreen && (
                 <motion.div
-                className="container text-center  bg-black"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: .7 }}
-            >
-                    <div className="prepartita">
-                        <h1 style={isImprev ? { color: "#ff0066" } : {}}>
-                            {id}
-                        </h1>
-                        <div className="isImprevisto">
-                            {" "}
-                            {isImprev ? "IMPREVISTO" : ""}{" "}
-                        </div>
-                        <h2 style={isImprev ? { color: "#ff0066" } : {}}>
-                            {" "}
-                            {title}{" "}
-                        </h2>
-                        <p> {description} </p>
-
-                        {/* IN CASO DI ULTERIORE ESTRAZIONE */}
-
-                        {ultEstrazione && (
-                            <div className="estrazione-extra">
-                                <TextField
-                                    size="small"
-                                    label="A chi tocca oggi?"
-                                    id="input-estrazione-giocatore"
-                                    name="randomPlayerNum"
-                                    type="number"
-                                    value={inputField.randomPlayerNum}
-                                    onChange={handleChange}
-                                    inputProps={{
-                                        inputMode: "numeric",
-                                        pattern: "[0-9]*",
-                                    }}
-                                    sx={CssTextField}
-                                />
-                                <MdSend
-                                    size={"3rem"}
-                                    onClick={genSecondRandomNumber}
-                                />
-                                {ultEstrazione && (
-                                    <div
-                                        className="tshirt"
-                                        style={{
-                                            backgroundImage: `url(${grifo})`,
-                                        }}
-                                    >
-                                        {secondExtractedNumber && (
-                                            <span>{secondExtractedNumber}</span>
-                                        )}
-                                    </div>
-                                )}
-                            </div>
-                        )}
-
-                        {/* ***** Pulsante estrazione ***** */}
-
-                        <Tooltip title="Estrai un numero" placement="top" arrow>
-                            <div
-                                className="sendButton"
-                                onClick={genRandomNumber}
-                            >
-                                <MdSend />
-                            </div>
-                        </Tooltip>
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="prepartita"
+                >
+                    <h1 style={isImprev ? { color: "#ff0066" } : {}}>{id}</h1>
+                    <div className="isImprevisto">
+                        {" "}
+                        {isImprev ? "IMPREVISTO" : ""}{" "}
                     </div>
+                    <h2 style={isImprev ? { color: "#ff0066" } : {}}>
+                        {" "}
+                        {title}{" "}
+                    </h2>
+                    <p> {description} </p>
+
+                    {/* IN CASO DI ULTERIORE ESTRAZIONE */}
+
+                    {ultEstrazione && (
+                        <div className="estrazione-extra">
+                            <TextField
+                                size="small"
+                                label="A chi tocca oggi?"
+                                id="input-estrazione-giocatore"
+                                name="randomPlayerNum"
+                                type="number"
+                                value={inputField.randomPlayerNum}
+                                onChange={handleChange}
+                                inputProps={{
+                                    inputMode: "numeric",
+                                    pattern: "[0-9]*",
+                                }}
+                                sx={CssTextField}
+                            />
+                            <MdSend
+                                size={"3rem"}
+                                onClick={genSecondRandomNumber}
+                            />
+                            {ultEstrazione && (
+                                <div
+                                    className="tshirt"
+                                    style={{
+                                        backgroundImage: `url(${grifo})`,
+                                    }}
+                                >
+                                    {secondExtractedNumber && (
+                                        <span>{secondExtractedNumber}</span>
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                    )}
+
+                    {/* ***** Pulsante estrazione ***** */}
+
+                    <Tooltip title="Estrai un numero" placement="top" arrow>
+                        <div className="sendButton" onClick={genRandomNumber}>
+                            <MdSend />
+                        </div>
+                    </Tooltip>
                 </motion.div>
             )}
         </motion.div>

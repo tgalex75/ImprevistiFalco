@@ -1,15 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 import Navbar from "./components/Navbar";
-import Main from "./pages/Main";
-import Imprevisto from "./pages/Imprevisto";
-import Settimana from "./pages/Settimana";
+import { BrowserRouter as Router } from "react-router-dom";
+
 import Footer from "./components/Footer";
 import Bg from "./components/Bg";
-import ErrorPage from "./pages/ErrorPage";
-import { AnimatePresence } from "framer-motion";
-
 
 export default function App() {
     // Salvare lo stato "theme" nel localStorage
@@ -36,19 +32,11 @@ export default function App() {
     }, [theme]);
 
     return (
-        <AnimatePresence exitBeforeEnter>
+        <Router>
             <Bg />
-            <Router>
-                <Navbar theme={theme} cambiaTema={cambiaTema} />
-                <Routes>
-                    <Route path="/" element={<Main />} />
-                    <Route path="/home" element={<Main />} />
-                        <Route path="/prepartita" element={<Imprevisto />} />
-                        <Route path="/settimana" element={<Settimana />} />
-                    <Route path="*" element={<ErrorPage />} />
-                </Routes>
-            </Router>
+            <Navbar theme={theme} cambiaTema={cambiaTema} />
+            <AnimatedRoutes />
             <Footer />
-        </AnimatePresence>
+        </Router>
     );
 }
