@@ -16,7 +16,7 @@ const prepartita = [
     {
         id: 3,
         title: "nessun imprevisto",
-        description: "Mister mettiamo la maglia BLU o quella BIANCA?",
+        description: "Mister mettiamo la prima o la seconda maglia?",
         isImprev: false,
         ultEstrazione: false
     },
@@ -44,7 +44,7 @@ const prepartita = [
     {
         id: 7,
         title: "nessun imprevisto",
-        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
+        description: "Ogni maledetta domenica si vince o si perde, resta da vedere se si vince o si perde da uomini.",
         isImprev: false,
         ultEstrazione: false
     },
@@ -93,7 +93,7 @@ const prepartita = [
     {
         id: 14,
         title: "nessun imprevisto",
-        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
+        description: "È il football ragazzi, è tutto qui. Allora, che cosa volete fare?",
         isImprev: false,
         ultEstrazione: false
     },
@@ -135,7 +135,7 @@ const prepartita = [
     {
         id: 20,
         title: "nessun imprevisto",
-        description: "La Dea bendata ci sorride: rendiamola fiera di noi!",
+        description: "Ogni maledetta domenica si vince o si perde, resta da vedere se si vince o si perde da uomini.",
         isImprev: false,
         ultEstrazione: false
     },
@@ -156,7 +156,7 @@ const prepartita = [
     {
         id: 23,
         title: "nessun imprevisto",
-        description: "Mister mettiamo la maglia BLU o quella BIANCA?",
+        description: "Mister mettiamo la prima o la seconda maglia?",
         isImprev: false,
         ultEstrazione: false
     },
@@ -184,7 +184,7 @@ const prepartita = [
     {
         id: 27,
         title: "nessun imprevisto",
-        description: "Mister non abbiamo scuse: vogliamo i 3 punti!",
+        description: "È il football ragazzi, è tutto qui. Allora, che cosa volete fare?",
         isImprev: false,
         ultEstrazione: false
     },
