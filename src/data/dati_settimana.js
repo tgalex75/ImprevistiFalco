@@ -8,8 +8,8 @@ const settimana = [
     },
     {
         id: 2,
-        title: "ADDIO PER SEMPRE",
-        description: "Il giocatore sarà inserito tra i cedibili e dovranno essere accettate tutte le offerte con possibilità di trattativa.",
+        title: "ADDIO PER SEMPRE...?",
+        description: "Il giocatore sarà inserito tra i cedibili con obbligo di cessione o gli dovrà essere rinnovato il contratto al doppio delle cifre attuali.",
         isImprev: true
         
     },
@@ -22,8 +22,8 @@ const settimana = [
     },
     {
         id: 4,
-        title: "SEMPRE PRESENTE",
-        description: "II giocatore dovrà disputare tutte le partite per tutto il mese.",
+        title: "PAROLA ALLA COMMUNITY",
+        description: "Sarà applicato l'imprevisto scelto dalla Community.",
         isImprev: true        
     },
     {
@@ -49,8 +49,8 @@ const settimana = [
     },
     {
         id: 8,
-        title: "SAUDADE",
-        description: "Acquista tra gli svincolati un connazionale a scelta del giocatore oggetto dell’imprevisto e schierali SEMPRE insieme per il mese successivo.",
+        title: "CERTIFICATO MEDICO DA SANTO DOMINGO",
+        description: "Il giocatore resterà fuori rosa per tutto il mese.",
         isImprev: true
         
     },
@@ -77,8 +77,8 @@ const settimana = [
     },
     {
         id: 12,
-        title: "SAUDADE",
-        description: "Acquista tra gli svincolati un connazionale a scelta del giocatore oggetto dell’imprevisto e schierali SEMPRE insieme per il mese successivo.",
+        title: "CERTIFICATO MEDICO DA SANTO DOMINGO",
+        description: "Il giocatore resterà fuori rosa per tutto il mese.",
         isImprev: true
         
     },
@@ -119,8 +119,8 @@ const settimana = [
     },
     {
         id: 18,
-        title: "SEMPRE PRESENTE",
-        description: "II giocatore dovrà disputare tutte le partite per tutto il mese.",
+        title: "PAROLA ALLA COMMUNITY",
+        description: "Sarà applicato l'imprevisto scelto dalla Community.",
         isImprev: true
         
     },
@@ -133,8 +133,8 @@ const settimana = [
     },
     {
         id: 20,
-        title: "SAUDADE",
-        description: "Acquista tra gli svincolati un connazionale a scelta del giocatore oggetto dell’imprevisto e schierali SEMPRE insieme per il mese successivo.",
+        title: "CERTIFICATO MEDICO DA SANTO DOMINGO",
+        description: "Il giocatore resterà fuori rosa per tutto il mese.",
         isImprev: true
         
     },
@@ -190,7 +190,7 @@ const settimana = [
     {
         id: 28,
         title: "ADDIO PER SEMPRE",
-        description: "Il giocatore sarà inserito tra i cedibili e dovranno essere accettate tutte le offerte con possibilità di trattativa.",
+        description: "Il giocatore sarà inserito tra i cedibili con obbligo di cessione o gli dovrà essere rinnovato il contratto al doppio delle cifre attuali.",
         isImprev: true
         
     },
