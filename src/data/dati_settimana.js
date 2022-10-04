@@ -105,8 +105,8 @@ const settimana = [
     },
     {
         id: 16,
-        title: "UNTORE",
-        description: "Il giocatore trasmette una brutta malattia al resto della squadra. Aumenta di 20 punti le due slide degli infortuni per tutto il mese.",
+        title: "ADEGUAMENTO",
+        description: "Tramite il suo agente il giocatore fa giungere una richiesta di adeguamento del contratto per raggiungere il più pagato della rosa. Che fai? Accetti o lo cacci?",
         isImprev: true
         
     },
@@ -189,7 +189,7 @@ const settimana = [
     },
     {
         id: 28,
-        title: "ADDIO PER SEMPRE",
+        title: "ADDIO PER SEMPRE...?",
         description: "Il giocatore sarà inserito tra i cedibili con obbligo di cessione o gli dovrà essere rinnovato il contratto al doppio delle cifre attuali.",
         isImprev: true
         
