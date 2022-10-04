@@ -53,7 +53,7 @@ input[type="number"] {
 .prepartita p {
     font-weight: 600;
     font-size: 1.2rem;
-    padding: 0 7rem;
+    padding: 0 15rem;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
@@ -166,6 +166,7 @@ input[type="number"] {
 @media (max-width: 768px) {
     .prepartita h2 {
         padding: 0 3rem;
+        font-size: 1.5rem;
     }
     .prepartita p {
         padding: 0 4rem;
