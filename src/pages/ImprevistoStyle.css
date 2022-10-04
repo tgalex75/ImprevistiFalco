@@ -166,6 +166,9 @@ input[type="number"] {
     .prepartita h2 {
         padding: 0 3rem;
     }
+    .prepartita p {
+        padding: 0 4rem;
+    }
     .sendButton {
         position: static;
         padding: 0;
