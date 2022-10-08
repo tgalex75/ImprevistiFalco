@@ -133,9 +133,12 @@ input[type="number"] {
 }
 
 .estrazione-extra:hover,
-.estrazione-extra:focus,
-.estrazione-extra:hover svg {
+.estrazione-extra:focus {
     border-color: #ff0066;
+}
+
+.estrazione-extra:hover svg {
+    color: #ff0066;
 }
 
 .tshirt {
