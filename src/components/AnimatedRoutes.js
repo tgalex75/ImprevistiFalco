@@ -7,6 +7,7 @@ import ErrorPage from "../pages/ErrorPage";
 //import MediaOverall from "../pages/MediaOverall";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import Regolamento from "../pages/Regolamento";
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -18,6 +19,7 @@ function AnimatedRoutes() {
                 <Route path="/home" element={<Main />} />
                 <Route path="/prepartita" element={<Imprevisto />} />
                 <Route path="/settimana" element={<Settimana />} />
+                <Route path="/regolamento" element={<Regolamento />} />
                 {/* <Route path="/calcolo-media" element={<MediaOverall />} /> */}
                 <Route path="*" element={<ErrorPage />} />
             </Routes>

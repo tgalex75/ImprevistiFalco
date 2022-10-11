@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import TextField from "@mui/material/TextField";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -48,6 +48,7 @@ const MediaOverall = () => {
         color: theme.palette.text.secondary,
     }));
 
+    
 
     return (
         <motion.div
@@ -71,15 +72,15 @@ const MediaOverall = () => {
                                 id="p10"
                                 size="small"
                                 label="Overall P10"
-                                name="randomPlayerNum"
-                                placeholder="68"
+                                name="p10"
                                 type="number"
-                                value={10}
+                                value={""}
                                 inputProps={{
                                     inputMode: "numeric",
                                     pattern: "[0-9]*",
                                 }}
                                 sx={CssTextField}
+                                
                             />
                         </Item>
                     </Grid>
@@ -89,10 +90,9 @@ const MediaOverall = () => {
                                 id="p11"
                                 size="small"
                                 label="Overall P11"
-                                name="randomPlayerNum"
-                                placeholder="68"
+                                name="p11"
                                 type="number"
-                                value={60}
+                                value={""}
                                 inputProps={{
                                     inputMode: "numeric",
                                     pattern: "[0-9]*",

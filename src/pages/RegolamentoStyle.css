@@ -1,0 +1,26 @@
+.container {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 85vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.container a:hover {
+    color: #ff0066;
+}
+
+.container > a > svg {
+    font-size: 4rem;
+}
+
+.subtext {
+    font-size: 1rem;
+}
