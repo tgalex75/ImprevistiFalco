@@ -46,6 +46,15 @@ function Navbar(props) {
                         <Link to="/settimana">
                             <li>Imprevisti della Settimana</li>
                         </Link>
+<<<<<<< Updated upstream
+=======
+                        <Link to="/regolamento">
+                            <li>Regolamento</li>
+                        </Link>
+                        <Link to="/calcolo-media">
+                            <li>Overall</li>
+                        </Link>
+>>>>>>> Stashed changes
                         <span id="span-menu">MENU</span>
                     </ul>
                 </div>

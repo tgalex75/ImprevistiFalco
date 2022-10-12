@@ -8,7 +8,6 @@ import TextField from "@mui/material/TextField";
 import grifo from "../assets/tshirt.png";
 
 const Imprevisto = () => {
-    //const [tipoImprevisto, setTipoImprevisto] = useState("prepartita")
     const [randomNumber, setRandomNumber] = useState(1);
     const [isWelcomeScreen, setIsWelcomeScreen] = useState(true);
 
