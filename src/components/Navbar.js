@@ -49,9 +49,9 @@ function Navbar(props) {
                         <Link to="/regolamento">
                             <li>Regolamento</li>
                         </Link>
-                        {/* <Link to="/calcolo-media">
-                            <li>Overall</li>
-                        </Link> */}
+                        <Link to="/calcolo-media">
+                            <li>Media Overall</li>
+                        </Link>
                         <span id="span-menu">MENU</span>
                     </ul>
                 </div>
