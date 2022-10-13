@@ -10,15 +10,15 @@ const Regolamento = () => {
     //const ghLink = "https://github.com/tgalex75/ImprevistiFalco"
 
     return (
-        <div className="container">
+        <div className="container--reg">
             <h1>Regolamento</h1>
             <Link to={pdfLink} target="_blank">
                 <MdDownload />
-                <p className="subtext">Scarica il regolamento</p>
+                <p className="subtext">Clicca qui e scarica il regolamento</p>
             </Link>
             <a href="https://github.com/tgalex75/ImprevistiFalco">
                 <MdCode />
-                <p className="subtext">Scarica il codice sorgente</p>
+                <p className="subtext">Clicca qui per scaricare qui il codice sorgente</p>
             </a>
         </div>
     );

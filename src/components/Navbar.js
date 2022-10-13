@@ -46,10 +46,10 @@ function Navbar(props) {
                         <Link to="/settimana">
                             <li>Imprevisti della Settimana</li>
                         </Link>
-                        {/* <Link to="/regolamento">
+                        <Link to="/regolamento">
                             <li>Regolamento</li>
                         </Link>
-                        <Link to="/calcolo-media">
+                        {/* <Link to="/calcolo-media">
                             <li>Overall</li>
                         </Link> */}
                         <span id="span-menu">MENU</span>
