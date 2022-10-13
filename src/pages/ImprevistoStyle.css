@@ -35,12 +35,13 @@
 
 .prepartita h2 {
     font-size: 2.2rem;
+    padding: 0 7rem;
 }
 
 .prepartita p {
     font-weight: 600;
     font-size: 1.2rem;
-    padding: 0 3rem;
+    padding: 0 15rem;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
@@ -132,9 +133,12 @@
 }
 
 .estrazione-extra:hover,
-.estrazione-extra:focus,
-.estrazione-extra:hover svg {
+.estrazione-extra:focus {
     border-color: #ff0066;
+}
+
+.estrazione-extra:hover svg {
+    color: #ff0066;
 }
 
 .tshirt {
@@ -165,6 +169,10 @@
 @media (max-width: 768px) {
     .prepartita h2 {
         padding: 0 3rem;
+        font-size: 1.5rem;
+    }
+    .prepartita p {
+        padding: 0 4rem;
     }
     .sendButton {
         position: static;

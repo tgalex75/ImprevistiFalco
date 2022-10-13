@@ -4,7 +4,6 @@ import Main from "../pages/Main";
 import Imprevisto from "../pages/Imprevisto";
 import Settimana from "../pages/Settimana";
 import ErrorPage from "../pages/ErrorPage";
-//import MediaOverall from "../pages/MediaOverall";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -18,12 +17,7 @@ function AnimatedRoutes() {
                 <Route path="/home" element={<Main />} />
                 <Route path="/prepartita" element={<Imprevisto />} />
                 <Route path="/settimana" element={<Settimana />} />
-<<<<<<< Updated upstream
-                {/* <Route path="/calcolo-media" element={<MediaOverall />} /> */}
-=======
->>>>>>> Stashed changes
                 <Route path="*" element={<ErrorPage />} />
-                <Route path="/regolamento" element={<Regolamento />} />
             </Routes>
         </AnimatePresence>
     );
