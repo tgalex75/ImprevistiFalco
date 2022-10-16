@@ -50,7 +50,7 @@ function Navbar(props) {
                             <li>Regolamento</li>
                         </Link>
                         {/* <Link to="/calcolo-media">
-                            <li>Overall</li>
+                            <li>Media Overall</li>
                         </Link> */}
                         <span id="span-menu">MENU</span>
                     </ul>
