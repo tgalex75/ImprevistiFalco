@@ -10,6 +10,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { makeStyles } from "@mui/styles";
 
 import menuItems from "../data/menuItems";
 import frame from "../assets/88.png";
@@ -26,6 +27,12 @@ const darkTheme = createTheme({
         text: {
             primary: "#efefef",
         },
+<<<<<<< Updated upstream
+=======
+        background: {
+            paper: "#424242",
+        },
+>>>>>>> Stashed changes
     },
 });
 
@@ -44,7 +51,36 @@ const lightTheme = createTheme({
     },
 });
 
+
+const useStyles = makeStyles({
+    label: {
+        color: "rgba(255,255,255,.5)",
+        "&.Mui-focused": {
+            color: "#ff0066",
+        },
+    },
+    select: {
+        "&:before": {
+            borderColor: "primary",
+        },
+        
+        "& .MuiSvgIcon-root": {
+            color: "#efefef",
+        },
+        "& fieldset": {
+            borderColor: "rgba(255,255,255,.5)",
+        },
+        "& .MuiInputBase-input": {
+            "&:hover fieldset": {
+                borderColor: "#ff0066",
+            },
+        },
+    },
+});
+
 const MediaOverall = (props) => {
+    const classes = useStyles();
+
     const defaultValues = {
         p1: 69,
         p2: 69,
@@ -110,8 +146,14 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p11">Pl-11</InputLabel>
+                                <InputLabel
+                                    id="select-p11"
+                                    className={classes.label}
+                                >
+                                    Pl-11
+                                </InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-11"
                                     id="player-11"
                                     name="p11"
@@ -135,8 +177,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p10">Pl-10</InputLabel>
+                                <InputLabel className={classes.label} id="select-p10">Pl-10</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-10"
                                     id="player-10"
                                     name="p10"
@@ -162,8 +205,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p9">Pl-9</InputLabel>
+                                <InputLabel className={classes.label} id="select-p9">Pl-9</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-9"
                                     id="player-9"
                                     name="p9"
@@ -187,8 +231,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p8">Pl-8</InputLabel>
+                                <InputLabel className={classes.label} id="select-p8">Pl-8</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-8"
                                     id="player-8"
                                     name="p8"
@@ -212,8 +257,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p7">Pl-7</InputLabel>
+                                <InputLabel className={classes.label} id="select-p7">Pl-7</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-7"
                                     id="player-7"
                                     name="p7"
@@ -237,8 +283,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p6">Pl-6</InputLabel>
+                                <InputLabel className={classes.label} id="select-p6">Pl-6</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-6"
                                     id="player-6"
                                     name="p6"
@@ -264,8 +311,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p5">Pl-5</InputLabel>
+                                <InputLabel className={classes.label} id="select-p5">Pl-5</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-5"
                                     id="player-5"
                                     name="p5"
@@ -289,8 +337,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p4">Pl-4</InputLabel>
+                                <InputLabel className={classes.label} id="select-p4">Pl-4</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-4"
                                     id="player-4"
                                     name="p4"
@@ -314,8 +363,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p3">Pl-3</InputLabel>
+                                <InputLabel className={classes.label} id="select-p3">Pl-3</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-3"
                                     id="player-3"
                                     name="p3"
@@ -339,8 +389,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p2">Pl-2</InputLabel>
+                                <InputLabel className={classes.label} id="select-p2">Pl-2</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-2"
                                     id="player-2"
                                     name="p2"
@@ -366,8 +417,9 @@ const MediaOverall = (props) => {
                                 sx={{ m: 1, minWidth: 120 }}
                                 size="small"
                             >
-                                <InputLabel id="select-p10">Pl-</InputLabel>
+                                <InputLabel className={classes.label} id="select-p1">Pl-1</InputLabel>
                                 <Select
+                                    className={classes.select}
                                     labelId="player-1"
                                     id="player-1"
                                     name="p1"
@@ -387,40 +439,40 @@ const MediaOverall = (props) => {
                             </FormControl>
                         </Grid>
                     </Grid>
-                <Box
-                    style={{
-                        margin: "0 auto",
-                        width: "30vw",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        padding: "2rem 1.5rem",
-                        backgroundImage: `url(${frame})`,
-                        backgroundSize: "contain",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center center",
-                    }}
-                >
-                    <h3
+                    <Box
                         style={{
-                            color: "#ff0066f9",
-                            fontSize: "1.2rem",
-                            textAlign: "center",
-                            padding: ".2rem 0",
+                            margin: "0 auto",
+                            width: "30vw",
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            padding: "2rem 1.5rem",
+                            backgroundImage: `url(${frame})`,
+                            backgroundSize: "contain",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center center",
                         }}
                     >
-                        Media:
-                    </h3>
-                    <h2
-                        style={{
-                            borderRadius: ".5rem",
-                            fontSize: "5rem",
-                        }}
+                        <h3
+                            style={{
+                                color: "#ff0066f9",
+                                fontSize: "1.2rem",
+                                textAlign: "center",
+                                padding: ".2rem 0",
+                            }}
                         >
-                        {result}
-                    </h2>
-                </Box>
-                        </ThemeProvider>
+                            Media:
+                        </h3>
+                        <h2
+                            style={{
+                                borderRadius: ".5rem",
+                                fontSize: "5rem",
+                            }}
+                        >
+                            {result}
+                        </h2>
+                    </Box>
+                </ThemeProvider>
             </Box>
         </motion.div>
     );

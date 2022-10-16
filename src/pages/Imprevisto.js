@@ -45,7 +45,7 @@ const Imprevisto = () => {
                 borderColor: "rgba(128, 128, 128, 0.4)",
             },
             "&:hover fieldset": {
-                borderColor: "#efefef",
+                borderColor: "#ff0066",
             },
             "&.Mui-focused fieldset": {
                 borderColor: "#ff0066",
