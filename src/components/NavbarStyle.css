@@ -53,7 +53,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.97);
-    color: #efefef;
+    color: var(--clr-text);
     z-index: -1;
     transition: 0.3s;
     padding: 5rem 7rem;
@@ -61,7 +61,7 @@ nav {
 
 .nav-menu.active {
     left: 0;
-    color: #efefef !important;
+    color: var(--clr-text) !important;
 }
 
 .nav-menu li,
@@ -70,13 +70,21 @@ a {
     font-size: 2.5rem;
     font-weight: 800;
     text-decoration: none;
-    color: #efefef;
+    color: var(--clr-text);
     position: relative;
     word-spacing: .8rem;
 }
 
+.nav-menu a:visited {
+    color: var(var(--clr-text));
+}
+
 .nav-menu li:hover {
     color: #ff0066;
+}
+
+.nav-menu li:visited {
+    color: var(--clr-text);
 }
 
 #span-menu {

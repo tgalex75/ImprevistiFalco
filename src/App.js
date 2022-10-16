@@ -35,7 +35,7 @@ export default function App() {
         <Router>
             <Bg />
             <Navbar theme={theme} cambiaTema={cambiaTema} />
-            <AnimatedRoutes />
+            <AnimatedRoutes theme={theme}/>
             <Footer />
         </Router>
     );

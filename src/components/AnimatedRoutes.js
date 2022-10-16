@@ -9,7 +9,7 @@ import ErrorPage from "../pages/ErrorPage";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
-function AnimatedRoutes() {
+function AnimatedRoutes(props) {
     const location = useLocation();
 
     return (
@@ -20,7 +20,7 @@ function AnimatedRoutes() {
                 <Route path="/prepartita" element={<Imprevisto />} />
                 <Route path="/settimana" element={<Settimana />} />
                 <Route path="/regolamento" element={<Regolamento />} />
-                <Route path="/calcolo-media" element={<MediaOverall />} />
+                <Route path="/calcolo-media" element={<MediaOverall theme={props.theme} />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
         </AnimatePresence>
