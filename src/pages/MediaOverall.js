@@ -26,6 +26,9 @@ const darkTheme = createTheme({
         text: {
             primary: "#efefef",
         },
+        background: {
+            paper: "#424242"
+        }
     },
 });
 
