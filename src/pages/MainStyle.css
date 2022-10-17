@@ -40,7 +40,7 @@
     transform: scale(105%);
     transition: var(--transition);
     filter: grayscale(0);
-    color: #ff0066;
+    color: var(--clr-primary);
 }
 
 .overlay {
@@ -69,7 +69,7 @@
 }
 
 .riquadro:hover h1 {
-    color: #ff0066;
+    color: var(--clr-primary);
 }
 
 .riquadro video {

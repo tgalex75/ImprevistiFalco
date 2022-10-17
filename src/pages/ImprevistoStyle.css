@@ -9,7 +9,7 @@
     font-size: 1.8rem;
     font-weight: 800;
     opacity: 0.8;
-    color: #ff0066;
+    color: var(--clr-primary);
     opacity: 40%;
 }
 
@@ -51,7 +51,7 @@
     font-family: "Special Elite", Verdana, sans-serif;
     font-size: 3rem;
     /* color: #b31217; */
-    color: #ff0066;
+    color: var(--clr-primary);
 }
 
 .sendButton {
@@ -74,7 +74,7 @@
 
 .sendButton:hover,
 .welcomeScreenBtn:hover {
-    color: #ff0066;
+    color: var(--clr-primary);
     background-color: rgba(128, 128, 128, 0.4);
     transition: var(--btn-transition);
 }
@@ -96,7 +96,7 @@
 
 .welcomeScreenBtn svg {
     font-size: 8rem;
-    color: #ff0066;
+    color: var(--clr-primary);
     margin: 2.5rem;
 }
 
@@ -134,11 +134,11 @@
 
 .estrazione-extra:hover,
 .estrazione-extra:focus {
-    border-color: #ff0066;
+    border-color: var(--clr-primary);
 }
 
 .estrazione-extra:hover svg {
-    color: #ff0066;
+    color: var(--clr-primary);
 }
 
 .tshirt {
