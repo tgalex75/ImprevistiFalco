@@ -14,7 +14,7 @@
 }
 
 .container--reg a:hover {
-    color: #ff0066;
+    color: var(--clr-primary);
 }
 
 .container--reg > a > svg {

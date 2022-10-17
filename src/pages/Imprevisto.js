@@ -29,7 +29,7 @@ const Imprevisto = () => {
 
     const CssTextField = {
         "& label.Mui-focused": {
-            color: "#ff0066",
+            color: "var(--clr-primary)",
         },
         "& .MuiInputLabel-root": {
             color: "rgba(128, 128, 128, 0.4)",
@@ -38,17 +38,17 @@ const Imprevisto = () => {
             color: "#efefef",
         },
         "& .MuiInput-underline:after": {
-            borderBottomColor: "#ff0066",
+            borderBottomColor: "var(--clr-primary)",
         },
         "& .MuiOutlinedInput-root": {
             "& fieldset": {
                 borderColor: "rgba(128, 128, 128, 0.4)",
             },
             "&:hover fieldset": {
-                borderColor: "#efefef",
+                borderColor: "var(--clr-primary)",
             },
             "&.Mui-focused fieldset": {
-                borderColor: "#ff0066",
+                borderColor: "var(--clr-primary)",
             },
         },
         "& .MuiInputBase-input": {
@@ -114,12 +114,12 @@ const Imprevisto = () => {
                     exit={{ opacity: 0 }}
                     className="prepartita"
                 >
-                    <h1 style={isImprev ? { color: "#ff0066" } : {}}>{id}</h1>
+                    <h1 style={isImprev ? { color: "var(--clr-primary)" } : {}}>{id}</h1>
                     <div className="isImprevisto">
                         {" "}
                         {isImprev ? "IMPREVISTO" : ""}{" "}
                     </div>
-                    <h2 style={isImprev ? { color: "#ff0066" } : {}}>
+                    <h2 style={isImprev ? { color: "var(--clr-primary)" } : {}}>
                         {" "}
                         {title}{" "}
                     </h2>

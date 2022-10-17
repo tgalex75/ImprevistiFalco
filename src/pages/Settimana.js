@@ -52,14 +52,14 @@ const Imprevisto = () => {
             {!isWelcomeScreen && (
                 <div>
                     <div className="prepartita">
-                        <h1 style={isImprev ? { color: "#ff0066" } : {}}>
+                        <h1 style={isImprev ? { color: "var(--clr-primary)" } : {}}>
                             {id}
                         </h1>
                         <div className="isImprevisto">
                             {" "}
                             {isImprev ? "IMPREVISTO" : ""}{" "}
                         </div>
-                        <h2 style={isImprev ? { color: "#ff0066" } : {}}>
+                        <h2 style={isImprev ? { color: "var(--clr-primary)" } : {}}>
                             {" "}
                             {title}{" "}
                         </h2>

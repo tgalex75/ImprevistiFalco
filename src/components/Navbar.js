@@ -46,12 +46,12 @@ function Navbar(props) {
                         <Link to="/settimana">
                             <li>Imprevisti della Settimana</li>
                         </Link>
+                        <Link to="/calcolo-media">
+                            <li>Media Overall</li>
+                        </Link>
                         <Link to="/regolamento">
                             <li>Regolamento</li>
                         </Link>
-                        {/* <Link to="/calcolo-media">
-                            <li>Media Overall</li>
-                        </Link> */}
                         <span id="span-menu">MENU</span>
                     </ul>
                 </div>
@@ -66,18 +66,3 @@ Navbar.propTypes = {
 };
 
 export default Navbar;
-
-/* <div className="hamburger" onClick={handleClick}>
-                    <ul className={openMenu ? "nav-menu" : "nav-menu active"}>
-                        <li onClick={props.selectMainPrepartita}>PREPARTITA</li>
-                        <li onClick={props.selectMainSettimana}>
-                            Peggiore della SETTIMANA
-                        </li>
-                        <li id="rules--li" onClick={props.selectMainRules}>- REGOLAMENTO -</li>
-                    </ul>
-                    {openMenu ? (
-                        <FaBars size={25} style={props.darkMode || props.mainState === "welcome" ? {color: "#fff"} : {color: "#000"}} />
-                    ) : (
-                        <FaTimes size={25} style={{color: "white"}} />
-                    )}
-                </div> */

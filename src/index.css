@@ -26,14 +26,14 @@
 .light-mode {
   --clr-bg: #efefef;
   --clr-text: #222;
-  --clr-primary: rgb(56, 146, 194);
+  --clr-primary: #c80051;
   --clr-card: #eeeeee;
 }
 
 .dark-mode {
   --clr-bg: #131313;
   --clr-text: #d4d3d3;
-  --clr-primary: #df372b;
+  --clr-primary: #ff0066;
   --clr-card: #272724;
 }
 

@@ -80,7 +80,7 @@ a {
 }
 
 .nav-menu li:hover {
-    color: #ff0066;
+    color: var(--clr-primary);
 }
 
 .nav-menu li:visited {
@@ -98,7 +98,7 @@ a {
     font-size: 1.8rem;
     font-weight: 800;
     opacity: 0.8;
-    color: #ff0066;
+    color: var(--clr-primary);
     opacity: 40%;
 }
 
@@ -110,7 +110,7 @@ a {
 
     .nav-menu li,
     a {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
     #span-menu {
         font-size: 1.2rem;
