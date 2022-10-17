@@ -8,45 +8,43 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-import { makeStyles } from "@mui/styles";
-
 import menuItems from "../data/menuItems";
 import frame from "../assets/88.png";
 
-const useStyles = makeStyles({
-    label: {
-        color: "var(--clr-text) !important",
-        "&.Mui-focused": {
-            color: "var(--clr-primary) !important",
-        },
-    },
-    select: {
-        textAlign: "center",
-        "& .MuiSelect-select": {
-            color: "var(--clr-text) !important",
-            opacity: "0.7"
-        },
-        "& .MuiSelect-select:hover": {
-            color: "var(--clr-text) !important",
-            opacity: "1"
-        },
-        "& .MuiSvgIcon-root": {
-            color: "var(--clr-text) !important",
-        },
-        "& fieldset": {
-            borderColor: "var(--clr-text) !important",
-        },
-        "& fieldset:hover": {
-            borderColor: "var(--clr-primary) !important",
-        },
-        background: {
-            paper: "#424242"
-        }
-    },
-});
 
 const MediaOverall = () => {
-    const classes = useStyles();
+
+    const classes ={
+        label: {
+            color: "var(--clr-text) !important",
+            "&.Mui-focused": {
+                color: "var(--clr-primary) !important",
+            },
+        },
+        select: {
+            textAlign: "center",
+            "& .MuiSelect-select": {
+                color: "var(--clr-text) !important",
+                opacity: "0.7"
+            },
+            "& .MuiSelect-select:hover": {
+                color: "var(--clr-text) !important",
+                opacity: "1"
+            },
+            "& .MuiSvgIcon-root": {
+                color: "var(--clr-text) !important",
+            },
+            "& fieldset": {
+                borderColor: "var(--clr-text) !important",
+            },
+            "& fieldset:hover": {
+                borderColor: "var(--clr-primary) !important",
+            },
+            background: {
+                paper: "#424242"
+            }
+        },
+    };
 
     const defaultValues = {
         p1: 69,
@@ -124,12 +122,12 @@ const MediaOverall = () => {
                         >
                             <InputLabel
                                 id="select-p11"
-                                className={classes.label}
+                                sx={classes.label}
                             >
                                 Pl-11
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-11"
                                 id="player-11"
                                 name="p11"
@@ -150,13 +148,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p10"
                             >
                                 Pl-10
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-10"
                                 id="player-10"
                                 name="p10"
@@ -178,13 +176,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p9"
                             >
                                 Pl-9
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-9"
                                 id="player-9"
                                 name="p9"
@@ -205,13 +203,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p8"
                             >
                                 Pl-8
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-8"
                                 id="player-8"
                                 name="p8"
@@ -232,13 +230,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p7"
                             >
                                 Pl-7
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-7"
                                 id="player-7"
                                 name="p7"
@@ -259,13 +257,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p6"
                             >
                                 Pl-6
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-6"
                                 id="player-6"
                                 name="p6"
@@ -287,13 +285,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p5"
                             >
                                 Pl-5
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-5"
                                 id="player-5"
                                 name="p5"
@@ -314,13 +312,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p4"
                             >
                                 Pl-4
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-4"
                                 id="player-4"
                                 name="p4"
@@ -341,13 +339,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p3"
                             >
                                 Pl-3
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-3"
                                 id="player-3"
                                 name="p3"
@@ -368,13 +366,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p2"
                             >
                                 Pl-2
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-2"
                                 id="player-2"
                                 name="p2"
@@ -396,13 +394,13 @@ const MediaOverall = () => {
                             size="small"
                         >
                             <InputLabel
-                                className={classes.label}
+                                sx={classes.label}
                                 id="select-p1"
                             >
                                 Pl-1
                             </InputLabel>
                             <Select
-                                className={classes.select}
+                                sx={classes.select}
                                 labelId="player-1"
                                 id="player-1"
                                 name="p1"
