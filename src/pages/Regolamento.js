@@ -1,7 +1,7 @@
 import { MdDownload, MdCode } from "react-icons/md";
 import React from "react";
 import "./RegolamentoStyle.css";
-import pdfLink from "../assets/FIFA 23_REGOLAMENTO.pdf";
+import pdfLink from "../assets/FIFA23_REGOLAMENTO.pdf";
 import { Link } from "react-router-dom";
 
 
