@@ -19,6 +19,7 @@ const Imprevisto = () => {
         setRandomNumber(getRandomNumber(prepartita));
         setIsWelcomeScreen(false);
         setInputField({randomPlayerNum: ""});
+        setSecondExtractedNumber(null)
     }
 
     function mappedNumber(data) {
