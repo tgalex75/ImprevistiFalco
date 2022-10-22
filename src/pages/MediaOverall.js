@@ -352,13 +352,13 @@ const MediaOverall = () => {
             </Box>
             <Box
                 style={{
-                    minWidth: "40vw",
+                    minWidth: "30vw",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "space-around",
                     padding: "1rem",
-                    marginBottom: "1rem",
+                    marginBottom: "2rem",
                     backgroundImage: `url(${frame})`,
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
