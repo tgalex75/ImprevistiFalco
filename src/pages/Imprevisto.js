@@ -21,6 +21,7 @@ const Imprevisto = () => {
         setIsWelcomeScreen(false);
         setCount(count + 1);
         setInputField({randomPlayerNum: ""});
+        setSecondExtractedNumber(null)
     }
 
     function mappedNumber(data) {
