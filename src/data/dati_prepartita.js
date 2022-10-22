@@ -39,7 +39,7 @@ const prepartita = [
         title: "PAROLA ALLA COMMUNITY!",
         description: "L'avete voluto voi...",
         isImprev: true,
-        ultEstrazione: false
+        ultEstrazione: true
     },
     {
         id: 7,
@@ -165,7 +165,7 @@ const prepartita = [
         title: "PAROLA ALLA COMMUNITY!",
         description: "L'avete voluto voi...",
         isImprev: true,
-        ultEstrazione: false
+        ultEstrazione: true
     },
     {
         id: 25,
