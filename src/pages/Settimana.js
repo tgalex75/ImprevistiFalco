@@ -6,7 +6,6 @@ import settimana from "../data/dati_settimana";
 import { motion } from "framer-motion";
 
 const Imprevisto = () => {
-    //const [tipoImprevisto, setTipoImprevisto] = useState("prepartita")
     const [randomNumber, setRandomNumber] = useState(1);
     const [isWelcomeScreen, setIsWelcomeScreen] = useState(true);
     const [count, setCount] = useState(0);
