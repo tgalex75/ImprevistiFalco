@@ -52,18 +52,37 @@ const Imprevisto = () => {
             {!isWelcomeScreen && (
                 <div>
                     <div className="prepartita">
-                        <h1 style={isImprev ? { color: "var(--clr-primary)" } : {}}>
+                        <h1
+                            style={
+                                isImprev ? { color: "var(--clr-primary)" } : {}
+                            }
+                        >
                             {id}
                         </h1>
                         <div className="isImprevisto">
                             {" "}
                             {isImprev ? "IMPREVISTO" : ""}{" "}
                         </div>
-                        <h2 style={isImprev ? { color: "var(--clr-primary)" } : {}}>
+                        <h2
+                            style={
+                                isImprev ? { color: "var(--clr-primary)" } : {}
+                            }
+                        >
                             {" "}
                             {title}{" "}
                         </h2>
                         <p> {description} </p>
+                        {(id === 8 || id === 16) && (
+                            <small
+                                style={{
+                                    color: "var(--clr-primary)",
+                                }}
+                            >
+                                ⃰ Non applicabile se il giocatore estratto è in
+                                prestito. In tal caso si ripete
+                                l&apos;estrazione
+                            </small>
+                        )}
 
                         {/* ***** Pulsante estrazione ***** */}
                         <Tooltip title="Estrai un numero" placement="top" arrow>

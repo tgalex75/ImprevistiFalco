@@ -49,7 +49,7 @@ const settimana = [
     },
     {
         id: 8,
-        title: "ADEGUAMENTO",
+        title: "ADEGUAMENTO ⃰",
         description:
             "Tramite il suo agente il giocatore fa giungere una richiesta di adeguamento del contratto per raggiungere il più pagato della rosa. Che fai? Accetti o lo cacci?",
         isImprev: true,
@@ -104,7 +104,7 @@ const settimana = [
     },
     {
         id: 16,
-        title: "ADEGUAMENTO",
+        title: "ADEGUAMENTO ⃰",
         description:
             "Tramite il suo agente il giocatore fa giungere una richiesta di adeguamento del contratto per raggiungere il più pagato della rosa. Che fai? Accetti o lo cacci?",
         isImprev: true,
