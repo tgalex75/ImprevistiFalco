@@ -10,6 +10,7 @@ import grifo from "../assets/tshirt.png";
 const Imprevisto = () => {
     const [randomNumber, setRandomNumber] = useState(1);
     const [isWelcomeScreen, setIsWelcomeScreen] = useState(true);
+    const [count, setCount] = useState(0);
 
     function getRandomNumber(inputNum) {
         return Math.floor(Math.random() * inputNum.length) + 1;
@@ -18,6 +19,7 @@ const Imprevisto = () => {
     function genRandomNumber() {
         setRandomNumber(getRandomNumber(prepartita));
         setIsWelcomeScreen(false);
+        setCount(count + 1);
         setInputField({randomPlayerNum: ""});
         setSecondExtractedNumber(null)
     }
@@ -116,16 +118,52 @@ const Imprevisto = () => {
                     exit={{ opacity: 0 }}
                     className="prepartita"
                 >
-                    <h1 style={isImprev ? { color: "var(--clr-primary)" } : {}}>{id}</h1>
-                    <div className="isImprevisto">
-                        {" "}
-                        {isImprev ? "IMPREVISTO" : ""}{" "}
-                    </div>
-                    <h2 style={isImprev ? { color: "var(--clr-primary)" } : {}}>
-                        {" "}
-                        {title}{" "}
-                    </h2>
-                    <p> {description} </p>
+                    <motion.div
+                        key={count}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1, rotate: 360 }}
+                        exit={{ opacity: 0 }}
+                        transition={{
+                            type: "tween",
+                            damping: 100,
+                            mass: 0.75,
+                            stiffness: 10,
+                        }}
+                    >
+                        <h1
+                            style={
+                                isImprev ? { color: "var(--clr-primary)" } : {}
+                            }
+                        >
+                            {id}
+                        </h1>
+                    </motion.div>
+                    <motion.div
+                    key={"a" + count}
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0}}
+                        exit={{ opacity: 0, y: 0 }}
+                        transition={{
+                            type: "tween",
+                            damping: 100,
+                            mass: 0.75,
+                            stiffness: 10,
+                        }}
+                    >
+                        <div className="isImprevisto">
+                            {" "}
+                            {isImprev ? "IMPREVISTO" : ""}{" "}
+                        </div>
+                        <h2
+                            style={
+                                isImprev ? { color: "var(--clr-primary)" } : {}
+                            }
+                        >
+                            {" "}
+                            {title}{" "}
+                        </h2>
+                        <p> {description} </p>
+                    </motion.div>
 
                     {/* IN CASO DI ULTERIORE ESTRAZIONE */}
 

@@ -4,11 +4,7 @@ import "./RegolamentoStyle.css";
 import pdfLink from "../assets/FIFA23_REGOLAMENTO.pdf";
 import { Link } from "react-router-dom";
 
-
 const Regolamento = () => {
-
-    //const ghLink = "https://github.com/tgalex75/ImprevistiFalco"
-
     return (
         <div className="container--reg">
             <h1>Regolamento</h1>
@@ -18,7 +14,9 @@ const Regolamento = () => {
             </Link>
             <a href="https://github.com/tgalex75/ImprevistiFalco">
                 <MdCode />
-                <p className="subtext">Clicca qui per scaricare il codice sorgente</p>
+                <p className="subtext">
+                    Clicca qui per scaricare il codice sorgente
+                </p>
             </a>
         </div>
     );

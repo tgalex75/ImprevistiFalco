@@ -6,9 +6,9 @@ import settimana from "../data/dati_settimana";
 import { motion } from "framer-motion";
 
 const Imprevisto = () => {
-    //const [tipoImprevisto, setTipoImprevisto] = useState("prepartita")
     const [randomNumber, setRandomNumber] = useState(1);
     const [isWelcomeScreen, setIsWelcomeScreen] = useState(true);
+    const [count, setCount] = useState(0);
 
     function getRandomNumber(inputNum) {
         return Math.floor(Math.random() * inputNum.length) + 1;
@@ -17,6 +17,7 @@ const Imprevisto = () => {
     function genRandomNumber() {
         setRandomNumber(getRandomNumber(settimana));
         setIsWelcomeScreen(false);
+        setCount(count + 1);
     }
 
     function mappedNumber(data) {
@@ -50,8 +51,24 @@ const Imprevisto = () => {
             {/* ***** PREPARTITA ***** */}
 
             {!isWelcomeScreen && (
-                <div>
-                    <div className="prepartita">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="prepartita"
+                >
+                    <motion.div
+                        key={count}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1, rotate: 360 }}
+                        exit={{ opacity: 0 }}
+                        transition={{
+                            type: "tween",
+                            damping: 100,
+                            mass: 0.75,
+                            stiffness: 10,
+                        }}
+                    >
                         <h1
                             style={
                                 isImprev ? { color: "var(--clr-primary)" } : {}
@@ -59,6 +76,19 @@ const Imprevisto = () => {
                         >
                             {id}
                         </h1>
+                    </motion.div>
+                    <motion.div
+                        key={"a" + count}
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 0 }}
+                        transition={{
+                            type: "tween",
+                            damping: 100,
+                            mass: 0.75,
+                            stiffness: 10,
+                        }}
+                    >
                         <div className="isImprevisto">
                             {" "}
                             {isImprev ? "IMPREVISTO" : ""}{" "}
@@ -83,18 +113,15 @@ const Imprevisto = () => {
                                 l&apos;estrazione
                             </small>
                         )}
+                    </motion.div>
 
-                        {/* ***** Pulsante estrazione ***** */}
-                        <Tooltip title="Estrai un numero" placement="top" arrow>
-                            <div
-                                className="sendButton"
-                                onClick={genRandomNumber}
-                            >
-                                <MdSend />
-                            </div>
-                        </Tooltip>
-                    </div>
-                </div>
+                    {/* ***** Pulsante estrazione ***** */}
+                    <Tooltip title="Estrai un numero" placement="top" arrow>
+                        <div className="sendButton" onClick={genRandomNumber}>
+                            <MdSend />
+                        </div>
+                    </Tooltip>
+                </motion.div>
             )}
         </motion.div>
     );
