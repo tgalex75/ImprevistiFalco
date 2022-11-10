@@ -12,7 +12,7 @@ const Regolamento = () => {
                 <MdDownload />
                 <p className="subtext">Clicca qui e scarica il regolamento</p>
             </Link>
-            <a href="https://github.com/tgalex75/ImprevistiFalco">
+            <a href="https://github.com/tgalex75/ImprevistiFalco" target="_blank" rel="noopener noreferrer">
                 <MdCode />
                 <p className="subtext">
                     Clicca qui per scaricare il codice sorgente
