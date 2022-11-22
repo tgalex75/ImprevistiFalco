@@ -364,6 +364,7 @@ const MediaOverall = () => {
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center center",
+                    zIndex: 10,
                 }}
             >
                 <h3
