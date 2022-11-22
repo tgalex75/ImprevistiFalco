@@ -112,6 +112,7 @@ const MediaOverall = () => {
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "space-evenly",
+                    zIndex: 10,
                 }}
             >
                 <Box sx={{}}>
