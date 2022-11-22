@@ -25,7 +25,7 @@ export default function App() {
         theme === "light-mode" ? setTheme("dark-mode") : setTheme("light-mode");
     };
 
-    // Al cambio ddello state "theme" verrà attaccata una classe al TAG html
+    // Al cambio dello state "theme" verrà attaccata una classe al TAG html
     useEffect(() => {
         document.documentElement.className = theme;
         localStorage.setItem("theme", theme);

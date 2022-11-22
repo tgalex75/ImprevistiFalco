@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* Colors
     --dark-blue: #03045eff;
@@ -53,10 +57,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   transition: var(--transition);
 }
-
-/* .centered {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-} */

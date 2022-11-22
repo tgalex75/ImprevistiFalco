@@ -75,6 +75,7 @@
 .riquadro video {
     height: 100%;
     width: auto;
+    max-width: none;
 }
 
 .logo-team {

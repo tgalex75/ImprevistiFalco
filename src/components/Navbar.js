@@ -20,9 +20,11 @@ function Navbar(props) {
         <nav>
             {/* Logo */}
             <div className="logo">
-                <a href="/">
-                    <img src={logo} alt="logo" />
-                </a>
+                <Tooltip title="Homepage" placement="left" arrow>
+                    <a href="/">
+                        <img src={logo} alt="logo" />
+                    </a>
+                </Tooltip>
             </div>
             <ThemeToggle theme={theme} cambiaTema={cambiaTema} />
             {/* Menu */}
