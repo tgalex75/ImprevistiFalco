@@ -100,6 +100,7 @@ const MediaOverall = () => {
                 style={{
                     textAlign: "center",
                     padding: "3.5rem 0 1rem",
+                    zIndex: 10,
                 }}
             >
                 Media Overall
