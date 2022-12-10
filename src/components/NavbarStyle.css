@@ -76,7 +76,7 @@ a {
 }
 
 .nav-menu a:visited {
-    color: var(var(--clr-text));
+    color: var(--clr-text);
 }
 
 .nav-menu li:hover {
