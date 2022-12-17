@@ -97,13 +97,37 @@ const MediaOverall = () => {
             }}
         >
             <h1
-                style={{
-                    textAlign: "center",
-                    padding: "3.5rem 0 1rem",
-                    zIndex: 10,
-                }}
+                style={
+                    window.innerWidth > 768
+                        ? {
+                              letterSpacing: "0.4em",
+                              textOrientation: "upright",
+                              writingMode: "vertical-lr",
+                              position: "absolute",
+                              right: 0,
+                              bottom: 0,
+                              paddingRight: ".6em",
+                              fontSize: "1.8rem",
+                              fontWeight: 800,
+                              color: "var(--clr-primary)",
+                              opacity: "40%",
+                          }
+                        : {
+                              letterSpacing: "0.4em",
+                              textOrientation: "upright",
+                              writingMode: "vertical-lr",
+                              position: "absolute",
+                              right: 0,
+                              bottom: 0,
+                              paddingRight: ".6em",
+                              fontSize: "1.2rem",
+                              fontWeight: 800,
+                              color: "var(--clr-primary)",
+                              opacity: "40%",
+                          }
+                }
             >
-                Media Overall
+                MEDIA OVERALL
             </h1>
 
             <Box

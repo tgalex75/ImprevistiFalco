@@ -49,6 +49,9 @@ function Navbar(props) {
                         <Link to="/calcolo-media">
                             <li>Media Overall</li>
                         </Link>
+                        <Link to="/migliore-peggiore-stagione">
+                            <li>Migliore e Peggiore della Stagione</li>
+                        </Link>
                         <Link to="/regolamento">
                             <li>Regolamento</li>
                         </Link>
