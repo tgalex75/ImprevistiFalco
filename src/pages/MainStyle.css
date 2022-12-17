@@ -92,7 +92,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    margin: 3rem;
+    margin: 2rem;
     z-index: 200;
     transform: rotate(10deg);
 }
