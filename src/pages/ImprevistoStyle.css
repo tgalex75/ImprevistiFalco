@@ -120,6 +120,7 @@
 /* Firefox */
 .estrazione-extra input[type="number"] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 #input-estrazione-giocatore {

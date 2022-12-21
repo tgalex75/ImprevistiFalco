@@ -6,7 +6,7 @@ import miglioreStagione from "../data/miglioreStagione";
 import peggioreStagione from "../data/peggioreStagione";
 import { MdSend } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
-import "./MaggiorePeggioreStyle.css";
+import "./MigliorePeggioreStyle.css";
 
 function MigliorePeggiore() {
     const [count, setCount] = useState(0);
@@ -39,7 +39,7 @@ function MigliorePeggiore() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <h1 className="titolo-h1">MIGLIORE e PEGGIORE</h1>
+            <h1 className="titolo-h1-MP">MIGLIORE e PEGGIORE</h1>
             <div className="mainBox" key={count}>
                 {count > 0 && (
                     <div className="bestWorse">

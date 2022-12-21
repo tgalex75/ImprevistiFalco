@@ -88,12 +88,13 @@ const MediaOverall = () => {
             style={{
                 width: "100%",
                 height: "100vh",
-                margin: "0 auto",
                 flexGrow: 1,
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "space-around",
+                justifyContent: "space-evenly",
+                gap: "1rem",
+                paddingTop: "5rem",
             }}
         >
             <h1
@@ -378,7 +379,7 @@ const MediaOverall = () => {
             </Box>
             <Box
                 style={{
-                    minWidth: "30vw",
+                    minWidth: "calc(2rem + 30vw)",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
