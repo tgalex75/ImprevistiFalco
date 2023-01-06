@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Footer from "./components/Footer";
-import DecorationsUp from "./components/DecorationsUp";
+//import DecorationsUp from "./components/DecorationsUp";
 import BgRotate from "./components/BgRotate";
 
 export default function App() {
