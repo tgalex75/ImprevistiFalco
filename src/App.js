@@ -39,7 +39,7 @@ export default function App() {
                 <AnimatedRoutes />
             </Router>
             <BgRotate />
-            //<DecorationsUp />
+            {/*<DecorationsUp /> */}
             <Footer />
         </>
     );
