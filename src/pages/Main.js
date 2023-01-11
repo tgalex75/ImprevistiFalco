@@ -5,7 +5,7 @@ import magicu from "../assets/video/tshirt.mp4";
 import lucianone from "../assets/video/lucianone.mp4";
 import poster1 from "../assets/cuore.jpg";
 import poster2 from "../assets/gaucci.jpg";
-//import siAmo from "../assets/siAmoTornati.png"
+import siAmo from "../assets/siAmoAncoraQui.png"
 import logoTeam from "../assets/logo-team.png";
 import { motion } from "framer-motion";
 
@@ -81,9 +81,9 @@ const Main = () => {
                     }
                 </div>
             </main>
-            {/* <div className="siamoTornati">
-                <img src={siAmo} alt="immagine siAmo tornati" />
-            </div> */}
+            <div className="siamoTornati">
+                <img src={siAmo} alt="immagine siAmo ancora qui" />
+            </div>
         </motion.div>
         
     );
