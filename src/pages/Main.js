@@ -5,7 +5,9 @@ import magicu from "../assets/video/tshirt.mp4";
 import lucianone from "../assets/video/lucianone.mp4";
 import poster1 from "../assets/cuore.jpg";
 import poster2 from "../assets/gaucci.jpg";
-import siAmo from "../assets/siAmoAncoraQui.png"
+import poster3 from "../assets/Takuma_Asano.png";
+import poster4 from "../assets/mosca.jpg";
+import siAmo from "../assets/siAmoAncoraQui.png";
 import logoTeam from "../assets/logo-team.png";
 import { motion } from "framer-motion";
 
@@ -80,12 +82,48 @@ const Main = () => {
                         </div>
                     }
                 </div>
+                <div className="container containerBis">
+                    <div
+                        className="riquadro"
+                        style={{
+                            backgroundImage: `url(${poster3})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "top center",
+                        }}
+                    >
+                        <div className="overlay">
+                            <Link className="links" to="/calcolo-media">
+                                <h2>Media Overall</h2>
+                            </Link>
+                        </div>
+                    </div>
+                    {
+                        <div
+                            className="riquadro"
+                            style={{
+                                backgroundImage: `url(${poster4})`,
+                                backgroundSize: "cover",
+                                backgroundRepeat: "no-repeat",
+                                backgroundPosition: "top center",
+                            }}
+                        >
+                            <div className="overlay">
+                                <Link
+                                    className="links"
+                                    to="/migliore-peggiore-stagione"
+                                >
+                                    <h2>Migliore e Peggiore</h2>
+                                </Link>
+                            </div>
+                        </div>
+                    }
+                </div>
             </main>
             <div className="siamoTornati">
                 <img src={siAmo} alt="immagine siAmo ancora qui" />
             </div>
         </motion.div>
-        
     );
 };
 

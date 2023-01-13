@@ -32,7 +32,6 @@ function MigliorePeggiore() {
         description: descriptionP,
     } = peggioreStagione[extractedNumberP];
 
-
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -135,11 +134,25 @@ function MigliorePeggiore() {
                     placement="top"
                     arrow
                 >
-                    <div id="bWButton" onClick={genClick}
-                    style={count != 0 && window.innerWidth < 768 ? {left: "80%", top: "80%"} : {}}>
+                    <div
+                        id="bWButton"
+                        onClick={genClick}
+                        style={
+                            count != 0 && window.innerWidth < 768
+                                ? { left: "80%", top: "80%" }
+                                : {}
+                        }
+                    >
                         <MdSend />
                     </div>
                 </Tooltip>
+                <p
+                    style={
+                        count === 0 ? { display: "block", padding : "10rem 5rem 0", color: "var(--clr-primary)", fontWeight: 700} : { display: "none" }
+                    }
+                >
+                    Estrai il migliore ed il peggiore della Stagione
+                </p>
             </div>
         </motion.div>
     );
