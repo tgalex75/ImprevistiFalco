@@ -45,17 +45,17 @@ const MediaOverall = () => {
     };
 
     const defaultValues = {
-        p1: 69,
-        p2: 69,
-        p3: 69,
-        p4: 69,
-        p5: 69,
-        p6: 69,
-        p7: 69,
-        p8: 69,
-        p9: 69,
-        p10: 69,
-        p11: 69,
+        p1: 72,
+        p2: 72,
+        p3: 72,
+        p4: 72,
+        p5: 72,
+        p6: 72,
+        p7: 72,
+        p8: 72,
+        p9: 72,
+        p10: 72,
+        p11: 72,
     };
 
     const [values, setValues] = useState(defaultValues);
@@ -163,7 +163,7 @@ const MediaOverall = () => {
                         </Select>
                     </FormControl>
 
-                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                    <FormControl sx={{ m: 1, minWidth: "15vw"}} size="small">
                         <InputLabel sx={classes.label} id="select-p10">
                             Pl-10
                         </InputLabel>
@@ -183,8 +183,6 @@ const MediaOverall = () => {
                             ))}
                         </Select>
                     </FormControl>
-                </Box>
-                <Box>
                     <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
                         <InputLabel sx={classes.label} id="select-p9">
                             Pl-9
@@ -205,7 +203,8 @@ const MediaOverall = () => {
                             ))}
                         </Select>
                     </FormControl>
-
+                </Box>
+                <Box>
                     <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
                         <InputLabel sx={classes.label} id="select-p8">
                             Pl-8
@@ -268,8 +267,6 @@ const MediaOverall = () => {
                             ))}
                         </Select>
                     </FormControl>
-                </Box>
-                <Box>
                     <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
                         <InputLabel sx={classes.label} id="select-p5">
                             Pl-5
@@ -290,7 +287,8 @@ const MediaOverall = () => {
                             ))}
                         </Select>
                     </FormControl>
-
+                </Box>
+                <Box>
                     <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
                         <InputLabel sx={classes.label} id="select-p4">
                             Pl-4
