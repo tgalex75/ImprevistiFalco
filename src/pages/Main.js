@@ -5,7 +5,7 @@ import magicu from "../assets/video/tshirt.mp4";
 import lucianone from "../assets/video/lucianone.mp4";
 import poster1 from "../assets/cuore.jpg";
 import poster2 from "../assets/gaucci.jpg";
-import poster3 from "../assets/Takuma_Asano.png";
+import poster3 from "../assets/rekolice.png";
 import poster4 from "../assets/mosca.jpg";
 import siAmo from "../assets/siAmoAncoraQui.png";
 import logoTeam from "../assets/logo-team.png";
