@@ -7,7 +7,7 @@ import poster1 from "../assets/cuore.jpg";
 import poster2 from "../assets/gaucci.jpg";
 import poster3 from "../assets/rekolice.png";
 import poster4 from "../assets/mosca.jpg";
-import siAmo from "../assets/siAmoAncoraQui.png";
+//import siAmo from "../assets/siAmoAncoraQui.png";
 import logoTeam from "../assets/logo-team.png";
 import { motion } from "framer-motion";
 
@@ -120,9 +120,9 @@ const Main = () => {
                     }
                 </div>
             </main>
-            <div className="siamoTornati">
+            {/* <div className="siamoTornati">
                 <img src={siAmo} alt="immagine siAmo ancora qui" />
-            </div>
+            </div> */}
         </motion.div>
     );
 };

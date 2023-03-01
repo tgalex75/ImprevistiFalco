@@ -89,6 +89,10 @@
     width: auto;
 }
 
+.riquadro video[poster] {
+    object-fit: cover;
+}
+
 .logo-team {
     width: auto;
     height: 7rem;
