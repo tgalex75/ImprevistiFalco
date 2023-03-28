@@ -9,6 +9,7 @@ import poster3 from "../assets/rekolice.png";
 import poster4 from "../assets/mosca.jpg";
 //import siAmo from "../assets/siAmoAncoraQui.png";
 import logoTeam from "../assets/logo-team.png";
+import coppa from "../assets/champions.png";
 import { motion } from "framer-motion";
 
 const Main = () => {
@@ -33,6 +34,7 @@ const Main = () => {
             <main className="main">
                 <div className="container">
                     <img className="logo-team" src={logoTeam} alt="logo team" />
+                    <img className="coppa" src={coppa} alt="logo team" />
                     <div
                         className="riquadro"
                         id="impr--pre"

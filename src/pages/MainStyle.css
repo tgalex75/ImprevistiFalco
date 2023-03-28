@@ -103,6 +103,16 @@
     transform: translate(-50%, -50%);
 }
 
+.coppa {
+    width: auto;
+    height: 15rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .3;
+}
+
 .siamoTornati {
     width: auto;
     height: 10rem;
@@ -139,6 +149,10 @@
 
     .logo-team{
         height: 5rem;
+    }
+
+    .coppa {
+        display: none;
     }
 
     .siamoTornati {
