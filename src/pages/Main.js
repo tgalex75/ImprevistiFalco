@@ -1,27 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./MainStyle.css";
-import magicu from "../assets/video/tshirt.mp4";
-import lucianone from "../assets/video/lucianone.mp4";
-import poster1 from "../assets/cuore.jpg";
-import poster2 from "../assets/gaucci.jpg";
-import poster3 from "../assets/rekolice.png";
+import poster1 from "../assets/ochoa.jpg";
+import poster2 from "../assets/lepresident.jpg";
+import poster3 from "../assets/lyon.jpg";
 import poster4 from "../assets/mosca.jpg";
 //import siAmo from "../assets/siAmoAncoraQui.png";
-import logoTeam from "../assets/logo-team.png";
+import logoTeam from "../assets/logo-team2.png";
 import coppa from "../assets/champions.png";
 import { motion } from "framer-motion";
 
 const Main = () => {
-    const prepRef = React.useRef();
-    const settRef = React.useRef();
-
-    const playVideo = (myVideo) => {
-        myVideo.play();
-    };
-    const pauseVideo = (myVideo) => {
-        myVideo.pause();
-    };
 
     React.useEffect(() => {}, []);
 
@@ -38,8 +27,12 @@ const Main = () => {
                     <div
                         className="riquadro"
                         id="impr--pre"
-                        onMouseEnter={() => playVideo(prepRef.current)}
-                        onMouseLeave={() => pauseVideo(prepRef.current)}
+                        style={{
+                            backgroundImage: `url(${poster1})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "top center",
+                        }}
                     >
                         <div className="overlay">
                             <Link className="links" to="/prepartita">
@@ -50,20 +43,18 @@ const Main = () => {
                                 </h1>
                             </Link>
                         </div>
-                        <video
-                            ref={prepRef}
-                            src={magicu}
-                            loop
-                            muted
-                            poster={poster1}
-                        />
+                        
                     </div>
                     {
                         <div
                             className="riquadro"
                             id="impr--sett"
-                            onMouseEnter={() => playVideo(settRef.current)}
-                            onMouseLeave={() => pauseVideo(settRef.current)}
+                            style={{
+                                backgroundImage: `url(${poster2})`,
+                                backgroundSize: "cover",
+                                backgroundRepeat: "no-repeat",
+                                backgroundPosition: "top center",
+                            }}
                         >
                             <div className="overlay">
                                 <Link className="links" to="/settimana">
@@ -74,13 +65,7 @@ const Main = () => {
                                     </h1>
                                 </Link>
                             </div>
-                            <video
-                                ref={settRef}
-                                src={lucianone}
-                                loop
-                                muted
-                                poster={poster2}
-                            />
+                            
                         </div>
                     }
                 </div>
