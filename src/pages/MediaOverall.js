@@ -45,17 +45,17 @@ const MediaOverall = () => {
     };
 
     const defaultValues = {
-        p1: 72,
-        p2: 72,
-        p3: 72,
-        p4: 72,
-        p5: 72,
-        p6: 72,
-        p7: 72,
-        p8: 72,
-        p9: 72,
-        p10: 72,
-        p11: 72,
+        p1: 82,
+        p2: 82,
+        p3: 82,
+        p4: 82,
+        p5: 82,
+        p6: 82,
+        p7: 82,
+        p8: 82,
+        p9: 82,
+        p10: 82,
+        p11: 82,
     };
 
     const [values, setValues] = useState(defaultValues);
