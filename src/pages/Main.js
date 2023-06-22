@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./MainStyle.css";
-import poster1 from "../assets/ochoa.jpg";
+import poster1 from "../assets/camelito_ly.jpg";
 import poster2 from "../assets/lepresident.jpg";
 import poster3 from "../assets/lyon.jpg";
 import poster4 from "../assets/mosca.jpg";
