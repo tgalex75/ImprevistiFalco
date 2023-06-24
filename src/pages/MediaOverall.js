@@ -108,7 +108,7 @@ const MediaOverall = () => {
                               right: 0,
                               bottom: 0,
                               paddingRight: ".6em",
-                              fontSize: "1.8rem",
+                              fontSize: "1.5rem",
                               fontWeight: 800,
                               color: "var(--clr-primary)",
                               opacity: "40%",
