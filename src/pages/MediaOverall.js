@@ -267,6 +267,8 @@ const MediaOverall = () => {
                             ))}
                         </Select>
                     </FormControl>
+                </Box>
+                <Box>
                     <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
                         <InputLabel sx={classes.label} id="select-p5">
                             Pl-5
@@ -287,8 +289,6 @@ const MediaOverall = () => {
                             ))}
                         </Select>
                     </FormControl>
-                </Box>
-                <Box>
                     <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
                         <InputLabel sx={classes.label} id="select-p4">
                             Pl-4
