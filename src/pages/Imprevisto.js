@@ -5,7 +5,7 @@ import Tooltip from "@mui/material/Tooltip";
 import "./ImprevistoStyle.css";
 import prepartita from "../data/dati_prepartita";
 import TextField from "@mui/material/TextField";
-import grifo from "../assets/tshirt.png";
+import grifo from "../assets/tshirtITALY.png";
 
 const Imprevisto = () => {
     const [randomNumber, setRandomNumber] = useState(1);

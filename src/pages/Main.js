@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./MainStyle.css";
-import poster1 from "../assets/camelito_ly.jpg";
-import poster2 from "../assets/lepresident.jpg";
-import poster3 from "../assets/lyon.jpg";
-import poster4 from "../assets/mosca.jpg";
-//import siAmo from "../assets/siAmoAncoraQui.png";
-import logoTeam from "../assets/logo-team2.png";
-import coppa from "../assets/champions.png";
+import poster1 from "../assets/italy.jpg";
+import poster2 from "../assets/lotito.jpg";
+//import poster3 from "../assets/lyon.jpg";
+//import poster4 from "../assets/mosca.jpg";
+//import tricolore from "../assets/tricolore.png";
+import logoTeam from "../assets/logoFIGC.svg";
 import { motion } from "framer-motion";
 
 const Main = () => {
@@ -23,7 +22,6 @@ const Main = () => {
             <main className="main">
                 <div className="container">
                     <img className="logo-team" src={logoTeam} alt="logo team" />
-                    <img className="coppa" src={coppa} alt="logo team" />
                     <div
                         className="riquadro"
                         id="impr--pre"
@@ -69,7 +67,7 @@ const Main = () => {
                         </div>
                     }
                 </div>
-                <div className="container containerBis">
+                {/* <div className="container containerBis">
                     <div
                         className="riquadro"
                         style={{
@@ -105,10 +103,10 @@ const Main = () => {
                             </div>
                         </div>
                     }
-                </div>
+                </div> */}
             </main>
             {/* <div className="siamoTornati">
-                <img src={siAmo} alt="immagine siAmo ancora qui" />
+                <img src={tricolore} alt="immagine siAmo ancora qui" />
             </div> */}
         </motion.div>
     );
