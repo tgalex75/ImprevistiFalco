@@ -1,23 +1,61 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Box from "@mui/material/Box";
+
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 import menuItems from "../data/menuItems";
 import frame from "../assets/88.png";
 
 const MediaOverall = () => {
+    const classes = {
+        label: {
+            color: "var(--clr-text) !important",
+            "&.Mui-focused": {
+                color: "var(--clr-primary) !important",
+            },
+        },
+        select: {
+            textAlign: "center",
+            "& .MuiSelect-select": {
+                color: "var(--clr-text) !important",
+                opacity: "0.7",
+            },
+            "& .MuiSelect-select:hover": {
+                color: "var(--clr-text) !important",
+                opacity: "1",
+            },
+            "& .MuiSvgIcon-root": {
+                color: "var(--clr-text) !important",
+            },
+            "& fieldset": {
+                borderColor: "var(--clr-text) !important",
+            },
+            "& fieldset:hover": {
+                borderColor: "var(--clr-primary) !important",
+            },
+            background: {
+                paper: "#424242",
+            },
+        },
+    };
+
     const defaultValues = {
-        p1: 69,
-        p2: 69,
-        p3: 69,
-        p4: 69,
-        p5: 69,
-        p6: 69,
-        p7: 69,
-        p8: 69,
-        p9: 69,
-        p10: 69,
-        p11: 69,
+        p1: 82,
+        p2: 82,
+        p3: 82,
+        p4: 82,
+        p5: 82,
+        p6: 82,
+        p7: 82,
+        p8: 82,
+        p9: 82,
+        p10: 82,
+        p11: 82,
     };
 
     const [values, setValues] = useState(defaultValues);
@@ -47,23 +85,70 @@ const MediaOverall = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="w-full h-screen mx-auto grow flex flex-col items-center justify-around"
+            style={{
+                width: "100%",
+                height: "100vh",
+                flexGrow: 1,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "space-evenly",
+                gap: "1rem",
+                paddingTop: "5rem",
+            }}
         >
-            <h1 className="text-center pt-14 px-0 pb-4 text-4xl font-bold">
-                Media Overall
+            <h1
+                style={
+                    window.innerWidth > 768
+                        ? {
+                              letterSpacing: "0.4em",
+                              textOrientation: "upright",
+                              writingMode: "vertical-lr",
+                              position: "absolute",
+                              right: 0,
+                              bottom: 0,
+                              paddingRight: ".6em",
+                              fontSize: "1.5rem",
+                              fontWeight: 800,
+                              color: "var(--clr-primary)",
+                              opacity: "40%",
+                          }
+                        : {
+                              letterSpacing: "0.4em",
+                              textOrientation: "upright",
+                              writingMode: "vertical-lr",
+                              position: "absolute",
+                              right: 0,
+                              bottom: 0,
+                              paddingRight: ".6em",
+                              fontSize: "1.2rem",
+                              fontWeight: 800,
+                              color: "var(--clr-primary)",
+                              opacity: "40%",
+                          }
+                }
+            >
+                MEDIA OVERALL
             </h1>
 
-            <div className="w-full flex flex-col items-center justify-evenly z-10">
-                <div className="flex items-center justify-around my-1">
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p11"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-11
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+            <Box
+                sx={{
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "space-evenly",
+                    zIndex: 10,
+                }}
+            >
+                <Box sx={{}}>
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel id="select-p11" sx={classes.label}>
+                            Pl-11
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-11"
                             id="player-11"
                             name="p11"
                             value={values.p11}
@@ -71,25 +156,20 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p10"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-10
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+
+                    <FormControl sx={{ m: 1, minWidth: "15vw"}} size="small">
+                        <InputLabel sx={classes.label} id="select-p10">
+                            Pl-10
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-10"
                             id="player-10"
                             name="p10"
                             value={values.p10}
@@ -97,27 +177,19 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                </div>
-                <div className="flex items-center justify-around my-1">
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p9"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-9
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p9">
+                            Pl-9
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-9"
                             id="player-9"
                             name="p9"
                             value={values.p9}
@@ -125,25 +197,21 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p8"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-8
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+                </Box>
+                <Box>
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p8">
+                            Pl-8
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-8"
                             id="player-8"
                             name="p8"
                             value={values.p8}
@@ -151,25 +219,20 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p7"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-7
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p7">
+                            Pl-7
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-7"
                             id="player-7"
                             name="p7"
                             value={values.p7}
@@ -177,25 +240,20 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p6"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-6
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p6">
+                            Pl-6
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-6"
                             id="player-6"
                             name="p6"
                             value={values.p6}
@@ -203,27 +261,21 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                </div>
-                <div className="flex items-center justify-around my-1">
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p5"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-5
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+                </Box>
+                <Box>
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p5">
+                            Pl-5
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-5"
                             id="player-5"
                             name="p5"
                             value={values.p5}
@@ -231,25 +283,19 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p4"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-4
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p4">
+                            Pl-4
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-4"
                             id="player-4"
                             name="p4"
                             value={values.p4}
@@ -257,25 +303,20 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p3"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-3
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p3">
+                            Pl-3
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-3"
                             id="player-3"
                             name="p3"
                             value={values.p3}
@@ -283,25 +324,20 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p2"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-2
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p2">
+                            Pl-2
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-2"
                             id="player-2"
                             name="p2"
                             value={values.p2}
@@ -309,27 +345,21 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                </div>
-                <div className="flex items-center justify-around my-1">
-                    <form className="font-semibold m-2 min-w-[15vw] flex items-center justify-center relative outline outline-1 rounded hover:text-[#ff0066]">
-                        <label
-                            id="select-p1"
-                            className="absolute -top-5 left-0 text-xs pl-2"
-                        >
-                            PL-1
-                        </label>
-                        <select
-                            className="bg-transparent p-2 hover:text-[#ff0066]"
+                        </Select>
+                    </FormControl>
+                </Box>
+                <Box>
+                    <FormControl sx={{ m: 1, minWidth: "15vw" }} size="small">
+                        <InputLabel sx={classes.label} id="select-p1">
+                            Pl-1
+                        </InputLabel>
+                        <Select
+                            sx={classes.select}
+                            labelId="player-1"
                             id="player-1"
                             name="p1"
                             value={values.p1}
@@ -337,36 +367,47 @@ const MediaOverall = () => {
                             onChange={handleChange}
                         >
                             {menuItems.map((option, index) => (
-                                <option
-                                    key={index}
-                                    value={option.value}
-                                    className=""
-                                >
+                                <MenuItem key={index} value={option.value}>
                                     {option.label}
-                                </option>
+                                </MenuItem>
                             ))}
-                        </select>
-                    </form>
-                </div>
-            </div>
-            <div
-                className="min-w-[40vw] flex flex-col items-center justify-around p-4 mb-4 font-bold"
+                        </Select>
+                    </FormControl>
+                </Box>
+            </Box>
+            <Box
                 style={{
+                    minWidth: "calc(2rem + 30vw)",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "space-around",
+                    padding: "1rem",
+                    marginBottom: "2rem",
                     backgroundImage: `url(${frame})`,
+                    backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center center",
-                    backgroundSize: "contain",
+                    zIndex: 10,
                 }}
             >
-                <h3 className="text-[#ff0066] text-[calc(.5rem+1.2vw)] mt-4">
+                <h3
+                    style={{
+                        color: "var(--clr-primary)",
+                        fontSize: "calc(.5rem + 1.2vw)",
+                        marginTop: "1rem",
+                    }}
+                >
                     Media:
                 </h3>
                 <h2
-                    className="text-[calc(2.2rem+5vw)]"
+                    style={{
+                        fontSize: "calc(2.2rem + 5vw)",
+                    }}
                 >
                     {result}
                 </h2>
-            </div>
+            </Box>
         </motion.div>
     );
 };

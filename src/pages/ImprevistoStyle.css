@@ -8,7 +8,6 @@
     padding-right: 0.6em;
     font-size: 1.8rem;
     font-weight: 800;
-    opacity: 0.8;
     color: var(--clr-primary);
     opacity: 40%;
 }
@@ -121,6 +120,7 @@
 /* Firefox */
 .estrazione-extra input[type="number"] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 #input-estrazione-giocatore {
@@ -164,6 +164,13 @@
     text-shadow: 1px 1px 3px #333;
     margin-bottom: 1.5rem;
     position: relative;
+}
+
+.migliorePeggioreContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
